@@ -1,0 +1,236 @@
+/* Estilos Generales - Variables Globales */
+:root {
+  /* Paleta de Colores Principal */
+  --primary-color: #39b890; 
+  --secondary-color: #00825e; 
+  --accent-color: #cafbe7; 
+  --highlight-color: #0048b4; 
+
+  /* Tipografía */
+  --font-family-moderno: 'Roboto', sans-serif; 
+  --font-family-ejecutivo: 'Times New Roman', serif; 
+  --font-family-sans-serif: 'Arial', sans-serif;
+  --font-family-cursiva: 'Courier New', cursive;
+  --font-family-monoespaciado: 'Consolas', monospace;
+
+  /* Responsive */
+  --breakpoint-tablet: 768px; /*  Tablet */
+  --breakpoint-mobile: 480px; /* Celular */
+
+  /* Modo Oscuro */
+  --dark-primary-color: #0048b4; 
+  --dark-secondary-color: #212529; 
+  --dark-accent-color: #e5f0ff;
+  --dark-highlight-color: #6c7698;
+  --dark-text-color: #eee;
+  --dark-background-color: #212529; 
+
+  /* Modo Daltonico (Deuteranopia) */
+  --dalton-primary-color: #00704d; 
+  --dalton-secondary-color: #e5ede5;
+  --dalton-accent-color: #628865;
+  --dalton-highlight-color: #003619; 
+}
+
+/* Estilos generales - Responsive */
+@media screen and (max-width: var(--breakpoint-tablet)) {
+  /* Estilos para tablets */
+}
+
+@media screen and (max-width: var(--breakpoint-mobile)) {
+  /* Estilos para celulares */
+}
+
+/* Estilos generales - Tipografía */
+body {
+  font-family: var(--font-family-moderno); /* Usar fuente moderna por defecto */
+}
+
+/* Estilos generales - Modo Oscuro */
+body.dark-mode {
+  background-color: var(--dark-background-color);
+  color: var(--dark-text-color);
+}
+
+body.dark-mode button {
+  background-color: var(--dark-primary-color); 
+}
+
+body.dark-mode .card {
+  background-color: var(--dark-secondary-color);
+}
+
+body.dark-mode .card-header {
+  background-color: var(--dark-background-color);
+}
+
+body.dark-mode table th {
+  background-color: var(--dark-secondary-color);
+}
+
+body.dark-mode input[type="text"],
+body.dark-mode input[type="email"],
+body.dark-mode input[type="password"],
+body.dark-mode textarea {
+  background-color: var(--dark-secondary-color);
+  color: var(--dark-text-color);
+}
+
+body.dark-mode .alert-success {
+  background-color: #28a745; /* Verde oscuro */
+  color: white;
+}
+
+body.dark-mode .alert-warning {
+  background-color: #ffc107; /* Amarillo oscuro */
+  color: white;
+}
+
+body.dark-mode .alert-danger {
+  background-color: #dc3545; /* Rojo oscuro */
+  color: white;
+}
+
+/* Estilos generales - Modo Daltonico */
+body.dalton-mode {
+  background-color: var(--dalton-secondary-color);
+  color: #333; 
+}
+
+body.dalton-mode button {
+  background-color: var(--dalton-primary-color); 
+}
+
+body.dalton-mode .card {
+  background-color: var(--dalton-highlight-color); 
+}
+
+body.dalton-mode .card-header {
+  background-color: var(--dalton-secondary-color);
+}
+
+body.dalton-mode table th {
+  background-color: var(--dalton-highlight-color); 
+}
+
+body.dalton-mode input[type="text"],
+body.dalton-mode input[type="email"],
+body.dalton-mode input[type="password"],
+body.dalton-mode textarea {
+  background-color: var(--dalton-highlight-color);
+  color: #333;
+}
+
+body.dalton-mode .alert-success {
+  background-color: #28a745; /* Verde oscuro */
+  color: white;
+}
+
+body.dalton-mode .alert-warning {
+  background-color: #ffc107; /* Amarillo oscuro */
+  color: white;
+}
+
+body.dalton-mode .alert-danger {
+  background-color: #dc3545; /* Rojo oscuro */
+  color: white;
+}
+
+/* Estilos para el contenido - Modo Oscuro */
+body.dark-mode .container {
+  background-color: var(--dark-background-color);
+}
+
+body.dark-mode .section-title {
+  color: var(--dark-text-color);
+}
+
+body.dark-mode .content {
+  color: var(--dark-text-color);
+}
+
+/* Estilos para el contenido - Modo Daltonico */
+body.dalton-mode .container {
+  background-color: var(--dalton-secondary-color);
+}
+
+body.dalton-mode .section-title {
+  color: #333;
+}
+
+body.dalton-mode .content {
+  color: #333;
+}
+
+/* Estilos adicionales - Modo Oscuro */
+body.dark-mode header {
+  background-color: var(--dark-background-color); 
+}
+
+body.dark-mode footer {
+  background-color: var(--dark-secondary-color);
+}
+
+/* Estilos adicionales - Modo Daltonico */
+body.dalton-mode header {
+  background-color: var(--dalton-secondary-color); 
+}
+
+body.dalton-mode footer {
+  background-color: var(--dalton-highlight-color); 
+}
+
+/* Estilos para la sección de libros - Modo Oscuro */
+body.dark-mode .book-card {
+  background-color: var(--dark-secondary-color); 
+  color: var(--dark-text-color);
+}
+
+body.dark-mode .book-card h3 {
+  color: var(--dark-text-color); 
+}
+
+body.dark-mode .book-card p {
+  color: var(--dark-text-color); 
+}
+
+/* Estilos para la sección de libros - Modo Daltonico */
+body.dalton-mode .book-card {
+  background-color: var(--dalton-highlight-color); 
+  color: #333;
+}
+
+body.dalton-mode .book-card h3 {
+  color: #333;
+}
+
+body.dalton-mode .book-card p {
+  color: #333;
+}
+
+/* Estilos generales - Tipografía */
+body {
+  font-family: var(--font-family-moderno);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-family-ejecutivo); /* Usar fuente ejecutiva para títulos */
+}
+
+/* Estilos para inputs */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea {
+  font-family: var(--font-family-sans-serif);
+}
+
+/* Estilos para código */
+code, pre {
+  font-family: var(--font-family-monoespaciado); 
+}
+
+/* Estilos para citas */
+blockquote {
+  font-family: var(--font-family-cursiva);
+}
