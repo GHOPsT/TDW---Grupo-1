@@ -1,0 +1,206 @@
+/* Tipografía */
+body {
+  font-family: 'Poppins', sans-serif; /* Poppins: fuente moderna y legible */
+  line-height: 1.6; 
+  color: #333; /* Gris oscuro para un contraste suave */
+  background-color: #f8f9fa; /* Gris suave como fondo */
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 400; 
+  margin-bottom: 1rem; 
+}
+
+/* Colores de la marca */
+:root {
+  --primary-color: #FF6347; /* Naranja vibrante, llama la atención */
+  --secondary-color: #2196F3; /* Azul claro, da sensación de calma */
+  --accent-color: #FFC300; /* Amarillo brillante para detalles */
+  --light-gray: #f8f9fa; /* Gris muy suave para fondos */
+  --dark-gray: #333; /* Gris oscuro para textos */
+}
+
+/* Botones */
+button {
+  background-color: var(--primary-color); /* Naranja vibrante */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Transición suave para el hover */
+}
+
+button:hover {
+  background-color: #FF4500; /* Naranja más oscuro al hacer hover */
+}
+
+/* Cuadros (Cards) */
+.card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Sombra más pronunciada */
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.card-header {
+  background-color: var(--light-gray);
+  padding: 10px;
+  border-bottom: 1px solid var(--secondary-color);
+}
+
+.card-body {
+  padding: 10px;
+}
+
+/* Tablas */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+th, td {
+  padding: 8px;
+  border: 1px solid var(--secondary-color);
+  text-align: left;
+}
+
+th {
+  background-color: var(--light-gray);
+}
+
+/* Inputs */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid var(--secondary-color);
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+/* Checkbox y RadioButton */
+input[type="checkbox"],
+input[type="radio"] {
+  margin-right: 5px;
+}
+
+/* Formularios */
+form {
+  margin-bottom: 20px;
+}
+
+/* Alertas */
+.alert {
+  padding: 10px;
+  border: 1px solid var(--secondary-color);
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.alert-success {
+  background-color: #d4edda; /* Verde claro */
+  color: #155724;
+}
+
+.alert-warning {
+  background-color: #fff3cd; /* Amarillo claro */
+  color: #856404;
+}
+
+.alert-danger {
+  background-color: #f8d7da; /* Rojo claro */
+  color: #721c24;
+}
+
+/* Spinner */
+.spinner {
+  border: 4px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  border-top-color: var(--primary-color); /* Naranja */
+  width: 30px;
+  height: 30px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Estilos para el contenido */
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.section-title {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: var(--dark-gray);
+}
+
+.content {
+  line-height: 1.5;
+  font-size: 1.1rem;
+  color: var(--dark-gray);
+}
+
+/* Estilos adicionales */
+
+/* Encabezado de la página */
+header {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Pie de página */
+footer {
+  background-color: var(--secondary-color);
+  color: white;
+  padding: 20px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Estilos para la sección de libros */
+.books-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Grilla responsive */
+  gap: 20px;
+}
+
+.book-card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); 
+  padding: 20px;
+  text-align: center;
+}
+
+.book-card img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.book-card h3 {
+  color: var(--primary-color); /* Título del libro en naranja */
+  margin-bottom: 5px;
+}
+
+.book-card p {
+  color: var(--dark-gray);
+  font-size: 0.9rem;
+}

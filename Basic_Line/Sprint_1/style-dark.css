@@ -1,0 +1,209 @@
+/* Estilos generales - Modo Oscuro */
+body {
+  font-family: 'Poppins', sans-serif; /* Poppins: fuente moderna y legible */
+  line-height: 1.6; 
+  color: #eee; /* Blanco suave para mejor contraste */
+  background-color: #212529; /* Gris oscuro para fondo */
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 400; 
+  margin-bottom: 1rem; 
+}
+
+/* Colores de la marca - Modo Oscuro */
+:root {
+  --primary-color: #FF6347; /* Naranja vibrante, llama la atención */
+  --secondary-color: #2196F3; /* Azul claro, da sensación de calma */
+  --accent-color: #FFC300; /* Amarillo brillante para detalles */
+  --light-gray: #343a40; /* Gris oscuro para fondos */
+  --dark-gray: #eee; /* Gris claro para textos */
+}
+
+/* Botones - Modo Oscuro */
+button {
+  background-color: var(--primary-color); /* Naranja vibrante */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Transición suave para el hover */
+}
+
+button:hover {
+  background-color: #FF4500; /* Naranja más oscuro al hacer hover */
+}
+
+/* Cuadros (Cards) - Modo Oscuro */
+.card {
+  background-color: #343a40; /* Gris oscuro para fondo */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25); /* Sombra más pronunciada */
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.card-header {
+  background-color: #212529; /* Gris aún más oscuro para el encabezado */
+  padding: 10px;
+  border-bottom: 1px solid var(--secondary-color);
+}
+
+.card-body {
+  padding: 10px;
+}
+
+/* Tablas - Modo Oscuro */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+th, td {
+  padding: 8px;
+  border: 1px solid var(--secondary-color);
+  text-align: left;
+  color: var(--dark-gray); /* Texto en gris claro */
+}
+
+th {
+  background-color: var(--light-gray);
+}
+
+/* Inputs - Modo Oscuro */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid var(--secondary-color);
+  border-radius: 5px;
+  margin-bottom: 10px;
+  background-color: #343a40; /* Gris oscuro para el fondo del input */
+  color: var(--dark-gray); /* Texto en gris claro */
+}
+
+/* Checkbox y RadioButton - Modo Oscuro */
+input[type="checkbox"],
+input[type="radio"] {
+  margin-right: 5px;
+}
+
+/* Formularios - Modo Oscuro */
+form {
+  margin-bottom: 20px;
+}
+
+/* Alertas - Modo Oscuro */
+.alert {
+  padding: 10px;
+  border: 1px solid var(--secondary-color);
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.alert-success {
+  background-color: #28a745; /* Verde oscuro */
+  color: white;
+}
+
+.alert-warning {
+  background-color: #ffc107; /* Amarillo oscuro */
+  color: white;
+}
+
+.alert-danger {
+  background-color: #dc3545; /* Rojo oscuro */
+  color: white;
+}
+
+/* Spinner - Modo Oscuro */
+.spinner {
+  border: 4px solid rgba(255, 255, 255, 0.1); /* Blanco suave para el borde */
+  border-radius: 50%;
+  border-top-color: var(--primary-color); /* Naranja */
+  width: 30px;
+  height: 30px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Estilos para el contenido - Modo Oscuro */
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.section-title {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: var(--dark-gray);
+}
+
+.content {
+  line-height: 1.5;
+  font-size: 1.1rem;
+  color: var(--dark-gray);
+}
+
+/* Estilos adicionales - Modo Oscuro */
+
+/* Encabezado de la página */
+header {
+  background-color: #212529; /* Gris oscuro */
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Pie de página */
+footer {
+  background-color: #1a1f24; /* Gris aún más oscuro */
+  color: white;
+  padding: 20px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Estilos para la sección de libros */
+.books-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Grilla responsive */
+  gap: 20px;
+}
+
+.book-card {
+  background-color: #343a40; /* Gris oscuro para el fondo de la tarjeta */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25); 
+  padding: 20px;
+  text-align: center;
+}
+
+.book-card img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.book-card h3 {
+  color: var(--primary-color); /* Título del libro en naranja */
+  margin-bottom: 5px;
+}
+
+.book-card p {
+  color: var(--dark-gray); /* Texto en gris claro */
+  font-size: 0.9rem;
+}
