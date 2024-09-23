@@ -44,6 +44,19 @@
 /* Estilos generales - Tipografía */
 body {
   font-family: var(--font-family-moderno); /* Usar fuente moderna por defecto */
+  overflow: hidden;
+  height: 100vh;
+  width: 100vh;
+  background-color: var(--accent-color);
+  text-transform: capitalize;
+}
+
+h1 {
+  width: 100vh;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* Estilos generales - Modo Oscuro */
