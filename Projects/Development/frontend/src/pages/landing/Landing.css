@@ -1,0 +1,25 @@
+.landing-page {
+  padding: 2rem;
+  min-height: 100vh; /* Ocupa toda la altura de la pantalla */
+  display: flex;
+  flex-direction: column; /* Ordena las secciones verticalmente */
+}
+
+.section {
+  padding: 2rem 0;
+  flex-grow: 1; /* Permite que las secciones ocupen el espacio disponible */
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+h1, h2 {
+  margin-bottom: 1rem;
+}
+
+p {
+  margin-bottom: 2rem;
+}

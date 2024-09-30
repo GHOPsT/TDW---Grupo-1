@@ -44,6 +44,19 @@
 /* Estilos generales - Tipografía */
 body {
   font-family: var(--font-family-moderno); /* Usar fuente moderna por defecto */
+  overflow: hidden;
+  height: 100vh;
+  width: 100vh;
+  background-color: var(--accent-color);
+  text-transform: capitalize;
+}
+
+h1 {
+  width: 100vh;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* Estilos generales - Modo Oscuro */
@@ -233,4 +246,133 @@ code, pre {
 /* Estilos para citas */
 blockquote {
   font-family: var(--font-family-cursiva);
+}
+
+.sidebar{
+  background-color: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 2rem 3rem;
+  width: 15rem;
+  height: 100vh;
+
+  .logoContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    h2.title {
+      font-size: 31.42px;
+      color: #003619;
+      padding: 0 0 0 1rem;
+    }
+  }
+
+  .burgerContainer {
+    content: '';
+    background-color: #333;
+    position: absolute;
+    right: (-35px / 2);
+    top: calc(9rem / 1.15);
+    width: 35px;
+    height: 35px;
+    border-radius: 2rem;
+    z-index: 1;
+
+    .burgerTrigger {
+      content: '';
+      width: 35px;
+      height: 35px;
+      background-color: red;
+      cursor: pointer;
+      z-index: 2;
+      opacity: 0;
+    }
+
+    .burgerMenu {
+      content: '';
+      background-color: white;
+      position: relative;
+      z-index: 1;
+      width: 20px;
+      height: 3px;
+      border-radius: 2rem;
+      bottom: calc(35px / 2);
+      left: 0.45rem;
+    }
+
+    .burgerMenu::after {
+      content: '';
+      background-color: white;
+      position: absolute;
+      width: 20px;
+      height: 3px;
+      border-radius: 2rem;
+      top: 0.4rem;
+      transform: translateY(0.4rem) rotate(45deg);
+    }
+
+    .burgerMenu::before {
+      content: '';
+      background-color: white;
+      position: absolute;
+      width: 20px;
+      height: 3px;
+      border-radius: 2rem;
+      top: -0.4rem;
+      transform: translateY(0.4rem) rotate(-45deg);
+    }
+
+  }
+
+  .burgerContainer::after {
+    content: '';
+    position: absolute;
+    right: 35px;
+    top: (35px / 2);
+    z-index: 0;
+    width: calc(6rem + 15rem);
+    background-color: lightgray;
+    height: 2px;
+  }
+
+  .profileContainer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 3rem 0 0 0;
+
+    img {
+      width: auto;
+      height: 3.5rem;
+    }
+
+    .profileContents {
+
+      padding: 0 0 0 1rem;
+
+      p.name {
+        padding: 0;
+        margin: 0;
+        font-size: 16.7px;
+        color: darkgray;
+        text-transform: capitalize;
+        font-weight: var(--font-family-moderno);
+      }
+
+      p {
+        padding: 0;
+        margin: 0;
+        font-size: 13.9px;
+        color: #212529;
+        text-transform: lowercase;
+      }
+    }
+
+  }
+
+  .contentsContainer {
+    
+  }
 }
