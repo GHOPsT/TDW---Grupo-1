@@ -1,0 +1,182 @@
+[
+  {
+    "id": 1,
+    "nombre": "Los tres chanchitos",
+    "portada": "https://www.example.com/los-tres-chanchitos.jpg",
+    "categoria": "literatura",
+    "autor": "Mario Vargas Llosa",
+    "resumen": "Un cuento clásico para niños sobre tres chanchitos que construyen casas...",
+    "fecha": "2023-12-20"
+  },
+  {
+    "id": 2,
+    "nombre": "El Quijote",
+    "portada": "https://www.example.com/el-quijote.jpg",
+    "categoria": "literatura",
+    "autor": "Miguel de Cervantes",
+    "resumen": "Una novela épica sobre un caballero andante que lucha contra molinos de viento...",
+    "fecha": "2023-12-20"
+  },
+  {
+    "id": 3,
+    "nombre": "Cien años de soledad",
+    "portada": "https://www.example.com/cien-años-de-soledad.jpg",
+    "categoria": "literatura",
+    "autor": "Gabriel García Márquez",
+    "resumen": "Una novela que narra la historia de la familia Buendía en un pueblo mágico...",
+    "fecha": "2023-12-20"
+  },
+  {
+    "id": 4,
+    "nombre": "1984",
+    "portada": "https://www.example.com/1984.jpg",
+    "categoria": "literatura",
+    "autor": "George Orwell",
+    "resumen": "Una novela distópica que imagina un futuro totalitario...",
+    "fecha": "2023-12-20"
+  },
+  {
+    "id": 5,
+    "nombre": "El señor de los anillos",
+    "portada": "https://www.example.com/el-señor-de-los-anillos.jpg",
+    "categoria": "literatura",
+    "autor": "J.R.R. Tolkien",
+    "resumen": "Una épica fantasía medieval sobre la lucha entre el bien y el mal...",
+    "fecha": "2023-12-20"
+  },
+  {
+    "id": 6,
+    "nombre": "Historia de dos ciudades",
+    "portada": "https://www.example.com/historia-de-dos-ciudades.jpg",
+    "categoria": "historia",
+    "autor": "Charles Dickens",
+    "resumen": "Una novela histórica ambientada en la Revolución Francesa...",
+    "fecha": "2023-12-20"
+  },
+  {
+    "id": 7,
+    "nombre": "La guerra y la paz",
+    "portada": "https://www.example.com/la-guerra-y-la-paz.jpg",
+    "categoria": "historia",
+    "autor": "León Tolstoi",
+    "resumen": "Una novela épica que describe la sociedad rusa durante la invasión napoleónica...",
+    "fecha": "2023-12-20"
+  },
+  {
+    "id": 8,
+    "nombre": "Breve historia del tiempo",
+    "portada": "https://www.example.com/breve-historia-del-tiempo.jpg",
+    "categoria": "ciencia",
+    "autor": "Stephen Hawking",
+    "resumen": "Un libro de divulgación científica que explica los conceptos básicos del universo...",
+    "fecha": "2023-12-20"
+  },
+  {
+    "id": 9,
+    "nombre": "Cosmos",
+    "portada": "https://www.example.com/cosmos.jpg",
+    "categoria": "ciencia",
+    "autor": "Carl Sagan",
+    "resumen": "Un libro que explora el universo y la historia de la ciencia...",
+    "fecha": "2023-12-20"
+  },
+  {
+    "id": 10,
+    "nombre": "El gen egoísta",
+    "portada": "https://www.example.com/el-gen-egoista.jpg",
+    "categoria": "ciencia",
+    "autor": "Richard Dawkins",
+    "resumen": "Un libro que explica la teoría de la selección natural desde una perspectiva genética...",
+    "fecha": "2023-12-20"
+  },
+  {
+    "id": 11,
+    "nombre": "El código da Vinci",
+    "portada": "https://www.example.com/el-código-da-vinci.jpg",
+    "categoria": "literatura",
+    "autor": "Dan Brown",
+    "resumen": "Una novela de misterio y suspense que gira en torno a un complot en el Vaticano...",
+    "fecha": "2023-12-20"
+  },
+  {
+    "id": 12,
+    "nombre": "La sombra del viento",
+    "portada": "https://www.example.com/la-sombra-del-viento.jpg",
+    "categoria": "literatura",
+    "autor": "Carlos Ruiz Zafón",
+    "resumen": "Una novela ambientada en la Barcelona de los años 40 que narra la historia de un joven...",
+    "fecha": "2023-12-20"
+  },
+  {
+    "id": 13,
+    "nombre": "El Hobbit",
+    "portada": "https://www.example.com/el-hobbit.jpg",
+    "categoria": "literatura",
+    "autor": "J.R.R. Tolkien",
+    "resumen": "Un cuento que precede a El señor de los anillos y narra la historia de Bilbo Bolsón...",
+    "fecha": "2023-12-20"
+  },
+  {
+    "id": 14,
+    "nombre": "El principito",
+    "portada": "https://www.example.com/el-principito.jpg",
+    "categoria": "literatura",
+    "autor": "Antoine de Saint-Exupéry",
+    "resumen": "Un cuento clásico para niños que habla sobre la amistad, el amor y la imaginación...",
+    "fecha": "2023-12-20"
+  },
+  {
+    "id": 15,
+    "nombre": "Matar un ruiseñor",
+    "portada": "https://www.example.com/matar-un-ruiseñor.jpg",
+    "categoria": "literatura",
+    "autor": "Harper Lee",
+    "resumen": "Una novela que narra la historia de la infancia de Scout Finch en el sur de Estados Unidos...",
+    "fecha": "2023-12-20"
+  },
+  {
+    "id": 16,
+    "nombre": "Orgullo y prejuicio",
+    "portada": "https://www.example.com/orgullo-y-prejuicio.jpg",
+    "categoria": "literatura",
+    "autor": "Jane Austen",
+    "resumen": "Una novela romántica que narra la historia de Elizabeth Bennet y Mr. Darcy...",
+    "fecha": "2023-12-20"
+  },
+  {
+    "id": 17,
+    "nombre": "La guerra de las galaxias",
+    "portada": "https://www.example.com/la-guerra-de-las-galaxias.jpg",
+    "categoria": "ciencia",
+    "autor": "George Lucas",
+    "resumen": "Una saga épica de ciencia ficción que narra las aventuras de Luke Skywalker...",
+    "fecha": "2023-12-20"
+  },
+  {
+    "id": 18,
+    "nombre": "El resplandor",
+    "portada": "https://www.example.com/el-resplandor.jpg",
+    "categoria": "literatura",
+    "autor": "Stephen King",
+    "resumen": "Una novela de terror que narra la historia de una familia que se muda a un hotel...",
+    "fecha": "2023-12-20"
+  },
+  {
+    "id": 19,
+    "nombre": "El retrato de Dorian Gray",
+    "portada": "https://www.example.com/el-retrato-de-dorian-gray.jpg",
+    "categoria": "literatura",
+    "autor": "Oscar Wilde",
+    "resumen": "Una novela gótica que explora la naturaleza de la belleza y la decadencia...",
+    "fecha": "2023-12-20"
+  },
+  {
+    "id": 20,
+    "nombre": "El gran Gatsby",
+    "portada": "https://www.example.com/el-gran-gatsby.jpg",
+    "categoria": "literatura",
+    "autor": "F. Scott Fitzgerald",
+    "resumen": "Una novela que narra la historia de Jay Gatsby, un hombre rico que busca el amor...",
+    "fecha": "2023-12-20"
+  }
+]

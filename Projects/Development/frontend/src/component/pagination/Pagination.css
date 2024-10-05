@@ -1,0 +1,35 @@
+/* Pagination.css */
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.page-item {
+  margin: 0 0.5rem;
+}
+
+.page-link {
+  display: block;
+  padding: 0.5rem 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  color: #333;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.page-link:hover {
+  background-color: #eee;
+}
+
+.active {
+  background-color: #0ea5e9;
+  color: #fff;
+}
+
+.disabled {
+  opacity: 0.5;
+  cursor: default;
+}
