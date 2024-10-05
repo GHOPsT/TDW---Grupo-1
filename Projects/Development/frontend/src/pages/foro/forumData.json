@@ -1,0 +1,191 @@
+[
+  {
+    "titulo": "¿El lobo es el bueno?",
+    "detalles": "Un libro para reflexionar...",
+    "tituloObra": "Los tres chanchitos",
+    "autor": "Mario Vargas Llosa",
+    "fecha": "01-01-2024",
+    "estado": "Aprobado",
+    "reporte": "No se permite..."
+  },
+  {
+    "titulo": "Los tres chanchitos",
+    "detalles": "Un libro para reflexionar...",
+    "tituloObra": "Los tres chanchitos",
+    "autor": "Mario Vargas Llosa",
+    "fecha": "01-01-2024",
+    "estado": "Desaprobado",
+    "reporte": "Comunismo no..."
+  },
+  {
+    "titulo": "El Quijote: ¿Un loco o un visionario?",
+    "detalles": "Análisis de la obra de Cervantes.",
+    "tituloObra": "El Quijote",
+    "autor": "Miguel de Cervantes",
+    "fecha": "15-02-2023",
+    "estado": "Pendiente",
+    "reporte": "Excelente análisis!"
+  },
+  {
+    "titulo": "La metamorfosis: ¿Qué nos dice sobre la soledad?",
+    "detalles": "Interpretación de la obra de Kafka.",
+    "tituloObra": "La metamorfosis",
+    "autor": "Franz Kafka",
+    "fecha": "28-03-2023",
+    "estado": "Desaprobado",
+    "reporte": "Tema interesante, pero falta profundidad."
+  },
+  {
+    "titulo": "Cien años de soledad: Un viaje a la memoria",
+    "detalles": "Reflexiones sobre la obra de García Márquez.",
+    "tituloObra": "Cien años de soledad",
+    "autor": "Gabriel García Márquez",
+    "fecha": "10-04-2023",
+    "estado": "Desaprobado",
+    "reporte": "Excelente análisis literario."
+  },
+  {
+    "titulo": "La Odisea: Un viaje épico de regreso a casa",
+    "detalles": "Análisis de la obra de Homero.",
+    "tituloObra": "La Odisea",
+    "autor": "Homero",
+    "fecha": "22-05-2023",
+    "estado": "Desaprobado",
+    "reporte": "Excelente trabajo, muy bien documentado."
+  },
+  {
+    "titulo": "Hamlet: La tragedia de un príncipe",
+    "detalles": "Interpretación de la obra de Shakespeare.",
+    "tituloObra": "Hamlet",
+    "autor": "William Shakespeare",
+    "fecha": "05-06-2023",
+    "estado": "Desaprobado",
+    "reporte": "Excelente interpretación del texto original."
+  },
+  {
+    "titulo": "El Principito: Una reflexión sobre la amistad",
+    "detalles": "Análisis del clásico de Saint-Exupéry.",
+    "tituloObra": "El Principito",
+    "autor": "Antoine de Saint-Exupéry",
+    "fecha": "18-07-2023",
+    "estado": "Desaprobado",
+    "reporte": "Excelente análisis del lenguaje de la obra."
+  },
+  {
+    "titulo": "El amor en los tiempos del cólera: Un amor eterno",
+    "detalles": "Interpretación de la obra de García Márquez.",
+    "tituloObra": "El amor en los tiempos del cólera",
+    "autor": "Gabriel García Márquez",
+    "fecha": "01-08-2023",
+    "estado": "Desaprobado",
+    "reporte": "Excelente trabajo de investigación."
+  },
+  {
+    "titulo": "La Divina Comedia: Un viaje a través del infierno, el purgatorio y el paraíso",
+    "detalles": "Análisis de la obra de Dante Alighieri.",
+    "tituloObra": "La Divina Comedia",
+    "autor": "Dante Alighieri",
+    "fecha": "15-09-2023",
+    "estado": "Desaprobado",
+    "reporte": "Excelente trabajo de investigación."
+  },
+  {
+    "titulo": "Don Juan: El seductor por excelencia",
+    "detalles": "Interpretación de la obra de Lord Byron.",
+    "tituloObra": "Don Juan",
+    "autor": "Lord Byron",
+    "fecha": "28-10-2023",
+    "estado": "Desaprobado",
+    "reporte": "Excelente trabajo de investigación."
+  },
+  {
+    "titulo": "Anna Karenina: Un amor prohibido",
+    "detalles": "Análisis de la obra de León Tolstoi.",
+    "tituloObra": "Anna Karenina",
+    "autor": "León Tolstoi",
+    "fecha": "12-11-2023",
+    "estado": "Desaprobado",
+    "reporte": "Excelente trabajo de investigación."
+  },
+  {
+    "titulo": "Madame Bovary: Una mujer en busca de la felicidad",
+    "detalles": "Interpretación de la obra de Gustave Flaubert.",
+    "tituloObra": "Madame Bovary",
+    "autor": "Gustave Flaubert",
+    "fecha": "25-12-2023",
+    "estado": "Desaprobado",
+    "reporte": "Excelente trabajo de investigación."
+  },
+  {
+    "titulo": "Crimen y Castigo: La culpa y la redención",
+    "detalles": "Análisis de la obra de Fiódor Dostoievski.",
+    "tituloObra": "Crimen y Castigo",
+    "autor": "Fiódor Dostoievski",
+    "fecha": "07-01-2024",
+    "estado": "Desaprobado",
+    "reporte": "Excelente trabajo de investigación."
+  },
+  {
+    "titulo": "El retrato de Dorian Gray: La belleza y la decadencia",
+    "detalles": "Interpretación de la obra de Oscar Wilde.",
+    "tituloObra": "El retrato de Dorian Gray",
+    "autor": "Oscar Wilde",
+    "fecha": "21-02-2024",
+    "estado": "Desaprobado",
+    "reporte": "Excelente trabajo de investigación."
+  },
+  {
+    "titulo": "El gran Gatsby: El sueño americano y su fracaso",
+    "detalles": "Análisis de la obra de F. Scott Fitzgerald.",
+    "tituloObra": "El gran Gatsby",
+    "autor": "F. Scott Fitzgerald",
+    "fecha": "04-03-2024",
+    "estado": "Desaprobado",
+    "reporte": "Excelente trabajo de investigación."
+  },
+  {
+    "titulo": "La Rebelión en la Granja: Una fábula política",
+    "detalles": "Interpretación de la obra de George Orwell.",
+    "tituloObra": "La Rebelión en la Granja",
+    "autor": "George Orwell",
+    "fecha": "18-04-2024",
+    "estado": "Desaprobado",
+    "reporte": "Excelente trabajo de investigación."
+  },
+  {
+    "titulo": "1984: Una distopía aterradora",
+    "detalles": "Análisis de la obra de George Orwell.",
+    "tituloObra": "1984",
+    "autor": "George Orwell",
+    "fecha": "01-05-2024",
+    "estado": "Desaprobado",
+    "reporte": "Excelente trabajo de investigación."
+  },
+  {
+    "titulo": "Fahrenheit 451: Un mundo sin libros",
+    "detalles": "Interpretación de la obra de Ray Bradbury.",
+    "tituloObra": "Fahrenheit 451",
+    "autor": "Ray Bradbury",
+    "fecha": "15-06-2024",
+    "estado": "Desaprobado",
+    "reporte": "Excelente trabajo de investigación."
+  },
+  {
+    "titulo": "Un mundo feliz: Una sociedad distópica",
+    "detalles": "Análisis de la obra de Aldous Huxley.",
+    "tituloObra": "Un mundo feliz",
+    "autor": "Aldous Huxley",
+    "fecha": "29-07-2024",
+    "estado": "Desaprobado",
+    "reporte": "Excelente trabajo de investigación."
+  },
+  {
+    "titulo": "El señor de los anillos: Una épica batalla entre el bien y el mal",
+    "detalles": "Análisis de la obra de J.R.R. Tolkien.",
+    "tituloObra": "El señor de los anillos",
+    "autor": "J.R.R. Tolkien",
+    "fecha": "12-08-2024",
+    "estado": "Desaprobado",
+    "reporte": "Excelente trabajo de investigación."
+  }
+]

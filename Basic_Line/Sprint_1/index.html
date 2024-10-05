@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Componentes Reutilizables</title>
+  <link rel="stylesheet" href="style.css" id="main-css">  </head>
+<body>
+  <div class="container">
+
+    <label for="darkModeToggle">Modo Oscuro:</label>
+    <input type="checkbox" id="darkModeToggle">
+
+    <h1>Componentes Reutilizables</h1>
+
+    <hr>
+
+    <h2>Botones</h2>
+    <button>Primario</button>
+    <button>Secundario</button>
+    <button>Éxito</button>
+    <button>Peligro</button>
+
+    <hr>
+
+    <h2>Cuadros</h2>
+    <div class="card">
+      <div class="card-header">Encabezado</div>
+      <div class="card-body">
+        <p>Contenido del cuadro.</p>
+      </div>
+    </div>
+
+    <hr>
+
+    <h2>Tablas</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Nombre</th>
+          <th>Apellido</th>
+          <th>Edad</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Juan</td>
+          <td>Pérez</td>
+          <td>30</td>
+        </tr>
+        <tr>
+          <td>María</td>
+          <td>Rodríguez</td>
+          <td>25</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <hr>
+
+    <h2>Inputs</h2>
+    <form>
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre">
+      <br>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email">
+      <br>
+      <label for="password">Contraseña:</label>
+      <input type="password" id="password" name="password">
+      <br>
+      <label for="mensaje">Mensaje:</label>
+      <textarea id="mensaje" name="mensaje"></textarea>
+      <br>
+      <button type="submit">Enviar</button>
+    </form>
+
+    <hr>
+
+    <h2>Checkbox y RadioButton</h2>
+    <input type="checkbox" id="checkbox1" name="checkbox1">
+    <label for="checkbox1">Opción 1</label>
+    <br>
+    <input type="radio" id="radio1" name="radio" value="opcion1">
+    <label for="radio1">Opción 1</label>
+    <br>
+    <input type="radio" id="radio2" name="radio" value="opcion2">
+    <label for="radio2">Opción 2</label>
+
+    <hr>
+
+    <h2>Alertas</h2>
+    <div class="alert alert-success">Éxito: Operación realizada correctamente.</div>
+    <div class="alert alert-warning">Advertencia: ¡Cuidado!</div>
+    <div class="alert alert-danger">Error: Hubo un problema.</div>
+
+    <hr>
+
+    <h2>Spinner</h2>
+    <div class="spinner"></div>
+
+  </div>
+
+  <script>
+    const darkModeToggle = document.getElementById('darkModeToggle');
+    const mainCSS = document.getElementById('main-css');
+
+    darkModeToggle.addEventListener('click', () => {
+      if (darkModeToggle.checked) {
+        mainCSS.href = 'style-dark.css'; // Aplicar estilo oscuro
+      } else {
+        mainCSS.href = 'style.css'; // Aplicar estilo claro
+      }
+    });
+  </script>
+
+</body>
+</html>
