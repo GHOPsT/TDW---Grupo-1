@@ -4,17 +4,22 @@ import image from './images/image_register.png'; // Cambia la imagen si es neces
 import './register.css'; // Cambia el archivo CSS si es necesario
 
 const Registro = () => {
+    const [nombreCompleto, setNombreCompleto] = useState('');
     const [nombreUsuario, setNombreUsuario] = useState('');
     const [correo, setCorreo] = useState('');
     const [contrasenia, setContrasenia] = useState('');
     const [confirmarContrasenia, setConfirmarContrasenia] = useState('');
+    const [registroExitoso, setRegistroExitoso] = useState(false);
     const navigate = useNavigate();
 
     const handleRegister = () => {
         if (nombreUsuario && correo && contrasenia && confirmarContrasenia) {
             if (contrasenia === confirmarContrasenia) {
-                console.log('Registro exitoso');
-                navigate('/home');
+                setRegistroExitoso(true);
+                setTimeout(() => {
+                    navigate('/home');
+                    console.log('Registro exitoso');
+                }, 2000);
             } else {
                 alert('Las contraseñas no coinciden.');
             }
@@ -25,6 +30,13 @@ const Registro = () => {
 
     return (
         <div className='container'>
+            {registroExitoso && (
+                <div className='registro-exitoso'>
+                    <div className='mensaje-exito'>
+                        <span className='check'>✔️</span> Registro exitoso
+                    </div>
+                </div>
+            )}
             <div className='right'>
                 <img className='in-se' src={image} alt='Registrarse' />
             </div>
@@ -34,34 +46,38 @@ const Registro = () => {
                 </div>
                 <div className='form'>
                     <div>
-                        <label htmlFor='nombreUsuario'>Nombre de Usuario</label>
+                        <label htmlFor='nombreCompleto'>Nombre Completo:</label>
+                        <input 
+                            className='nombreCompleto' 
+                            value={nombreCompleto}
+                            onChange={(e) => setNombreCompleto(e.target.value)}
+                        />
+                        <label htmlFor='nombreUsuario'>Usuario:</label>
                         <input 
                             className='nombreUsuario' 
-                            placeholder='Nombre de Usuario' 
                             value={nombreUsuario}
                             onChange={(e) => setNombreUsuario(e.target.value)}
                         />
-                        <label htmlFor='correo'>Correo Electrónico</label>
+                        <label htmlFor='correo'>Correo Electrónico:</label>
                         <input 
                             type='email' 
                             className='correo' 
-                            placeholder='Correo Electrónico' 
                             value={correo}
                             onChange={(e) => setCorreo(e.target.value)}
                         />
-                        <label htmlFor='contrasenia'>Contraseña</label>
+                        <label htmlFor='contrasenia'>Contraseña:</label>
                         <input 
                             type='password' 
                             className='contrasenia' 
-                            placeholder='**********' 
+                            placeholder='***************' 
                             value={contrasenia}
                             onChange={(e) => setContrasenia(e.target.value)}
                         />
-                        <label htmlFor='confirmarContrasenia'>Confirmar Contraseña</label>
+                        <label htmlFor='confirmarContrasenia'>Confirmar Contraseña:</label>
                         <input 
                             type='password' 
                             className='confirmarContrasenia' 
-                            placeholder='**********' 
+                            placeholder='***************' 
                             value={confirmarContrasenia}
                             onChange={(e) => setConfirmarContrasenia(e.target.value)}
                         />
