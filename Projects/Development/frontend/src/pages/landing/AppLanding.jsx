@@ -2,14 +2,20 @@ import React, { useState } from 'react';
 import { RiBookmarkLine } from "react-icons/ri";
 import './AppLanding.css';
 import Landing from './Landing';
+import {useNavigate} from 'react-router-dom';
 
 
 function AppLanding() {
   const [activeLink, setActiveLink] = useState('');
+  const navigate = useNavigate();
 
   const handleLinkClick = (link) => {
     setActiveLink(link);
   };
+
+  const handleLogin = () => {
+    navigate('/login');
+  }
 
   return (
     <div className="App">
@@ -49,7 +55,7 @@ function AppLanding() {
             </a>
           </li>
         </ul>
-        <button>Iniciar Sesión</button>
+        <button onClick={handleLogin}>Iniciar Sesión</button>
       </nav>
       <Landing />
     </div>

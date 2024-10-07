@@ -1,0 +1,14 @@
+.registrar-material-page {
+    display: flex;
+  }
+  
+  .sidebar {
+    /* Ajusta el ancho del sidebar */
+    width: 250px;
+  }
+  
+  .content {
+    flex-grow: 1;
+    padding: 20px;
+  }
+  
