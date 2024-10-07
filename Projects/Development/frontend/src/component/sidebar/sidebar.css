@@ -1,0 +1,154 @@
+/* Estilos para el sidebar */
+.sidebar {
+  background-color: #f8fafc;
+  width: 250px;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: -250px; /* Oculto inicialmente */
+  transition: left 0.3s ease-in-out;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 100;
+  font-family: 'Arial', sans-serif;
+  padding-top: 20px; /* Espacio superior para mejor separación */
+}
+
+.sidebar.open {
+  left: 0; /* Se muestra al hacer clic */
+}
+
+.sidebar.closed {
+  left: -250px; /* Oculto */
+}
+
+.logoContainer {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  background-color: #e2e8f0;
+}
+
+.logo {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.title {
+  font-size: 1.25rem;
+  color: #333;
+  font-weight: bold;
+}
+
+.profileContainer {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #ddd;
+}
+
+.profile {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.profileContents .name {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.contentsContainer {
+  padding: 20px;
+}
+
+.contentsContainer ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contentsContainer ul li {
+  display: flex;
+  align-items: center;
+  padding: 15px 10px;
+  transition: background-color 0.3s, padding-left 0.3s;
+  font-size: 1.1rem;
+  font-weight: 500;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.contentsContainer ul li:hover {
+  background-color: #e2e8f0;
+  cursor: pointer;
+  padding-left: 20px;
+}
+
+.menuIcon {
+  width: 24px;
+  height: 24px;
+  margin-right: 15px;
+}
+
+.contentsContainer ul li a {
+  text-decoration: none;
+  color: #333;
+  flex-grow: 1; /* Para que los enlaces ocupen todo el espacio disponible */
+}
+
+.contentsContainer ul li a:hover {
+  color: #1d4ed8; /* Color de hover más visible */
+}
+
+/* Estilo del botón hamburguesa */
+.burgerIcon {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
+  z-index: 101;
+}
+
+.burgerIcon.open {
+  left: 260px; /* Mueve el ícono cuando el sidebar está abierto */
+}
+
+.burgerLine {
+  width: 100%;
+  height: 4px;
+  background-color: #333;
+  transition: background-color 0.3s;
+}
+
+.burgerLine:hover {
+  background-color: #666;
+}
+
+/* Transiciones y detalles de UX */
+.sidebar.open + .burgerIcon .burgerLine {
+  background-color: #f2f2f2;
+}
+
+/* Responsividad para pantallas más pequeñas */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 200px;
+  }
+
+  .sidebar.open {
+    left: 0;
+  }
+
+  .burgerIcon.open {
+    left: 220px;
+  }
+}

@@ -1,0 +1,90 @@
+/* Faq8.css */
+
+.lg\:container.lg\:mx-auto.lg\:py-16.md\:py-12.md\:px-6.py-12.px-4 {
+  background-color: #14213d; /* Color de fondo principal del landing page */
+  color: #ffffff; /* Color de texto principal del landing page */
+}
+
+h1 {
+  color: #ffffff; /* Color de texto del título */
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+.lg\:mt-12.bg-gray-100.md\:mt-10.mt-8.lg\:py-7.lg\:px-6.md\:p-6.py-6.px-4.lg\:w-8\/12.w-full.mx-auto {
+  background-color: #1f2937; /* Color de fondo de la sección de preguntas */
+  color: #ffffff; /* Color de texto de la sección de preguntas */
+  padding: 2rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+}
+
+.font-medium.text-xl.leading-5.text-gray-800.lg\:mb-2.mb-4 {
+  color: #ffffff; /* Color de texto del título de la sección de preguntas */
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.font-normal.text-sm.leading-5.text-gray-600.md\:w-8\/12.md\:ml-0.w-11\/12.mx-auto {
+  color: #ffffff; /* Color de texto del párrafo de la sección de preguntas */
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.focus\:outline-none.focus\:ring-2.focus\:ring-offset-2.focus\:ring-gray-800.flex.bg-white.md\:justify-center.justify-between.items-center.px-4.py-3.w-full {
+  background-color: #ffffff; /* Color de fondo del campo de búsqueda */
+  color: #4B5563; /* Color de texto del campo de búsqueda */
+  border: none;
+  padding: 0.8rem 1rem;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+
+.focus\:outline-none.bg-white {
+  color: #4B5563; /* Color de texto del placeholder del campo de búsqueda */
+  font-size: 1rem;
+}
+
+.cursor-pointer {
+  color: #4B5563; /* Color del icono de búsqueda */
+  font-size: 1.2rem;
+}
+
+.w-full.lg\:mt-10.md\:mt-12.md\:mb-8.my-8 {
+  border-color: #ffffff; /* Color de la línea divisoria */
+  border-top: 1px solid #ffffff;
+}
+
+.flex.justify-between.items-center.w-full {
+  color: #ffffff; /* Color de texto del encabezado de la pregunta */
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 1rem 0;
+}
+
+.lg\:mr-6.mr-4.lg\:text-2xl.md\:text-xl.text-lg.leading-6.md\:leading-5.lg\:leading-4.font-semibold.text-gray-800 {
+  color: #ffffff; /* Color de texto del número de la pregunta */
+}
+
+.focus\:outline-none.focus\:ring-2.focus\:ring-offset-2.focus\:ring-gray-800 {
+  background-color: transparent; /* Color de fondo del botón de toggle */
+  color: #ffffff; /* Color de texto del botón de toggle */
+  border: none;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+.transform.rotate-180, .transform.rotate-0 {
+  color: #ffffff; /* Color del icono del botón de toggle */
+  font-size: 1.5rem;
+}
+
+.mt-6.w-full.block, .mt-6.w-full.hidden {
+  color: #ffffff; /* Color de texto del contenido de la respuesta */
+  font-size: 1rem;
+  line-height: 1.5;
+  padding: 1rem 0;
+}

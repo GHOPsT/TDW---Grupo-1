@@ -1,0 +1,8 @@
+.App {
+  font-family: 'Roboto', sans-serif;
+  background-color: #14213d;
+  color: #ffffff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
