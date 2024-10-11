@@ -1,6 +1,82 @@
-/* Biblioteca.css */
-.grid {
+.app-container {
+  display: flex;
+  background-color: whitesmoke;
+}
+
+.main-content {
+  flex-grow: 1;
+  padding: 1rem;
+}
+
+.content-wrapper {
+  padding: 1.5rem;
+}
+
+.content-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.filters {
+  display: flex;
+  gap: 1rem;
+}
+
+.filter-category {
+  display: flex;
+  align-items: center;
+  background-color: #e2e8f0;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+}
+
+.select-category {
+  margin-left: 0.5rem;
+  background: none;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+}
+
+.search-input {
+  padding: 0.5rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.books-section {
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 8px;
+}
+
+.book-grid {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  gap: 2rem;
+  gap: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .book-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 576px) {
+  .book-grid {
+    grid-template-columns: 1fr;
+  }
 }

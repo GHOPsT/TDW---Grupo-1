@@ -61,18 +61,18 @@
   color: #333;
 }
 
-.contentsContainer {
-  padding: 20px;
-}
-
+/* Estilos para el contenedor de los enlaces */
 .contentsContainer ul {
-  list-style-type: none;
+  list-style: none; /* Eliminar el estilo de lista por defecto */
   padding: 0;
   margin: 0;
+  display: flex;
+  flex-direction: column; /* Apilar los elementos verticalmente */
+  width: 100%; /* Asegurar que ocupe todo el ancho disponible */
 }
 
 .contentsContainer ul li {
-  display: flex;
+  display: flex; /* Mantener flex para alinear icono y texto en fila */
   align-items: center;
   padding: 15px 10px;
   transition: background-color 0.3s, padding-left 0.3s;
@@ -80,6 +80,11 @@
   font-weight: 500;
   border-radius: 5px;
   margin-bottom: 10px;
+  width: 100%; /* Cada elemento debe ocupar todo el ancho del contenedor */
+}
+
+.contentsContainer ul li img {
+  margin-right: 10px; /* Añadir un espacio entre el icono y el texto */
 }
 
 .contentsContainer ul li:hover {
