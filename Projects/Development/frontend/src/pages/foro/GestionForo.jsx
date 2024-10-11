@@ -1,8 +1,9 @@
-// GestionForo.jsx
 import React, { useState, useEffect } from 'react';
 import Sidebar from '../../component/sidebar/Sidebar';
 import '../../component/sidebar/sidebar.css';
 import './GestionForo.css';
+import { FaUser, FaBook, FaForumbee } from 'react-icons/fa'; // Importa íconos
+
 import forumData from '../foro/forumData.json'; // Importa el JSON de datos
 
 function GestionForo() {
@@ -14,7 +15,6 @@ function GestionForo() {
   // Filtrar datos por tipo de filtro y término de búsqueda
   useEffect(() => {
     const filtered = forumData.filter((item) => {
-      // Filtrar por tipo de filtro
       const searchValue = item[filterType].toLowerCase();
       return searchValue.includes(searchTerm.toLowerCase());
     });
@@ -32,15 +32,15 @@ function GestionForo() {
   };
 
   const userLinks = [
-    { icon: 'https://www.example.com/user-icon.png', title: 'Gestionar Usuario', path: '/user' },
-    { icon: 'https://www.example.com/forum-icon.png', title: 'Gestionar Foro', path: '/forum' },
-    { icon: 'https://www.example.com/book-icon.png', title: 'Gestionar Libros', path: '/books' },
+    { icon: <FaUser />, title: 'Gestionar Usuario', path: '/user' },
+    { icon: <FaForumbee />, title: 'Gestionar Foro', path: '/forum' },
+    { icon: <FaBook />, title: 'Gestionar Libros', path: '/books' },
   ];
 
   return (
     <div className="app-container">
       <Sidebar
-        userType="admin" // O "user" si corresponde
+        userType="admin"
         profileImg="https://www.example.com/profile-picture.jpg"
         name="Max Saavedra"
         email="john.doe@example.com"
@@ -50,12 +50,10 @@ function GestionForo() {
         <div className="sm:px-6 w-full">
           <div className="px-4 md:px-10 py-4 md:py-7">
             <div className="flex items-center justify-between">
-              <p className="text-base sm:text-lg md:text-xl lg:text-2xl font-bold leading-normal text-gray-800">
-                Foros
-              </p>
-              <div className="py-3 px-4 flex items-center text-sm font-medium leading-none text-gray-600 bg-gray-200 hover:bg-gray-300 cursor-pointer rounded">
+              <p className="title">Foros</p>
+              <div className="filter-category">
                 <p>Filtrar por:</p>
-                <select className="focus:outline-none bg-transparent ml-1" value={filterType} onChange={handleFilterChange}>
+                <select className="select-category" value={filterType} onChange={handleFilterChange}>
                   <option value="titulo">Título</option>
                   <option value="autor">Autor</option>
                   <option value="fecha">Fecha</option>
@@ -65,94 +63,65 @@ function GestionForo() {
               </div>
             </div>
           </div>
+
           <div className="bg-white py-4 md:py-7 px-4 md:px-8 xl:px-10">
             <div className="sm:flex items-center justify-between">
-              <div className="flex items-center">
-                {/* ... (filtros por tipo) ... */}
-              </div>
               <div className="mt-4 sm:mt-0">
-                <input type="text" placeholder="Buscar por Título" className="px-4 py-2 border rounded" value={searchTerm} onChange={handleSearchChange} />
+                <input
+                  type="text"
+                  placeholder="Buscar por Título"
+                  className="search-input"
+                  value={searchTerm}
+                  onChange={handleSearchChange}
+                />
               </div>
             </div>
+
             <div className="mt-7 overflow-x-auto">
               <table className="w-full whitespace-nowrap">
                 <thead>
                   <tr>
-                    <th className="px-4 py-3 font-medium leading-4 text-gray-800">
-                      Título de la duda o debate
-                    </th>
-                    <th className="px-4 py-3 font-medium leading-4 text-gray-800">
-                      Detalles
-                    </th>
-                    <th className="px-4 py-3 font-medium leading-4 text-gray-800">
-                      Título de la obra
-                    </th>
-                    <th className="px-4 py-3 font-medium leading-4 text-gray-800">
-                      Autor
-                    </th>
-                    <th className="px-4 py-3 font-medium leading-4 text-gray-800">
-                      Fecha
-                    </th>
-                    <th className="px-4 py-3 font-medium leading-4 text-gray-800">
-                      Estado
-                    </th>
-                    <th className="px-4 py-3 font-medium leading-4 text-gray-800">
-                      Reporte
-                    </th>
-                    <th className="px-4 py-3 font-medium leading-4 text-gray-800" />
+                    <th className="px-4 py-3">Título de la duda o debate</th>
+                    <th className="px-4 py-3">Detalles</th>
+                    <th className="px-4 py-3">Título de la obra</th>
+                    <th className="px-4 py-3">Autor</th>
+                    <th className="px-4 py-3">Fecha</th>
+                    <th className="px-4 py-3">Estado</th>
+                    <th className="px-4 py-3">Reporte</th>
+                    <th className="px-4 py-3"></th>
                   </tr>
                 </thead>
                 <tbody>
                   {filteredData.map((item, index) => (
                     <tr key={index} className="h-16 border border-gray-100 rounded">
                       <td className="px-4 py-3">
-                        <p className="text-base font-medium leading-none text-gray-700">
-                          {item.titulo}
-                        </p>
+                        <p className="text-base font-medium">{item.titulo}</p>
                       </td>
                       <td className="px-4 py-3">
-                        <p className="text-base font-medium leading-none text-gray-700">
-                          {item.detalles}
-                        </p>
+                        <p className="text-base font-medium">{item.detalles}</p>
                       </td>
                       <td className="px-4 py-3">
-                        <p className="text-base font-medium leading-none text-gray-700">
-                          {item.tituloObra}
-                        </p>
+                        <p className="text-base font-medium">{item.tituloObra}</p>
                       </td>
                       <td className="px-4 py-3">
-                        <p className="text-base font-medium leading-none text-gray-700">
-                          {item.autor}
-                        </p>
+                        <p className="text-base font-medium">{item.autor}</p>
                       </td>
                       <td className="px-4 py-3">
-                        <p className="text-base font-medium leading-none text-gray-700">
-                          {item.fecha}
-                        </p>
+                        <p className="text-base font-medium">{item.fecha}</p>
                       </td>
                       <td className="px-4 py-3">
                         <div className="flex items-center">
-                          <span
-                            className={`bg-${
-                              item.estado === 'Aprobado'
-                                ? 'green'
-                                : item.estado === 'Desaprobado'
-                                ? 'red'
-                                : 'yellow'
-                            }-500 text-white px-2 py-1 rounded`}
-                          >
+                          <span className={`status-badge ${item.estado.toLowerCase()}`}>
                             {item.estado}
                           </span>
                         </div>
                       </td>
                       <td className="px-4 py-3">
-                        <p className="text-base font-medium leading-none text-gray-700">
-                          {item.reporte}
-                        </p>
+                        <p className="text-base font-medium">{item.reporte}</p>
                       </td>
                       <td className="px-4 py-3">
-                        <div className="relative px-5 pt-2">
-                          <button className="focus:outline-none" onClick={() => setShow(index)}>
+                        <div className="relative">
+                          <button className="dropdown-button" onClick={() => setShow(index)}>
                             <svg
                               xmlns="http://www.w3.org/2000/svg"
                               width={20}
@@ -185,7 +154,8 @@ function GestionForo() {
                           </button>
                           {show === index && (
                             <div className="dropdown-menu">
-                              {/* Opciones del dropdown */}
+                              <p>Editar</p>
+                              <p>Eliminar</p>
                             </div>
                           )}
                         </div>

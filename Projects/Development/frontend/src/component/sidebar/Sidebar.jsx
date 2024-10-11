@@ -21,7 +21,7 @@ const Sidebar = ({ userType, profileImg, name, email, links }) => {
       {/* Sidebar con contenido */}
       <div className={`sidebar ${isOpen ? 'open' : 'closed'}`}>
         <div className="logoContainer">
-          <img src="/logo.png" alt="icon" className="logo" />
+          <img src="../../images/award.svg" alt="logo" className="logo" />
           <h2 className="title">Plataform</h2>
         </div>
         <div className="profileContainer">
