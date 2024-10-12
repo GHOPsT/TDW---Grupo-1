@@ -1,6 +1,6 @@
 /* Estilos para el sidebar */
 .sidebar {
-  background-color: #f8fafc;
+  background-color: #3a4573;
   width: 250px;
   height: 100vh;
   position: fixed;
@@ -23,56 +23,95 @@
 
 .logoContainer {
   display: flex;
+  flex-direction: column;
   align-items: center;
+  justify-content: center; 
   padding: 20px;
-  background-color: #e2e8f0;
+  background-color: #3a4573;
 }
 
-.logo {
-  width: 40px;
-  height: 40px;
+.logoIcon {
+  width: 75px;  /* Ajusta el ancho de la imagen */
+  height: auto;  /* Mantén la proporción original de la imagen */
+  object-fit: contain;  /* Asegura que la imagen se ajuste dentro del contenedor */
   margin-right: 10px;
 }
 
 .title {
   font-size: 1.25rem;
-  color: #333;
+  color: white;
   font-weight: bold;
+  font-family: 'Times New Roman', Times, serif; 
+  text-align: center;
+}
+
+h2.title{
+  color: white;
 }
 
 .profileContainer {
   display: flex;
+  flex-direction: column;
   align-items: center;
+  justify-content: center; 
   padding: 20px;
-  background-color: #ffffff;
+  background-color: #3a4573;
   border-bottom: 1px solid #ddd;
 }
 
 .profile {
-  width: 50px;
-  height: 50px;
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
   margin-right: 15px;
 }
 
-.profileContents .name {
-  font-size: 1rem;
-  font-weight: bold;
-  color: #333;
+.profileContents {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Alinea el texto a la izquierda */
 }
+
+.profileContents .name {
+  margin: 0;  /* Elimina márgenes por defecto */
+  color: white;
+  font-size: 0.9em;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; 
+  text-align: center;
+}
+
+.profileContents .email {
+  margin: 0;  /* Elimina márgenes por defecto */
+  color: white;
+  font-size: 0.9em;
+  text-align: center;
+}
+
+/* Estilos para el contenedor de los enlaces */
 
 .contentsContainer {
-  padding: 20px;
+  width: 80;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  justify-content: center;
+  padding: 10px;
 }
 
+
 .contentsContainer ul {
-  list-style-type: none;
+  list-style: none; /* Eliminar el estilo de lista por defecto */
   padding: 0;
   margin: 0;
+  display: flex;
+  flex-direction: column; /* Apilar los elementos verticalmente */
+  width: 100%; /* Asegurar que ocupe todo el ancho disponible */
 }
 
 .contentsContainer ul li {
-  display: flex;
+  display: flex; /* Mantener flex para alinear icono y texto en fila */
   align-items: center;
   padding: 15px 10px;
   transition: background-color 0.3s, padding-left 0.3s;
@@ -80,7 +119,21 @@
   font-weight: 500;
   border-radius: 5px;
   margin-bottom: 10px;
+  width: 100%; /* Cada elemento debe ocupar todo el ancho del contenedor */
 }
+
+.contentsContainer ul li img {
+  width: 30px;
+  height: auto;
+  margin-right: 10px; /* Añadir un espacio entre el icono y el texto */
+}
+
+.contentsContainer img {
+  width: 30px;
+  height: auto;
+  margin-right: 10px; /* Añadir un espacio entre el icono y el texto */
+}
+
 
 .contentsContainer ul li:hover {
   background-color: #e2e8f0;
@@ -89,14 +142,14 @@
 }
 
 .menuIcon {
-  width: 24px;
-  height: 24px;
-  margin-right: 15px;
+  width: 50px;  /* Aumenta el tamaño a 50px */
+  height: 50px;  /* Asegúrate de que la altura también sea de 50px */
+  margin-right: 15px; /* Mantén un espacio adecuado entre el ícono y el texto */
 }
 
 .contentsContainer ul li a {
   text-decoration: none;
-  color: #333;
+  color: white;
   flex-grow: 1; /* Para que los enlaces ocupen todo el espacio disponible */
 }
 
