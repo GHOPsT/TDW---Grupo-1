@@ -5,7 +5,8 @@ import './Biblioteca.css'; // Importa el archivo CSS para los estilos del conten
 import bookData from '../../data/bookData.json'; // Importa el JSON de datos
 import Carta from '../../component/carta/Carta';
 import Pagination from '../../component/pagination/Pagination';
-import { FaUser, FaBook, FaForumbee } from 'react-icons/fa'; // Ejemplo usando react-icons
+import { FcBusinessman, FcOpenedFolder } from "react-icons/fc";  // Importa tus íconos
+import { FaBookBible } from "react-icons/fa6";
 
 
 function Biblioteca() {
@@ -52,9 +53,9 @@ function Biblioteca() {
   const currentBooks = filteredData.slice(indexOfFirstBook, indexOfLastBook);
 
  const userLinks = [
-  { icon: <FaUser />, title: 'Gestionar Usuario', path: '/user' },
-  { icon: <FaForumbee />, title: 'Gestionar Foro', path: '/forum' },
-  { icon: <FaBook />, title: 'Gestionar Libros', path: '/books' },
+  { icon: <FcBusinessman />, title: 'Gestionar Usuario', path: '/accessibility'  },
+  { icon: <FcOpenedFolder />, title: 'Gestionar Foro', path: '/forum' },
+  { icon: <FaBookBible />, title: 'Gestionar Libros', path: '/books' },
 ];
 
   return (
