@@ -1,0 +1,86 @@
+.registro-exitoso {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+.mensaje-exito {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 20px;
+    color: green;
+    display: flex;
+    align-items: center;
+}
+
+.check {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+    background-color: rgb(235 , 239 , 255);
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+.tittle {
+    justify-content: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+.in-se {
+    max-width: 100%;
+    height: auto;
+}
+
+.form {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+}
+
+.form label {
+    font-size: 16px;
+    margin-bottom: 5px;
+    display: block; 
+}
+
+.form input {
+    display: block;
+    padding: 10px;
+    width: 250px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
