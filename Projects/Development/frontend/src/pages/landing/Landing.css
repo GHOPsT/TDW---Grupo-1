@@ -42,11 +42,11 @@ body, html {
 }
 
 .inicio .intro-text {
-  font-size: 1.5rem; /* Tamaño interesante para el texto */
+  font-size: 1.3rem; /* Tamaño interesante para el texto */
   line-height: 1.6; /* Espaciado entre líneas para mejor legibilidad */
   margin-bottom: 30px; /* Espacio debajo del texto */
   max-width: 850px; /* Limitar el ancho del texto */
-  text-align: justify; /* Justificar el texto */
+  text-align:center; /* Justificar el texto */
   color: aliceblue;
 }
 
@@ -64,6 +64,18 @@ body, html {
 
 .inicio button:hover {
   background-color: #0056b3;
+}
+
+
+.image-container{
+  width: 50%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.image-container{
+  width: 100%;
+  height: auto;
 }
 
 .inicio .image-container {
