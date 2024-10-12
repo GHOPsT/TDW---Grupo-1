@@ -178,5 +178,23 @@
     "autor": "F. Scott Fitzgerald",
     "resumen": "Una novela que narra la historia de Jay Gatsby, un hombre rico que busca el amor...",
     "fecha": "2023-12-20"
+  },
+  {
+    "id": 21,
+    "nombre": "El gran Max",
+    "portada": "https://www.example.com/el-gran-gatsby.jpg",
+    "categoria": "literatura",
+    "autor": "S. Max Bruno",
+    "resumen": "Una novela que narra la historia de Max Saavedra, un hombre rico que busca el amor...",
+    "fecha": "2023-12-20"
+  },
+  {
+    "id": 22,
+    "nombre": "El Kinua y La F",
+    "portada": "https://www.example.com/el-gran-gatsby.jpg",
+    "categoria": "historia",
+    "autor": "S. Geomar Willy",
+    "resumen": "Una novela que narra la historia de dos estudiantes de Ing. Software ...",
+    "fecha": "2023-12-20"
   }
 ]

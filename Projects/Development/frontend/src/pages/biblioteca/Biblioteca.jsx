@@ -62,7 +62,7 @@ function Biblioteca() {
     <div className="app-container">
       <Sidebar
         userType="lector"
-        profileImg="/images/libros/user.png"  // Cambia la ruta según la ubicación en tu proyecto
+        profileImg="../../images/libros/user.png"  // Cambia la ruta según la ubicación en tu proyecto
         name="John Doe"
         email="john.doe@example.com"
         links={userLinks}
@@ -88,10 +88,16 @@ function Biblioteca() {
               <div className="search-box">
                 <input
                   type="text"
-                  placeholder="Buscar por nombre"
+                  placeholder="Buscar"
                   className="search-input"
                   value={searchTerm}
                   onChange={handleSearchChange}
+                  onKeyPress={(e) => {
+                    if (e.key === 'Enter') {
+                      // Lógica para realizar la búsqueda
+                      console.log("Búsqueda iniciada:", searchTerm);
+                    }
+                  }}
                 />
               </div>
             </div>
