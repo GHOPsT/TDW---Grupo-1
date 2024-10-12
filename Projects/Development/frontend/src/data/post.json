@@ -1,0 +1,142 @@
+[
+  {
+    "id": 1,
+    "titulo": "¿Cómo mejorar mis habilidades en programación?",
+    "descripcion": "Estoy buscando recursos y consejos para mejorar mis habilidades en programación. Cualquier recomendación sería apreciada.",
+    "autor": "Max Saavedra",
+    "respuestas": []
+  },
+  {
+    "id": 2,
+    "titulo": "Dudas sobre React",
+    "descripcion": "Tengo algunas dudas sobre cómo manejar el estado en React. ¿Alguien puede ayudarme?",
+    "autor": "Maria Gonzalez",
+    "respuestas": []
+  },
+  {
+    "id": 3,
+    "titulo": "¿Qué frameworks de CSS recomiendan?",
+    "descripcion": "Estoy tratando de decidir entre Bootstrap y Tailwind CSS. ¿Cuál es mejor para proyectos pequeños?",
+    "autor": "Luis Pérez",
+    "respuestas": []
+  },
+  {
+    "id": 4,
+    "titulo": "Aprender Python desde cero",
+    "descripcion": "¿Cuáles son los mejores cursos gratuitos para aprender Python?",
+    "autor": "Ana López",
+    "respuestas": []
+  },
+  {
+    "id": 5,
+    "titulo": "Consejos para entrevistas de trabajo en tecnología",
+    "descripcion": "¿Qué tipo de preguntas suelen hacer en entrevistas para desarrolladores?",
+    "autor": "José Martínez",
+    "respuestas": []
+  },
+  {
+    "id": 6,
+    "titulo": "¿Cuál es la diferencia entre React y Angular?",
+    "descripcion": "He escuchado mucho sobre ambos. ¿Cuál es más fácil de aprender para un principiante?",
+    "autor": "Carla Ramírez",
+    "respuestas": []
+  },
+  {
+    "id": 7,
+    "titulo": "Libros recomendados para programadores",
+    "descripcion": "¿Qué libros me recomiendan para mejorar mis habilidades de programación?",
+    "autor": "Ricardo Torres",
+    "respuestas": []
+  },
+  {
+    "id": 8,
+    "titulo": "Cómo mejorar el rendimiento de aplicaciones web",
+    "descripcion": "¿Cuáles son algunas buenas prácticas para optimizar el rendimiento de una aplicación web?",
+    "autor": "Lucía Gómez",
+    "respuestas": []
+  },
+  {
+    "id": 9,
+    "titulo": "Introducción a la inteligencia artificial",
+    "descripcion": "¿Cuáles son los mejores recursos para aprender sobre IA y machine learning?",
+    "autor": "Julio Soto",
+    "respuestas": []
+  },
+  {
+    "id": 10,
+    "titulo": "Desarrollo de aplicaciones móviles",
+    "descripcion": "¿Qué lenguajes de programación son los más usados para el desarrollo de aplicaciones móviles?",
+    "autor": "Sofia Mendoza",
+    "respuestas": []
+  },
+  {
+    "id": 11,
+    "titulo": "Cómo manejar el estrés como desarrollador",
+    "descripcion": "¿Qué técnicas usan para manejar el estrés en trabajos de alta presión?",
+    "autor": "Pedro Fernández",
+    "respuestas": []
+  },
+  {
+    "id": 12,
+    "titulo": "¿Es importante aprender sobre bases de datos?",
+    "descripcion": "Estoy comenzando a aprender sobre desarrollo web. ¿Debería enfocarme también en bases de datos?",
+    "autor": "Valentina Castro",
+    "respuestas": []
+  },
+  {
+    "id": 13,
+    "titulo": "Mejores prácticas de programación",
+    "descripcion": "¿Cuáles son algunas mejores prácticas que debería seguir al escribir código?",
+    "autor": "Fernando Ruiz",
+    "respuestas": []
+  },
+  {
+    "id": 14,
+    "titulo": "¿Qué es DevOps?",
+    "descripcion": "¿Alguien puede explicar qué es DevOps y por qué es importante en el desarrollo de software?",
+    "autor": "Gabriela Díaz",
+    "respuestas": []
+  },
+  {
+    "id": 15,
+    "titulo": "Aprender a programar en Java",
+    "descripcion": "¿Qué recursos me recomiendan para aprender Java desde cero?",
+    "autor": "Miguel Álvarez",
+    "respuestas": []
+  },
+  {
+    "id": 16,
+    "titulo": "¿Cómo mejorar la seguridad en aplicaciones web?",
+    "descripcion": "¿Qué medidas de seguridad debería implementar en mis aplicaciones web?",
+    "autor": "Isabel Torres",
+    "respuestas": []
+  },
+  {
+    "id": 17,
+    "titulo": "Dudas sobre Git y GitHub",
+    "descripcion": "Soy nuevo en Git y GitHub. ¿Cuáles son los conceptos clave que debo entender?",
+    "autor": "Javier Jiménez",
+    "respuestas": []
+  },
+  {
+    "id": 18,
+    "titulo": "El futuro de la programación",
+    "descripcion": "¿Cómo ven el futuro de la programación y las nuevas tecnologías que están surgiendo?",
+    "autor": "Claudia Álvarez",
+    "respuestas": []
+  },
+  {
+    "id": 19,
+    "titulo": "¿Qué es un algoritmo?",
+    "descripcion": "Estoy intentando entender los fundamentos de la programación. ¿Alguien puede explicarme qué es un algoritmo?",
+    "autor": "Nicolás Salas",
+    "respuestas": []
+  },
+  {
+    "id": 20,
+    "titulo": "Recursos para aprender diseño web",
+    "descripcion": "¿Qué sitios me recomiendan para aprender sobre diseño web y UX?",
+    "autor": "Laura Pérez",
+    "respuestas": []
+  }
+]

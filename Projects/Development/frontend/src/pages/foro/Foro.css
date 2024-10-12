@@ -1,0 +1,233 @@
+.app-container {
+  display: flex;
+}
+
+.main-content {
+  flex: 1;
+  padding: 20px;
+}
+
+.forum-container {
+  margin: 10px auto; /* Reducir el margen */
+  max-width: 850px; /* Aumentar el ancho máximo del foro */
+}
+
+.forum-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.forum-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.btn-back {
+  padding: 5px 10px; /* Reducir tamaño del botón */
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 0.9rem; /* Tamaño de fuente más pequeño */
+}
+
+.btn-back:hover {
+  background-color: #0056b3;
+}
+
+.search-input {
+  width: 100%; /* Asegurar que el campo de búsqueda ocupe el 100% del ancho */
+  padding: 8px; /* Espaciado interno */
+  border: 1px solid #eaeaea;
+  border-radius: 5px;
+  margin-bottom: 15px; /* Espacio entre la barra de búsqueda y el contenedor de publicaciones */
+}
+
+.posts-container {
+  background: #ffffff;
+  padding: 15px; /* Ajustar el espaciado */
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow-y: auto; /* Añadir scroll si el contenido es demasiado largo */
+  max-height: 600px; /* Ajustar la altura máxima del contenedor */
+}
+
+.post {
+  margin-bottom: 15px; /* Ajustar el margen inferior */
+  padding: 10px; /* Ajustar el espaciado interno */
+  border: 1px solid #8dbfd6;
+  border-radius: 8px;
+  transition: box-shadow 0.2s ease;
+  background-color: #93c3f7;
+}
+
+.post:hover {
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.post-title {
+  font-size: 1.4rem; /* Ajustar tamaño del título */
+  color: #2c3e50;
+  margin-bottom: 5px; /* Ajustar el margen inferior */
+}
+
+.post-description {
+  font-size: 0.9rem; /* Reducir tamaño de la descripción */
+  color: #333;
+  margin-bottom: 5px; /* Ajustar el margen inferior */
+}
+
+.post-author {
+  font-size: 0.8rem; /* Reducir tamaño del autor */
+  color: #666;
+}
+
+.post-actions {
+  display: flex;
+  gap: 8px; /* Ajustar el espaciado entre los botones */
+}
+
+.btn-like,
+.btn-dislike,
+.btn-delete,
+.btn-reply,
+.btn-submit,
+.btn-cancel {
+  padding: 6px; /* Reducir tamaño de los botones */
+  background-color: transparent; /* Fondo transparente para los botones */
+  color: #007bff; /* Color del icono */
+  border: none;
+  cursor: pointer;
+  transition: color 0.3s; /* Transición para hover */
+  font-size: 1rem; /* Tamaño de fuente más pequeño */
+}
+
+.btn-like:hover,
+.btn-dislike:hover,
+.btn-delete:hover,
+.btn-reply:hover,
+.btn-submit:hover,
+.btn-cancel:hover {
+  color: #0056b3; /* Color del icono al hacer hover */
+}
+
+/* Estilo para marcar el botón */
+.btn-like.active,
+.btn-dislike.active {
+  color: #0056b3; /* Cambia el color cuando se selecciona */
+  pointer-events: none; /* Deshabilitar interacciones después de dar like o dislike */
+}
+
+.reply-container {
+  margin-top: 10px; /* Ajustar el margen superior */
+}
+
+.reply-input {
+  width: 100%;
+  padding: 8px; /* Reducir espaciado interno */
+  border: 1px solid #eaeaea;
+  border-radius: 5px;
+  margin-bottom: 8px; /* Ajustar el margen inferior */
+}
+
+.responses-container {
+  margin-top: 10px; /* Ajustar el margen superior */
+}
+
+.response {
+  border-top: 1px solid #eaeaea;
+  padding-top: 8px; /* Reducir el espaciado superior */
+  margin-top: 8px; /* Reducir el margen superior */
+}
+
+.response-text {
+  font-size: 0.9rem;
+  color: #333;
+}
+
+.pagination-controls {
+  display: flex;
+  justify-content: center; /* Centra los botones de paginación */
+  margin-top: 20px; /* Espacio entre las publicaciones y la paginación */
+  gap: 10px; /* Espaciado uniforme entre botones */
+}
+
+.pagination-controls button {
+  padding: 6px 10px; /* Reducir tamaño de los botones de paginación */
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-size: 0.9rem; /* Tamaño de fuente uniforme */
+}
+
+.pagination-controls button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+.pagination-controls span {
+  align-self: center;
+  font-size: 1rem; /* Tamaño de fuente para el número de página */
+}
+.new-post-container {
+  margin-bottom: 20px; /* Espacio entre el formulario de nuevo post y la lista de posts */
+}
+
+.new-post-input {
+  width: calc(100% - 20px); /* Tomar casi todo el ancho */
+  padding: 10px; /* Espaciado interno */
+  border: 1px solid #eaeaea; /* Borde gris */
+  border-radius: 5px; /* Bordes redondeados */
+  margin-bottom: 10px; /* Espacio inferior */
+}
+
+.new-post-textarea {
+  width: 100%; /* Ancho completo */
+  padding: 10px; /* Espaciado interno */
+  border: 1px solid #eaeaea; /* Borde gris */
+  border-radius: 5px; /* Bordes redondeados */
+  margin-bottom: 10px; /* Espacio inferior */
+  resize: vertical; /* Permitir cambiar el tamaño verticalmente */
+}
+
+.btn-create {
+  padding: 8px 12px; /* Tamaño adecuado */
+  background-color: #007bff; /* Color de fondo */
+  color: white; /* Color de texto */
+  border: none; /* Sin borde */
+  border-radius: 5px; /* Bordes redondeados */
+  cursor: pointer; /* Cambiar cursor al pasar */
+  transition: background-color 0.3s; /* Transición suave */
+}
+
+.btn-create:hover {
+  background-color: #0056b3; /* Color al pasar el mouse */
+}
+
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+  .forum-container {
+    padding: 10px;
+  }
+
+  .post-title {
+    font-size: 1.2rem;
+  }
+
+  .btn-back {
+    font-size: 0.8rem;
+  }
+
+  .reply-input {
+    font-size: 0.9rem;
+  }
+}
