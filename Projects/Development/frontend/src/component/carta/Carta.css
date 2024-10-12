@@ -35,10 +35,17 @@
   padding: 20px;
 }
 
+.carta-datos{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .carta-titulo {
   font-size: 1.4rem;
   font-weight: bold;
-  color: #2c3e50;
+  color: #44495D;
   margin-bottom: 10px;
   transition: color 0.3s ease;
 }
@@ -49,9 +56,22 @@
 
 .carta-categoria,
 .carta-autor {
+  text-transform: capitalize;
   font-size: 1rem;
   color: #7f8c8d;
   margin-bottom: 8px;
+}
+
+.carta-categoria{
+  background-color: #2c3e50;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+}
+
+.carta-autor{
+  color: #509CDB;
+  font-weight: 600;
 }
 
 /* Estilo del modal */

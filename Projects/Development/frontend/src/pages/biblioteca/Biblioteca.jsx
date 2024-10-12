@@ -72,8 +72,8 @@ function Biblioteca() {
           <div className="content-header">
             <h2 className="title">Biblioteca</h2>
             <div className="filters">
+              <p>Filtrar por Categoría:</p>
               <div className="filter-category">
-                <p>Filtrar por Categoría:</p>
                 <select
                   className="select-category"
                   value={categoryFilter}
