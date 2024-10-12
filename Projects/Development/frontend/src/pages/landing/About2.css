@@ -1,0 +1,79 @@
+/* About2.css */
+
+.2xl\:container.2xl\:mx-auto.lg\:py-16.lg\:px-20.md\:py-12.md\:px-6.py-9.px-4 {
+  background-color: #14213d; /* Color de fondo principal del landing page */
+  color: #ffffff; /* Color de texto principal del landing page */
+  padding: 2rem;
+}
+
+.lg\:w-10\/12.w-full {
+  text-align: center; /* Alinea el texto al centro */
+  margin-bottom: 2rem;
+}
+
+.font-normal.text-sm.leading-3.text-indigo-700.hover\:text-indigo-800.cursor-pointer {
+  color: #6366f1; /* Color de enlace "About" */
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out; /* Transición suave para el color al pasar el ratón */
+}
+
+.font-normal.text-sm.leading-3.text-indigo-700.hover\:text-indigo-800.cursor-pointer:hover {
+  color: #4f46e5; /* Color de enlace "About" al pasar el ratón */
+}
+
+h2 {
+  color: #ffffff; /* Color de texto del título */
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.font-normal.text-base.leading-6.text-gray-600.mt-6 {
+  color: #ffffff; /* Color de texto del párrafo */
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 2rem;
+}
+
+.lg\:mt-14.sm\:mt-10.mt-12 {
+  margin-bottom: 2rem;
+}
+
+.lg\:block.hidden.w-full,
+.lg\:hidden.sm\:block.hidden.w-full,
+.sm\:hidden.block.w-full {
+  width: 100%; /* Ajusta el ancho de la imagen a 100% */
+  max-width: 100%; /* Asegura que la imagen no sobrepase el ancho del contenedor */
+  height: auto; /* Ajusta la altura de la imagen automáticamente */
+  display: block; /* Elimina el espacio adicional debajo de la imagen */
+  margin: 0 auto; /* Centra la imagen horizontalmente */
+}
+
+.lg\:mt-16.sm\:mt-12.mt-16.flex.lg\:flex-row.justify-between.flex-col.lg\:gap-8.gap-12 {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.w-full.xl\:w-5\/12.lg\:w-6\/12 {
+  width: 100%;
+  max-width: 50%; /* Ajusta el ancho de la sección de texto */
+  margin-bottom: 2rem;
+}
+
+.lg\:flex.items-center.w-full.lg\:w-1\/2 {
+  width: 100%;
+  max-width: 50%; /* Ajusta el ancho de la sección de imagen */
+}
+
+.lg\:block.hidden.w-full,
+.lg\:hidden.sm\:block.hidden.w-full.h-3\/4,
+.sm\:hidden.block.w-full {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}

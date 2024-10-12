@@ -1,0 +1,140 @@
+/* Estilo principal de las cartas */
+.carta {
+  background-color: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.carta:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Contenedor de la imagen */
+.carta-imagen-container {
+  height: 250px;
+  overflow: hidden;
+}
+
+.carta-imagen {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.carta:hover .carta-imagen {
+  transform: scale(1.05);
+}
+
+/* Contenido de la carta */
+.carta-contenido {
+  padding: 20px;
+}
+
+.carta-titulo {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #2c3e50;
+  margin-bottom: 10px;
+  transition: color 0.3s ease;
+}
+
+.carta:hover .carta-titulo {
+  color: #007bff;
+}
+
+.carta-categoria,
+.carta-autor {
+  font-size: 1rem;
+  color: #7f8c8d;
+  margin-bottom: 8px;
+}
+
+/* Estilo del modal */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  animation: fadeIn 0.4s ease-in-out;
+}
+
+.modal-contenido {
+  background-color: white;
+  padding: 25px;
+  border-radius: 16px;
+  max-width: 600px;
+  width: 100%;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  position: relative;
+  animation: scaleIn 0.3s ease-in-out;
+}
+
+.modal-imagen {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+
+.modal-titulo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #2c3e50;
+}
+
+.modal-categoria,
+.modal-autor,
+.modal-resumen,
+.modal-fecha {
+  font-size: 1.1rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.modal-cerrar {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: none;
+  border: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+  color: #666;
+  transition: color 0.3s ease;
+}
+
+.modal-cerrar:hover {
+  color: #333;
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    transform: scale(0.9);
+  }
+  to {
+    transform: scale(1);
+  }
+}

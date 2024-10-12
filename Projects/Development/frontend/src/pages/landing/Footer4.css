@@ -1,0 +1,67 @@
+/* Footer4.css */
+
+footer {
+  background-color: #1f2937; /* Color de fondo del footer */
+  color: #ffffff; /* Color de texto del footer */
+  padding: 2rem 0;
+  text-align: center; /* Centra el contenido del footer */
+}
+
+.mx-auto.container.xl\:px-20.lg\:px-12.sm\:px-6.px-4.px-4.py-12 {
+  max-width: 1200px; /* Ancho máximo del contenedor del footer */
+  margin: 0 auto;
+}
+
+.flex.flex-col.items-center.justify-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+svg {
+  fill: #1f2937; /* Color del logo del footer */
+  margin-bottom: 2rem;
+}
+
+.flex.flex-wrap.sm\:gap-10.gap-8.items-center.justify-center.mt-8 {
+  display: flex;
+  flex-wrap: wrap; /* Permite que los elementos se envuelvan en múltiples líneas */
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.hover\:text-gray-500.text-base.cursor-pointer.leading-4.text-gray-800 {
+  color: #ffffff; /* Color de texto de los enlaces */
+  font-weight: normal;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+.hover\:text-gray-500.text-base.cursor-pointer.leading-4.text-gray-800:hover {
+  color: #6366f1; /* Color de texto de los enlaces al pasar el ratón */
+}
+
+.flex.items-center.gap-x-8.mt-6 {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.fill-current.text-gray-800.hover\:text-gray-500 {
+  fill: #ffffff; /* Color de los iconos de redes sociales */
+  transition: fill 0.3s ease-in-out;
+}
+
+.fill-current.text-gray-800.hover\:text-gray-500:hover {
+  fill: #6366f1; /* Color de los iconos de redes sociales al pasar el ratón */
+}
+
+.border-l.border-gray-800.pl-2.ml-2 {
+  border-left: 2px solid #ffffff; /* Línea divisoria del texto del copyright */
+  padding-left: 0.5rem;
+  margin-left: 0.5rem;
+}
