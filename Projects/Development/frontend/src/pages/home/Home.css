@@ -1,0 +1,95 @@
+/* Container for the entire home page */
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  margin: 0 auto;
+  max-width: 1000px;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Home title */
+.home-title {
+  font-size: 2.5rem;
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+/* Home description */
+.home-description {
+  font-size: 1.2rem;
+  color: #7f8c8d;
+  margin-bottom: 30px;
+}
+
+/* Grid container for the link cards */
+.home-links-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  width: 100%;
+  max-width: 1000px;
+}
+
+/* Individual link card */
+.home-link-card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 20px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Hover effect for the link card */
+.home-link-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Icon inside the link card */
+.home-link-icon {
+  font-size: 3rem;
+  color: #3498db;
+  margin-bottom: 15px;
+}
+
+/* Title of each link card */
+.home-link-title {
+  font-size: 1.5rem;
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+/* Description text in each link card */
+.home-link-description {
+  font-size: 1rem;
+  color: #7f8c8d;
+}
+
+/* Responsive design for mobile devices */
+@media (max-width: 600px) {
+  .home-title {
+    font-size: 2rem;
+  }
+
+  .home-description {
+    font-size: 1rem;
+  }
+
+  .home-link-card {
+    padding: 15px;
+  }
+
+  .home-link-title {
+    font-size: 1.3rem;
+  }
+
+  .home-link-description {
+    font-size: 0.9rem;
+  }
+}

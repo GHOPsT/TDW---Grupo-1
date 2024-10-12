@@ -1,25 +1,542 @@
+/* General Styles */
+body, html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .landing-page {
-  padding: 2rem;
-  min-height: 100vh; /* Ocupa toda la altura de la pantalla */
-  display: flex;
-  flex-direction: column; /* Ordena las secciones verticalmente */
+  width: 100%;
+  overflow-x: hidden; /* Asegura que no haya desplazamiento horizontal */
 }
 
+/* Sección General */
 .section {
-  padding: 2rem 0;
-  flex-grow: 1; /* Permite que las secciones ocupen el espacio disponible */
-}
-
-.container {
-  max-width: 800px;
-  margin: 0 auto;
+  width: 100vw; /* Ocupa todo el ancho de la pantalla */
+  padding: 1px 0; /* Espaciado vertical */
   text-align: center;
 }
 
+/* Alternar colores de fondo entre secciones */
+/* Sección de Inicio */
+.inicio {
+  background-color: #100F57; /* Fondo oscuro */
+  color: white; /* Texto blanco para fondo oscuro */
+  text-align: center; /* Centrar el contenido */
+  padding: 50px 0; /* Espaciado vertical */
+}
+
+.inicio .container {
+  max-width: 900px; /* Limitar el ancho máximo */
+  margin: 0 auto; /* Centrar el contenedor */
+  text-align: center; /* Centrar el texto y el contenido */
+  display: flex;
+  flex-direction: column; /* Apilar los elementos de forma vertical */
+  align-items: center; /* Alinear los elementos al centro */
+  background-color: #100F57;
+}
+
+.inicio h1 {
+  font-size: 3rem; /* Tamaño grande para el título */
+  margin-bottom: 20px; /* Espaciado debajo del título */
+}
+
+.inicio .intro-text {
+  font-size: 1.5rem; /* Tamaño interesante para el texto */
+  line-height: 1.6; /* Espaciado entre líneas para mejor legibilidad */
+  margin-bottom: 30px; /* Espacio debajo del texto */
+  max-width: 850px; /* Limitar el ancho del texto */
+  text-align: justify; /* Justificar el texto */
+  color: aliceblue;
+}
+
+.inicio button {
+  padding: 12px 24px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.2rem; /* Tamaño adecuado para el botón */
+  transition: background-color 0.3s ease;
+  margin-bottom: 30px; /* Espacio para la imagen debajo */
+}
+
+.inicio button:hover {
+  background-color: #0056b3;
+}
+
+.inicio .image-container {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center; /* Centrar la imagen */
+}
+
+.inicio .image-container img {
+  max-width: 100%; /* Asegurar que la imagen no sobrepase el ancho del contenedor */
+  height: auto; /* Mantener la proporción de la imagen */
+  border-radius: 8px; /* Bordes redondeados */
+}
+
+/* Estilo para la sección de Normativas */
+.normativas {
+  background-color: white; /* Fondo blanco */
+  color: #100F57; /* Texto oscuro */
+  padding: 50px 0; /* Espaciado vertical */
+  text-align: center;
+}
+
+.normativas .container {
+  max-width: 1000px; /* Limitar el ancho máximo */
+  margin: 10px auto; /* Centrar el contenedor */
+  text-align: center; /* Centrar el texto y contenido */
+  flex-direction: column;
+}
+
+.normativas h2 {
+  font-size: 2.5rem; /* Tamaño del título */
+  margin-bottom: 20px;
+}
+
+/* Texto de introducción */
+.normativas .intro-text {
+  font-size: 1.3rem; /* Tamaño del texto de introducción */
+  color: #100F57;
+  margin-bottom: 40px; /* Espaciado debajo del texto */
+  max-width: 850px; /* Limitar el ancho del texto */
+  margin-left: auto;
+  margin-right: auto;
+  text-align: justify; /* Justificar el texto */
+}
+
+/* Lista de normativas apiladas */
+.normativas-list {
+  list-style-type: none; /* Quitar el estilo de viñetas */
+  padding: 0;
+  font-size: 1.2rem; /* Tamaño del texto de la lista */
+  color: #100F57; /* Color del texto */
+  text-align: center; /* Centrar el texto */
+  max-width: 850px; /* Limitar el ancho de la lista */
+  margin: 0 auto 30px auto; /* Centrar la lista con espaciado inferior */
+  flex-direction: column;
+}
+
+/* Animación de apilamiento */
+.normativas-list li {
+  margin-bottom: 20px; /* Espaciado entre los ítems */
+  padding: 10px;
+  background-color: #F0F4FF; /* Fondo claro para cada normativa */
+  border-radius: 10px; /* Bordes redondeados */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  opacity: 0; /* Ocultar inicialmente */
+  transform: translateY(20px); /* Desplazar ligeramente hacia abajo */
+  animation: fadeInUp 0.8s ease forwards; /* Animación para aparecer hacia arriba */
+}
+
+.normativas-list li:nth-child(1) {
+  animation-delay: 0.2s; /* Retardo para el primer ítem */
+}
+.normativas-list li:nth-child(2) {
+  animation-delay: 0.4s; /* Retardo para el segundo ítem */
+}
+.normativas-list li:nth-child(3) {
+  animation-delay: 0.6s; /* Retardo para el tercer ítem */
+}
+.normativas-list li:nth-child(4) {
+  animation-delay: 0.8s; /* Retardo para el cuarto ítem */
+}
+.normativas-list li:nth-child(5) {
+  animation-delay: 1s; /* Retardo para el quinto ítem */
+}
+
+/* Animación de aparición desde abajo */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Contenedor de la imagen */
+.image-container {
+  margin-top: 1px;
+  display: flex;
+  justify-content: center; /* Centrar la imagen */
+}
+
+.image-container img {
+  max-width: 100%; /* Asegurar que la imagen no sobrepase el ancho del contenedor */
+  height: auto; /* Mantener la proporción de la imagen */
+  border-radius: 8px; /* Bordes redondeados */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+/* Estilo para la sección de Nosotros */
+.nosotros {
+  background-color: #100F57; /* Fondo oscuro */
+  color: white; /* Texto blanco para fondo oscuro */
+  padding: 50px 0; /* Espaciado vertical */
+}
+
+.nosotros .container {
+  max-width: 1200px; /* Ancho máximo para centrar el contenido */
+  margin: 0 auto; /* Centrar el contenedor */
+  display: flex;
+  align-items: center; /* Centrar verticalmente */
+  justify-content: space-between; /* Espacio entre texto e imagen */
+  text-align: left;
+  background-color: #100F57;
+}
+
+.nosotros .content-wrapper {
+  display: flex;
+  flex-direction: row; /* Texto a la izquierda, imagen a la derecha */
+  justify-content: space-between;
+  align-items: center;
+}
+
+.text-content {
+  max-width: 50%; /* Limitar el ancho del texto */
+}
+
+.text-content h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.text-content .intro-text {
+  font-size: 1.3rem; /* Tamaño de fuente atractivo */
+  line-height: 1.6;
+  text-align: justify; /* Justificar el texto */
+  color: #F0F4FF;
+}
+
+.image-content {
+  max-width: 45%; /* Limitar el ancho de la imagen */
+}
+
+.image-content img {
+  width: 100%; /* Ajustar la imagen al contenedor */
+  height: auto;
+  border-radius: 10px; /* Bordes redondeados */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+
+/* Estilo para la sección de Localización */
+.localizacion {
+  background-color: white; /* Fondo blanco */
+  color: #100F57; /* Texto oscuro */
+  padding: 50px 0; /* Espaciado vertical */
+}
+
+.localizacion .container {
+  max-width: 1200px; /* Ancho máximo para centrar el contenido */
+  margin: 0 auto; /* Centrar el contenedor */
+  text-align: center; /* Centrar el texto */
+  flex-direction: column;
+}
+
+.localizacion h2 {
+  font-size: 2.5rem; /* Tamaño del título */
+  margin-bottom: 20px;
+}
+
+.localizacion .intro-text {
+  font-size: 1.3rem; /* Tamaño del texto */
+  line-height: 1.6; /* Espaciado entre líneas */
+  margin-bottom: 40px; /* Espacio inferior */
+  color: #100F57; /* Mantener el color principal */
+  max-width: 850px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: justify; /* Justificar el texto */
+}
+
+.location-info {
+  display: flex;
+  flex-direction: row; /* Colocar dirección y mapa en línea */
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+}
+
+.address {
+  flex: 1; /* Permitir que la dirección ocupe un espacio flexible */
+  text-align: left; /* Alinear el texto a la izquierda */
+}
+
+.address h3 {
+  font-size: 1.8rem; /* Tamaño del subtítulo */
+  margin-bottom: 15px;
+}
+
+.address p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+.map-container {
+  flex: 1; /* El mapa ocupará el mismo espacio que la dirección */
+  max-width: 600px; /* Limitar el ancho máximo del mapa */
+}
+
+.map-container iframe {
+  width: 100%; /* Asegurar que el mapa ocupe todo el ancho */
+  border-radius: 8px; /* Bordes redondeados para el mapa */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+/* Estilo para la sección de FAQ */
+.faq {
+  background-color: #100F57; /* Fondo oscuro */
+  color: white; /* Texto blanco para fondo oscuro */
+  padding: 50px 0; /* Espaciado vertical */
+}
+
+.faq .container {
+  max-width: 800px; /* Limitar el ancho máximo */
+  margin: 0 auto; /* Centrar el contenedor */
+  text-align: center; /* Centrar el texto */
+  background-color: #100F57;
+  flex-direction: column; 
+}
+
+.faq h2 {
+  font-size: 2.5rem; /* Tamaño del título */
+  margin-bottom: 20px;
+}
+
+.faq-list {
+  display: flex; /* Hacer que la lista sea flexible */
+  flex-direction: column; /* Colocar los elementos en columna */
+  gap: 15px; /* Espacio entre preguntas */
+}
+
+.faq-item {
+  background-color: #1a1a2e; /* Fondo de la pregunta */
+  border-radius: 8px; /* Bordes redondeados */
+  padding: 15px; /* Espaciado interno */
+  transition: background-color 0.3s ease; /* Transición para hover */
+}
+
+.faq-item:hover {
+  background-color: #162447; /* Fondo más oscuro al pasar el mouse */
+}
+
+.faq-question {
+  background: none; /* Sin fondo */
+  color: white; /* Texto blanco */
+  border: none; /* Sin borde */
+  font-size: 1.2rem; /* Tamaño del texto */
+  text-align: left; /* Alinear el texto a la izquierda */
+  width: 100%; /* Ancho completo */
+  cursor: pointer; /* Cambiar cursor al pasar */
+}
+
+.faq-answer {
+  margin-top: 10px; /* Espacio superior para la respuesta */
+  font-size: 1rem; /* Tamaño de la respuesta */
+  color: #d1d1d1; /* Color gris claro para la respuesta */
+  text-align: left; /* Alinear el texto a la izquierda */
+}
+
+
+/* Estilo para la sección de Contáctenos */
+.contactenos {
+  background-color: white; /* Fondo blanco */
+  color: #100F57; /* Texto oscuro */
+  padding: 50px 0; /* Espaciado vertical */
+  text-align: center; /* Centrar el texto */
+}
+
+.contactenos .container {
+  max-width: 800px; /* Limitar el ancho máximo */
+  margin: 0 auto; /* Centrar el contenedor */
+  padding: 0 20px; /* Espacio lateral */
+  flex-direction: column;
+}
+
+.contactenos h2 {
+  font-size: 2.5rem; /* Tamaño del título */
+  margin-bottom: 20px;
+}
+
+.contactenos p {
+  font-size: 1.2rem; /* Tamaño del texto */
+  margin-bottom: 30px; /* Espacio inferior */
+}
+
+.contact-form {
+  display: flex; /* Usar flexbox para el formulario */
+  flex-direction: column; /* Colocar los elementos en columna */
+  align-items: center; /* Centrar los elementos */
+  
+}
+
+.form-input, .form-textarea {
+  width: 100%; /* Ancho completo */
+  max-width: 500px; /* Ancho máximo para el formulario */
+  padding: 10px; /* Espaciado interno */
+  border: 1px solid #eaeaea; /* Borde gris */
+  border-radius: 5px; /* Bordes redondeados */
+  margin-bottom: 20px; /* Espacio inferior */
+  font-size: 1rem; /* Tamaño del texto */
+}
+
+.form-textarea {
+  resize: vertical; /* Permitir cambiar el tamaño verticalmente */
+  height: 100px; /* Altura predeterminada */
+  width: 800px;
+}
+
+.btn-submit {
+  padding: 12px 20px; /* Tamaño adecuado */
+  background-color: #007bff; /* Color de fondo */
+  color: white; /* Color de texto */
+  border: none; /* Sin borde */
+  border-radius: 5px; /* Bordes redondeados */
+  cursor: pointer; /* Cambiar cursor al pasar */
+  transition: background-color 0.3s; /* Transición suave */
+  font-size: 1rem; /* Tamaño de fuente adecuado */
+}
+
+.btn-submit:hover {
+  background-color: #0056b3; /* Color al pasar el mouse */
+}
+
+.contact-info {
+  margin-top: 40px; /* Espacio superior para la información de contacto */
+  text-align: left; /* Alinear el texto a la izquierda */
+}
+
+.contact-info h3 {
+  font-size: 1.8rem; /* Tamaño del subtítulo */
+  margin-bottom: 15px; /* Espacio inferior */
+}
+
+.social-media {
+  margin-top: 10px; /* Espacio superior para los enlaces sociales */
+}
+
+.social-media a {
+  margin-right: 15px; /* Espacio entre enlaces */
+  color: #007bff; /* Color de los enlaces */
+  text-decoration: none; /* Sin subrayado */
+  font-size: 1rem; /* Tamaño de fuente de los enlaces */
+}
+
+.social-media a:hover {
+  text-decoration: underline; /* Subrayar al pasar el mouse */
+}
+
+
+/* Títulos de las secciones */
 h1, h2 {
-  margin-bottom: 1rem;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
 }
 
 p {
-  margin-bottom: 2rem;
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+/* Botones */
+button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Footer Section (más corto y ajustado) */
+footer {
+  background-color: #343a40;
+  color: white;
+  padding: 10px 0; /* Reducir la altura del footer */
+  text-align: center;
+  font-size: 0.9rem; /* Texto más pequeño */
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+  .forum-container {
+    padding: 10px;
+  }
+
+  h1, h2 {
+    font-size: 1.8rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  button {
+    font-size: 0.9rem;
+  }
+  .inicio h1 {
+    font-size: 2rem;
+  }
+
+  .inicio .intro-text {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+
+  .inicio button {
+    font-size: 1rem;
+  }
+
+  .normativas h2 {
+    font-size: 2rem; /* Reducir tamaño del título */
+  }
+
+  .normativas .intro-text {
+    font-size: 1.1rem; /* Reducir tamaño del texto */
+  }
+
+  .normativas-list {
+    font-size: 1rem; /* Reducir el tamaño de la lista */
+  }
+
+  .nosotros .content-wrapper {
+    flex-direction: column; /* Cambiar a disposición vertical en pantallas pequeñas */
+    text-align: center;
+  }
+
+  .text-content, .image-content {
+    max-width: 100%;
+    margin-bottom: 20px; /* Añadir espacio entre texto e imagen */
+  }
+
+  .text-content .intro-text {
+    font-size: 1.1rem; /* Reducir el tamaño del texto */
+  }
+
+  .image-content img {
+    max-width: 80%; /* Ajustar la imagen para pantallas pequeñas */
+  }
+
+  .location-info {
+    flex-direction: column; /* Cambiar a diseño apilado en pantallas pequeñas */
+    text-align: center;
+  }
+
+  .address, .map-container {
+    max-width: 100%; /* Asegurar que ambos ocupen todo el ancho */
+    margin-bottom: 20px; /* Espacio inferior entre la dirección y el mapa */
+  }
 }

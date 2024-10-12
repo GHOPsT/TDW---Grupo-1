@@ -94,7 +94,7 @@ function Foro() {
     <div className="app-container">
       <Sidebar
         userType="admin"
-        profileImg="https://www.example.com/profile-picture.jpg"
+        profileImg="https://cdn.britannica.com/49/39749-050-E773E614/Max-Weber-1918.jpg"
         name="Max Saavedra"
         email="john.doe@example.com"
         links={[
