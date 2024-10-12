@@ -18,8 +18,10 @@ function Carta({ book, show, setShow }) {
         <img src={book.portada} alt={book.nombre} className="carta-imagen" />
       </div>
       <div className="carta-contenido">
-        <h3 className="carta-titulo">{book.nombre}</h3>
-        <p className="carta-categoria">{book.categoria}</p>
+        <div className="carta-datos">
+          <h3 className="carta-titulo">{book.nombre}</h3>
+          <p className="carta-categoria">{book.categoria}</p>
+        </div>
         <p className="carta-autor">{book.autor}</p>
       </div>
 

@@ -14,36 +14,39 @@
 
 .content-header {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 1.5rem;
 }
 
-.title {
-  font-size: 2rem;
+.content-header .title {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 3rem;
   font-weight: bold;
   color: #333;
 }
 
 .filters {
+  margin: 40px auto;
   display: flex;
+  justify-content: flex-end;
+  align-items: center;
   gap: 1rem;
-  height: 59px;
 }
 
-.filter-category {
+.filters p{
+  color: #A69C9C;
+}
+
+.filter-category{
+  padding: 0 2rem;
   display: flex;
   align-items: center;
-  background: linear-gradient(to bottom, #d8e7fc, #f7f9ff); /* Degradado suave */
-  padding: 0.5rem 1rem;
-  border-radius: 30px; /* Bordes más redondeados */
-  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1); /* Sombra ligera para dar profundidad */
-  transition: background 0.3s ease, box-shadow 0.3s ease; /* Suave transición al hover */
-}
-
-.filter-category:hover {
-  background: linear-gradient(to bottom, #c1dafc, #eef5ff); /* Cambio de fondo al hover */
-  box-shadow: 2px 4px 15px rgba(0, 0, 0, 0.15); /* Sombra más fuerte al hover */
+  height: 59px;
+  background-color: #EBE9E9;
+  border-radius: 10px
 }
 
 .select-category {
@@ -57,33 +60,23 @@
   transition: color 0.3s ease, transform 0.3s ease; /* Suave transición en color y movimiento */
 }
 
-.select-category:hover {
-  color: #0042ff; /* Color más intenso en hover */
-  transform: scale(1.05); /* Ligeramente más grande al hacer hover */
-}
-
-
 .search-box {
-  width: 210px;
+  width: 1000px;
   height: 59px;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(to bottom,rgb(227, 213, 255),rgb(255, 231, 231));
   border-radius: 30px;
-  overflow: hidden;
   cursor: pointer;
-  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.075);
 }
 
-.search-input {
-  width: 200px;
-  height: 40px;
+.search-box input {
+  width: 1000px;
+  height: 59px;
   border: none;
   outline: none;
-  caret-color: rgb(255, 81, 0);
-  background-color: rgb(247, 247, 247);
-  border-radius: 30px;
+  background-color: #EBE9E9;
+  border-radius: 10px;
   padding-left: 15px;
   letter-spacing: 0.8px;
   color: rgb(19, 19, 19);
@@ -98,7 +91,7 @@
 
 .book-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Grid responsivo */
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr)); /* Grid responsivo */ 
   gap: 2rem; /* Espaciado más amplio entre elementos */
   padding: 1rem; /* Añadir un pequeño padding alrededor del grid */
   margin: 0 auto; /* Centrar el grid */

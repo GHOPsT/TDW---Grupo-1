@@ -2,7 +2,7 @@
   {
     "id": 1,
     "nombre": "Los tres chanchitos",
-    "portada": "https://www.example.com/los-tres-chanchitos.jpg",
+    "portada": "https://i.pinimg.com/control/564x/5c/96/2e/5c962ea8a464da68c8a53b49bcc1bf7a.jpg",
     "categoria": "literatura",
     "autor": "Mario Vargas Llosa",
     "resumen": "Un cuento clásico para niños sobre tres chanchitos que construyen casas...",
@@ -11,7 +11,7 @@
   {
     "id": 2,
     "nombre": "El Quijote",
-    "portada": "https://www.example.com/el-quijote.jpg",
+    "portada": "https://images.cdn1.buscalibre.com/fit-in/360x360/bd/94/bd94eec781bdbb153a654022ef70fdcb.jpg",
     "categoria": "literatura",
     "autor": "Miguel de Cervantes",
     "resumen": "Una novela épica sobre un caballero andante que lucha contra molinos de viento...",
@@ -20,7 +20,7 @@
   {
     "id": 3,
     "nombre": "Cien años de soledad",
-    "portada": "https://www.example.com/cien-años-de-soledad.jpg",
+    "portada": "https://www.penguinlibros.com/pe/1682545/cien-anos-de-soledad.jpg",
     "categoria": "literatura",
     "autor": "Gabriel García Márquez",
     "resumen": "Una novela que narra la historia de la familia Buendía en un pueblo mágico...",
@@ -29,7 +29,7 @@
   {
     "id": 4,
     "nombre": "1984",
-    "portada": "https://www.example.com/1984.jpg",
+    "portada": "https://www.crisol.com.pe/media/catalog/product/cache/f6d2c62455a42b0d712f6c919e880845/9/7/9788418915093_vqlklll9mtfnzavx.jpg",
     "categoria": "literatura",
     "autor": "George Orwell",
     "resumen": "Una novela distópica que imagina un futuro totalitario...",
@@ -38,7 +38,7 @@
   {
     "id": 5,
     "nombre": "El señor de los anillos",
-    "portada": "https://www.example.com/el-señor-de-los-anillos.jpg",
+    "portada": "https://i.pinimg.com/564x/56/e8/fe/56e8feac9405f6933c36c2f6205d9466.jpg",
     "categoria": "literatura",
     "autor": "J.R.R. Tolkien",
     "resumen": "Una épica fantasía medieval sobre la lucha entre el bien y el mal...",
@@ -47,7 +47,7 @@
   {
     "id": 6,
     "nombre": "Historia de dos ciudades",
-    "portada": "https://www.example.com/historia-de-dos-ciudades.jpg",
+    "portada": "https://i.pinimg.com/564x/50/c5/ef/50c5ef8e325cdd2622281c0c3dc8dc5b.jpg",
     "categoria": "historia",
     "autor": "Charles Dickens",
     "resumen": "Una novela histórica ambientada en la Revolución Francesa...",
@@ -56,7 +56,7 @@
   {
     "id": 7,
     "nombre": "La guerra y la paz",
-    "portada": "https://www.example.com/la-guerra-y-la-paz.jpg",
+    "portada": "https://semanariouniversidad.com/wp-content/uploads/2020/09/portadilla-la-guerra-y-la-paz-18.jpg",
     "categoria": "historia",
     "autor": "León Tolstoi",
     "resumen": "Una novela épica que describe la sociedad rusa durante la invasión napoleónica...",
@@ -65,7 +65,7 @@
   {
     "id": 8,
     "nombre": "Breve historia del tiempo",
-    "portada": "https://www.example.com/breve-historia-del-tiempo.jpg",
+    "portada": "https://acortar.link/Hl18Oy",
     "categoria": "ciencia",
     "autor": "Stephen Hawking",
     "resumen": "Un libro de divulgación científica que explica los conceptos básicos del universo...",
@@ -74,7 +74,7 @@
   {
     "id": 9,
     "nombre": "Cosmos",
-    "portada": "https://www.example.com/cosmos.jpg",
+    "portada": "https://acortar.link/ffktNa",
     "categoria": "ciencia",
     "autor": "Carl Sagan",
     "resumen": "Un libro que explora el universo y la historia de la ciencia...",
@@ -83,7 +83,7 @@
   {
     "id": 10,
     "nombre": "El gen egoísta",
-    "portada": "https://www.example.com/el-gen-egoista.jpg",
+    "portada": "https://acortar.link/sgMOs5",
     "categoria": "ciencia",
     "autor": "Richard Dawkins",
     "resumen": "Un libro que explica la teoría de la selección natural desde una perspectiva genética...",
@@ -92,7 +92,7 @@
   {
     "id": 11,
     "nombre": "El código da Vinci",
-    "portada": "https://www.example.com/el-código-da-vinci.jpg",
+    "portada": "https://acortar.link/JBeafW",
     "categoria": "literatura",
     "autor": "Dan Brown",
     "resumen": "Una novela de misterio y suspense que gira en torno a un complot en el Vaticano...",
@@ -101,7 +101,7 @@
   {
     "id": 12,
     "nombre": "La sombra del viento",
-    "portada": "https://www.example.com/la-sombra-del-viento.jpg",
+    "portada": "https://acortar.link/yZqS3K",
     "categoria": "literatura",
     "autor": "Carlos Ruiz Zafón",
     "resumen": "Una novela ambientada en la Barcelona de los años 40 que narra la historia de un joven...",
@@ -110,7 +110,7 @@
   {
     "id": 13,
     "nombre": "El Hobbit",
-    "portada": "https://www.example.com/el-hobbit.jpg",
+    "portada": "https://acortar.link/Uv63n5",
     "categoria": "literatura",
     "autor": "J.R.R. Tolkien",
     "resumen": "Un cuento que precede a El señor de los anillos y narra la historia de Bilbo Bolsón...",
@@ -119,7 +119,7 @@
   {
     "id": 14,
     "nombre": "El principito",
-    "portada": "https://www.example.com/el-principito.jpg",
+    "portada": "https://acortar.link/V7d7mM",
     "categoria": "literatura",
     "autor": "Antoine de Saint-Exupéry",
     "resumen": "Un cuento clásico para niños que habla sobre la amistad, el amor y la imaginación...",
@@ -128,7 +128,7 @@
   {
     "id": 15,
     "nombre": "Matar un ruiseñor",
-    "portada": "https://www.example.com/matar-un-ruiseñor.jpg",
+    "portada": "https://acortar.link/o2xJeP",
     "categoria": "literatura",
     "autor": "Harper Lee",
     "resumen": "Una novela que narra la historia de la infancia de Scout Finch en el sur de Estados Unidos...",
@@ -137,7 +137,7 @@
   {
     "id": 16,
     "nombre": "Orgullo y prejuicio",
-    "portada": "https://www.example.com/orgullo-y-prejuicio.jpg",
+    "portada": "https://acortar.link/eecfge",
     "categoria": "literatura",
     "autor": "Jane Austen",
     "resumen": "Una novela romántica que narra la historia de Elizabeth Bennet y Mr. Darcy...",
@@ -146,7 +146,7 @@
   {
     "id": 17,
     "nombre": "La guerra de las galaxias",
-    "portada": "https://www.example.com/la-guerra-de-las-galaxias.jpg",
+    "portada": "https://acortar.link/QY4XeU",
     "categoria": "ciencia",
     "autor": "George Lucas",
     "resumen": "Una saga épica de ciencia ficción que narra las aventuras de Luke Skywalker...",
@@ -155,7 +155,7 @@
   {
     "id": 18,
     "nombre": "El resplandor",
-    "portada": "https://www.example.com/el-resplandor.jpg",
+    "portada": "https://acortar.link/hfFQUJ",
     "categoria": "literatura",
     "autor": "Stephen King",
     "resumen": "Una novela de terror que narra la historia de una familia que se muda a un hotel...",
@@ -164,7 +164,7 @@
   {
     "id": 19,
     "nombre": "El retrato de Dorian Gray",
-    "portada": "https://www.example.com/el-retrato-de-dorian-gray.jpg",
+    "portada": "https://acortar.link/qAzxFq",
     "categoria": "literatura",
     "autor": "Oscar Wilde",
     "resumen": "Una novela gótica que explora la naturaleza de la belleza y la decadencia...",
@@ -173,7 +173,7 @@
   {
     "id": 20,
     "nombre": "El gran Gatsby",
-    "portada": "https://www.example.com/el-gran-gatsby.jpg",
+    "portada": "https://acortar.link/KMLK64",
     "categoria": "literatura",
     "autor": "F. Scott Fitzgerald",
     "resumen": "Una novela que narra la historia de Jay Gatsby, un hombre rico que busca el amor...",
@@ -182,7 +182,7 @@
   {
     "id": 21,
     "nombre": "El gran Max",
-    "portada": "https://www.example.com/el-gran-gatsby.jpg",
+    "portada": "http://alternativaseconomicas.coop/sites/default/files/shared/publicaciones/revistas/2014/revista12/fotos/ellobodewallstreet.jpg",
     "categoria": "literatura",
     "autor": "S. Max Bruno",
     "resumen": "Una novela que narra la historia de Max Saavedra, un hombre rico que busca el amor...",
@@ -190,11 +190,11 @@
   },
   {
     "id": 22,
-    "nombre": "El Kinua y La F",
-    "portada": "https://www.example.com/el-gran-gatsby.jpg",
+    "nombre": "El Kinua y La Fiorella",
+    "portada": "https://acortar.link/m3QM5g",
     "categoria": "historia",
-    "autor": "S. Geomar Willy",
-    "resumen": "Una novela que narra la historia de dos estudiantes de Ing. Software ...",
+    "autor": "F. Geomar Willy",
+    "resumen": "Una novela que narra la historia de dos estudiantes de Ing. Software en busca del amor apasionado y que se ve opacada por el villano Axel con su caña Ferrari y su compinche Willy el vendedor chicha morada y gruñon...",
     "fecha": "2023-12-20"
   }
 ]
