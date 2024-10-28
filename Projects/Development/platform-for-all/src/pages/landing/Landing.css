@@ -1,0 +1,247 @@
+body, html {
+    height: 100%; /* Hacer que el contenedor principal ocupe el 100% de la altura */
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.content-landing {
+    align-items: center;
+    flex-direction: column;
+    display: grid;
+    background-color: aquamarine;
+    min-height: 100dvh;
+    min-width: 100dvw;
+    width: 100%;
+}
+
+.headerlanding {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    min-width: 100dvw;
+    position: fixed; /* Fijar el encabezado para que no se mueva al hacer scroll */
+    top: 0; /* Posicionarlo en la parte superior */
+    left: 0; /* Ajustarlo al borde izquierdo */
+    z-index: 1000; /* Asegurarse de que esté por encima de otros elementos */
+    padding: 10px 20px; /* Añadir algo de relleno para una mejor apariencia */
+
+}
+
+.button-container {
+    margin-left: auto;
+    padding-right: 90px;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    border-bottom: #000;
+    border-radius: 10px;
+}
+
+.boton-sesion-landing {
+    background-color: blue;
+    color: white;
+}
+
+/* Contenido del Landing Page */
+.contenido-landing {
+    display: flex;
+    flex-direction: column;
+    padding-top: 80px; /* Espacio para el header fijo */
+    background-color: #100F57;
+    flex: 1; /* Ocupar el espacio disponible entre el header y el footer */
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+    color: white;
+    overflow: auto;
+    text-align: center;
+    min-height: calc(100vh - 120px); /* Ajustar según el tamaño del footer */
+    box-sizing: border-box;
+}
+
+/* Inicio */
+
+.inicio-landing {
+    background-color: #100F57;
+    width: 100%;
+    font-family: 'Courier New', Courier, monospace;
+    
+    box-sizing: border-box;
+    .titulo-inicio {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        font-size: 3rem; /* Ajusta el tamaño de fuente como prefieras */
+        font-weight: bold;
+        line-height: 1.2; /* Espaciado entre líneas */
+        color: white; /* Ajusta el color del texto */
+    }
+
+    .text-inicio {
+
+        margin-right: 510px;
+        margin-left: 510px;
+        font-size: 1.2rem;
+        line-height: 1.6;
+        text-align: center;
+        box-sizing: border-box;
+    }
+
+    .button-empezar {
+        margin-top: 30px;
+        align-items: center;
+
+        .button-empezar-register {
+            background-color: #0A92DD;
+        }
+    }
+
+}
+
+/* Enjoy */
+
+.normativas-landing {
+    background-color: #FFFFFF;
+    width: 100%;
+    color: #000;
+    height: 100vh; /* Ocupa toda la altura de la ventana */
+    align-items: center;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    justify-content: space-between;
+    display: flex;
+    font-family: 'Courier New', Courier, monospace;
+
+    .text-enjoy {
+        flex: 1;
+        text-align: left;
+        margin-left: 200px;
+        flex-direction: column;
+    }
+
+    .subtitulo-enjoy {
+        font-size: 2rem;
+        font-weight: bold;
+        left: 143px;
+        top: 128px;
+        line-height: 40px;
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    .texto-enjoy {
+        margin-right: 300px;
+        font-size: 1.1rem;
+        line-height: 1.6;
+    }
+
+    .imagen-enjoy {
+        margin-right: 80PX;
+    }
+
+}
+
+
+/* Question */
+
+.nosotros-landing {
+    background-color: #100F57;
+    width: 100%;
+    height: 100vh; /* Ocupa toda la altura de la ventana */
+    overflow-x: auto;
+    justify-content: space-between;
+    display: flex;
+    font-family: 'Courier New', Courier, monospace;
+    align-items: center;
+    flex-wrap: nowrap;
+
+    .text-question {
+        flex: 1;
+        text-align: left;
+        margin-left: 200px;
+        flex-direction: column;
+    }
+
+    .subtitulo-question {
+        font-size: 2rem;
+        font-weight: bold;
+        left: 143px;
+        top: 128px;
+        line-height: 40px;
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    .texto-question {
+        margin-right: 300px;
+        font-size: 1.1rem;
+        line-height: 1.6;
+    }
+
+    .imagen-question {
+        margin-right: 10PX;
+        margin-left: 150px;
+    }
+
+}
+
+/* Colabora */
+
+.localizacion-landing {
+    background-color: #FFFFFF;
+    color: #000;
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+
+    .imagen-Colabora {
+        margin-top: 40px;
+    }
+
+    .localizacion-texto-landing {
+        display:flex;
+        margin-left: 1000px;
+        margin-right: 500px;
+        margin-top: 50px;
+    }
+
+    .subtitulo-local {
+        font-size: 1.6rem;
+        font-weight: bold;
+        line-height: 40px;
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+        align-items: baseline;
+    }
+
+    .texto-local {
+        font-size: 1.1rem;
+        line-height: 1.6;
+        display: flex;
+    }
+
+    .texto-p-local {
+        margin-right: 500px;
+    }
+
+}
+
+
+.footer-landing {
+    background-color: #100F57;
+    bottom: 0; /* Alinear en la parte inferior */
+    left: 0; /* Alinear con el borde izquierdo */
+    padding: 10px 0; /* Espacio interno */
+    text-align: center; /* Centrar el contenido */
+    color: white; /* Color del texto */
+    z-index: 1000; /* Asegurarse de que esté en frente de otros elementos */
+    width: 100%;
+}
