@@ -67,7 +67,7 @@ function Landing() {
                 </div>
                 <div className="button-container">
                     <button>
-                        <Button title="Iniciar Sesión" variant="link" href="https://example.com" />
+                        <Button title="Iniciar Sesión" variant="link" href="/login" />
                     </button>
                 </div>
             </div>
@@ -85,7 +85,7 @@ function Landing() {
                     </div>
                     <div className="button-empezar">
                         <button className="button-empezar-register">
-                            <Button title="Empezar" variant="link" href="https://example.com" />
+                            <Button title="Empezar" variant="link" href="/register" />
                         </button>
                     </div>
                     <div className="imagen-inicio">

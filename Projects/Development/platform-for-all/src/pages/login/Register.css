@@ -1,0 +1,79 @@
+body, html {
+    height: 100%; /* Hacer que el contenedor principal ocupe el 100% de la altura */
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+
+.label-register {
+    justify-content: center;
+    display: flex;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.register-content {
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    align-items: center;
+    margin-top: 150px;
+}
+
+
+.formulario-register {
+    display: flex;
+    flex-direction: column;
+    margin-left: 100px;
+    color: black;
+    max-width: 400px; /* Limita el ancho total del formulario */
+}
+
+.grupo-registro {
+    display: flex;
+    flex-direction: column;
+    gap: 5px; /* Espacio entre cada grupo de label e input */
+}
+
+.label-register, .control-register {
+    width: 100%; /* Para que ambos tengan el mismo ancho */
+    color: black;
+}
+
+.control-register {
+    border-radius: 10px;
+    background-color: white;
+    padding: 8px;
+    border: 1px solid #ddd;
+    font-size: 1rem;
+    box-sizing: border-box; /* Asegura que el ancho incluya el padding y el borde */
+}
+
+
+.button-submit {
+    margin-top: 20px;
+    padding: 10px 15px;
+    font-weight: bold;
+    background-color: #656ED3;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100%;
+    text-align: center;
+}
+
+.button-submit:hover {
+    background-color: #545ba3;
+}
+
+.login-link {
+    color: blue;         /* Color azul para simular un enlace */
+    font-weight: bold;   /* Negrita para destacar */
+    text-decoration: underline; /* Subrayado para parecer un enlace */
+    cursor: pointer;     /* Cambia el cursor a una mano para indicar que es clickeable */
+}
+
+.login-link:hover {
+    color: darkblue;     /* Cambia de color al pasar el cursor */
+}

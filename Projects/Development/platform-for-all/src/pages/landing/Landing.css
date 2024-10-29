@@ -196,10 +196,9 @@ body, html {
     color: #000;
     font-family: 'Courier New', Courier, monospace;
     display: flex;
-    align-items: center;
     flex-direction: column;
-    height: 100vh;
-    width: 100%;
+
+    width: 100vw;
 
     .imagen-Colabora {
         margin-top: 40px;
@@ -207,29 +206,32 @@ body, html {
 
     .localizacion-texto-landing {
         display:flex;
-        margin-left: 1000px;
-        margin-right: 500px;
+        margin-left: 300px;
+        margin-right: 300px;
         margin-top: 50px;
+        margin-bottom: 30px;
     }
 
     .subtitulo-local {
-        font-size: 1.6rem;
+        font-size: 1.4rem;
         font-weight: bold;
         line-height: 40px;
-        display: flex;
         flex-direction: column;
         margin-top: 20px;
+        width: 2190px;
+        display: flex;
         align-items: baseline;
     }
 
     .texto-local {
-        font-size: 1.1rem;
+        font-size: 1.2rem;
         line-height: 1.6;
         display: flex;
     }
 
     .texto-p-local {
-        margin-right: 500px;
+        margin-right: 50px;
+        margin-left: 50px;
     }
 
 }
