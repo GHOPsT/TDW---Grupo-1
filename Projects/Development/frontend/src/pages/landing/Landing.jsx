@@ -2,6 +2,7 @@ import React , { useState } from 'react';
 import { Link } from 'react-router-dom'; 
 import './Landing.css';
 import Footer4 from './Footer4';
+import chica from './imageneslanding/chica_sin_fondo.png'
 
 function Landing({ inicioRef, normativasRef, nosotrosRef, localizacionRef, faqRef, contactenosRef }) {
 
@@ -44,15 +45,14 @@ function Landing({ inicioRef, normativasRef, nosotrosRef, localizacionRef, faqRe
       {/* Sección de inicio */}
       <section ref={inicioRef} className="section inicio">
         <div className="container">
-          <h1>Bienvenido a "Aprendizaje para todos"</h1>
+          <h1>Bienvenido a <br />"Aprendizaje para <br />todos"</h1>
           <p className="intro-text">
-            La biblioteca virtual es una herramienta clave en el ámbito académico, ofreciendo acceso inmediato y global a una vasta colección de libros, artículos y recursos educativos. Rompiendo las barreras del tiempo y la geografía, facilita el acceso a información actualizada para mejorar sus estudios o investigaciones desde cualquier lugar, en cualquier momento.
-          </p>
+          Aquí encontrarás una amplia colección de libros de texto, <br />guías de estudio, y materiales complementarios para <br />todos los niveles educativos, desde primaria hasta <br />secundaria. Nuestro objetivo es apoyar el aprendizaje en <br />cualquier lugar y momento, proporcionando materiales <br />actualizados y alineados con los programas educativos <br />nacionales e internacionales.          </p>
           <Link to="/register"> {/* Usa Link para redirigir */}
             <button>Empezar</button>
           </Link>
           <div className="image-container">
-            <img src="https://i.pinimg.com/736x/c6/10/0c/c6100c4317632c6c56bd13078722ca8b.jpg" alt="Biblioteca Virtual" />
+            <img src={chica} alt="Biblioteca Virtual" />
           </div>
         </div>
       </section>
