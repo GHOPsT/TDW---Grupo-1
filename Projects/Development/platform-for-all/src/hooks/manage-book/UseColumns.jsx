@@ -20,10 +20,6 @@ export default function useColumns() {
         accessor: "categoria"
       },
       {
-        Header: "Descripción",
-        accessor: "descripcion"
-      },
-      {
         Header: "Fecha de Publicación",
         accessor: "fech_publicada"
       },

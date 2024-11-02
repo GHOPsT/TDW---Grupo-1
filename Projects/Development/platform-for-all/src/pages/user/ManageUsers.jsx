@@ -1,31 +1,26 @@
-import { useState, useMemo } from 'react';
+import { useState } from 'react';
 import { useTable, useSortBy, usePagination, useGlobalFilter } from 'react-table';
-import useRows from '../../hooks/manage-book/UseRows';
-import useColumns from '../../hooks/manage-book/UseColumns';
+import useRows from '../../hooks/manage-user/UseRowsUser';
+import useColumns from '../../hooks/manage-user/UseColumnsUser';
 import Form from 'react-bootstrap/Form';
 import InputGroup from 'react-bootstrap/InputGroup';
 import { CiSearch } from "react-icons/ci";
 import { BiFirstPage, BiLastPage } from "react-icons/bi";
 import { MdKeyboardArrowLeft, MdKeyboardArrowRight } from "react-icons/md";
-import '../book/ManageBooks.css';
+import '../user/ManageUsers.css';
 
-function ManageBooks() {
+function ManageUsers() {
   const columns = useColumns();
   const data = useRows();
 
-  // Estado para el valor de búsqueda y columna seleccionada
-  const [selectedColumn, setSelectedColumn] = useState("titulo");
-  const [searchValue, setSearchValue] = useState("");
-
-  // Función de filtro personalizada para la columna seleccionada
-  const filterData = useMemo(() => {
-    return (rows, columnIds, filterValue) => {
-      if (!filterValue) return rows;
-      return rows.filter(row =>
-        String(row.values[selectedColumn]).toLowerCase().includes(filterValue.toLowerCase())
-      );
-    };
-  }, [selectedColumn]);
+  // Agregar filtro global personalizado
+  const filterData = (rows, columnIds, filterValue) => {
+    const { value, column } = filterValue;
+    if (!value) return rows; // Si no hay valor, retorna todas las filas
+    return rows.filter(row =>
+      String(row.values[column]).toLowerCase().includes(value.toLowerCase())
+    );
+  };
 
   const {
     getTableProps,
@@ -42,29 +37,33 @@ function ManageBooks() {
     previousPage,
     setPageSize,
     state: { pageIndex, pageSize },
+    preGlobalFilteredRows,
     setGlobalFilter
   } = useTable(
     {
       columns,
       data,
-      globalFilter: filterData,
-      initialState: { pageSize: 5, pageIndex: 0 }
+      initialState: { pageSize: 5, pageIndex: 0 },
+      globalFilter: filterData // Filtro global personalizado
     },
     useGlobalFilter,
     useSortBy,
     usePagination
   );
 
-  // Handlers para el filtro y columna seleccionada
+  const [selectedColumn, setSelectedColumn] = useState("username");
+  const [searchValue, setSearchValue] = useState("");
+
   const handleColumnChange = (e) => {
-    setSelectedColumn(e.target.value);
-    setGlobalFilter(searchValue); // Actualiza el filtro para la nueva columna
+    const column = e.target.value;
+    setSelectedColumn(column);
+    setGlobalFilter({ value: searchValue, column });
   };
 
   const handleSearchChange = (e) => {
     const value = e.target.value;
     setSearchValue(value);
-    setGlobalFilter(value); // Aplica el filtro global
+    setGlobalFilter({ value, column: selectedColumn });
   };
 
   return (
@@ -72,8 +71,13 @@ function ManageBooks() {
       <div className="content-show-table">
         <div className="search">
           <div className="select-filter">
-            <Form.Select aria-label="Select Column" className="filtro-drop" onChange={handleColumnChange} value={selectedColumn}>
-              <option value="titulo">Selecciona una columna...</option>
+            <Form.Select
+              aria-label="Select Column"
+              className="filtro-drop"
+              onChange={handleColumnChange}
+              value={selectedColumn}
+            >
+              <option value="username">Selecciona una columna...</option>
               {columns.map((column) => (
                 <option key={column.id || column.accessor} value={column.accessor}>
                   {column.Header}
@@ -84,7 +88,14 @@ function ManageBooks() {
           <div className="input-search">
             <CiSearch className="logo-search" />
             <InputGroup>
-              <Form.Control as="input" aria-label="With textarea" className="input-buscar" value={searchValue} onChange={handleSearchChange} placeholder="Buscar..." />
+              <Form.Control
+                as="input"
+                aria-label="With textarea"
+                className="input-buscar"
+                value={searchValue}
+                onChange={handleSearchChange}
+                placeholder="Buscar..."
+              />
             </InputGroup>
           </div>
         </div>
@@ -95,7 +106,7 @@ function ManageBooks() {
                 <tr {...headerGroup.getHeaderGroupProps()} className="row-header">
                   {headerGroup.headers.map(column => (
                     <th
-                      key={column.id || column.accessor} // Pasar el key directamente aquí
+                      key={column.id || column.accessor}
                       {...column.getHeaderProps(column.getSortByToggleProps())}
                       className={
                         column.isSorted
@@ -158,4 +169,4 @@ function ManageBooks() {
   );
 }
 
-export default ManageBooks;
+export default ManageUsers;

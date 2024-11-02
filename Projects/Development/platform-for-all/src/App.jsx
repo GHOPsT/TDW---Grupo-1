@@ -3,6 +3,7 @@ import Landing from './pages/landing/Landing';
 import Register from './pages/login/Register';
 import Login from './pages/login/Login';
 import ManageBooks from './pages/book/ManageBooks';
+import ManageUsers from './pages/user/ManageUsers';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <Route path="/register" element={<Register />} />
         <Route path="/login" element={<Login />} />
         <Route path="/managebooks" element={<ManageBooks />} />
+        <Route path="/manageusers" element={<ManageUsers />} />
       </Routes>
     </Router>
   );
