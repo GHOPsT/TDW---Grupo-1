@@ -9,9 +9,12 @@ import InputGroup from 'react-bootstrap/InputGroup';
 import { CiSearch } from "react-icons/ci";
 import { BiFirstPage, BiLastPage } from "react-icons/bi";
 import { MdKeyboardArrowLeft, MdKeyboardArrowRight } from "react-icons/md";
+import { useNavigate, Link } from 'react-router-dom';
+import { Button } from 'react-bootstrap';
 import '../book/Biblioteca.css';
 
 function Biblioteca() {
+  const navigate = useNavigate();
   const books = useBooks();
   const categories = useCategories();
 
@@ -93,7 +96,7 @@ function Biblioteca() {
                       <img src={book.cover} alt={book.title} className="book-cover" />
                       <p className="book-category">{book.category}</p>
                       <p className="book-title">{book.title}</p>
-                      <button>Aprender</button>
+                      <Button onClick={() => navigate(`/biblioteca/book/${book.id}`)}>Ver Detalles</Button>
                     </Paper>
                   </Grid>
                 ))}

@@ -5,7 +5,7 @@
     "portada": "https://i.pinimg.com/control/564x/5c/96/2e/5c962ea8a464da68c8a53b49bcc1bf7a.jpg",
     "autor": "Mario Vargas Llosa",
     "categoria": "literatura",
-    "descripción": "Un cuento clásico para niños sobre tres chanchitos que construyen casas...",
+    "descripcion": "Un cuento clásico para niños sobre tres chanchitos que construyen casas...",
     "fech_publicada": "2023-12-20",
     "estado": "Aprobado"
   },
@@ -15,17 +15,17 @@
     "portada": "https://images.cdn1.buscalibre.com/fit-in/360x360/bd/94/bd94eec781bdbb153a654022ef70fdcb.jpg",
     "autor": "Miguel de Cervantes",
     "categoria": "literatura",
-    "descripción": "Una novela épica sobre un caballero andante que lucha contra molinos de viento...",
+    "descripcion": "Una novela épica sobre un caballero andante que lucha contra molinos de viento...",
     "fech_publicada": "2023-12-20",
     "estado": "Aprobado"
   },
   {
     "id": 3,
     "titulo": "Cien años de soledad",
-    "portada": "https://www.penguinlibros.com/pe/1682545/cien-anos-de-soledad.jpg",
+    "portada": "https://i.pinimg.com/564x/45/28/41/452841e9e64b532003a631606e5e12f5.jpg",
     "autor": "Gabriel García Márquez",
     "categoria": "literatura",
-    "descripción": "Una novela que narra la historia de la familia Buendía en un pueblo mágico...",
+    "descripcion": "Una novela que narra la historia de la familia Buendía en un pueblo mágico...",
     "fech_publicada": "2023-12-20",
     "estado": "Aprobado"
   },
@@ -35,7 +35,7 @@
     "portada": "https://www.crisol.com.pe/media/catalog/product/cache/f6d2c62455a42b0d712f6c919e880845/9/7/9788418915093_vqlklll9mtfnzavx.jpg",
     "autor": "George Orwell",
     "categoria": "literatura",
-    "descripción": "Una novela distópica que imagina un futuro totalitario...",
+    "descripcion": "Una novela distópica que imagina un futuro totalitario...",
     "fech_publicada": "2023-12-20",
     "estado": "Aprobado"
   },
@@ -45,7 +45,7 @@
     "portada": "https://i.pinimg.com/564x/56/e8/fe/56e8feac9405f6933c36c2f6205d9466.jpg",
     "autor": "J.R.R. Tolkien",
     "categoria": "literatura",
-    "descripción": "Una épica fantasía medieval sobre la lucha entre el bien y el mal...",
+    "descripcion": "Una épica fantasía medieval sobre la lucha entre el bien y el mal...",
     "fech_publicada": "2023-12-20",
     "estado": "Aprobado"
   },
@@ -55,7 +55,7 @@
     "portada": "https://i.pinimg.com/564x/50/c5/ef/50c5ef8e325cdd2622281c0c3dc8dc5b.jpg",
     "autor": "Charles Dickens",
     "categoria": "historia",
-    "descripción": "Una novela histórica ambientada en la Revolución Francesa...",
+    "descripcion": "Una novela histórica ambientada en la Revolución Francesa...",
     "fech_publicada": "2023-12-20",
     "estado": "Aprobado"
   },
@@ -65,7 +65,7 @@
     "portada": "https://semanariouniversidad.com/wp-content/uploads/2020/09/portadilla-la-guerra-y-la-paz-18.jpg",
     "autor": "León Tolstoi",
     "categoria": "historia",
-    "descripción": "Una novela épica que describe la sociedad rusa durante la invasión napoleónica...",
+    "descripcion": "Una novela épica que describe la sociedad rusa durante la invasión napoleónica...",
     "fech_publicada": "2023-12-20",
     "estado": "Aprobado"
   },
@@ -75,7 +75,7 @@
     "portada": "https://acortar.link/Hl18Oy",
     "autor": "Stephen Hawking",
     "categoria": "ciencia",
-    "descripción": "Un libro de divulgación científica que explica los conceptos básicos del universo...",
+    "descripcion": "Un libro de divulgación científica que explica los conceptos básicos del universo...",
     "fech_publicada": "2023-12-20",
     "estado": "Aprobado"
   },
@@ -85,7 +85,7 @@
     "portada": "https://acortar.link/ffktNa",
     "autor": "Carl Sagan",
     "categoria": "ciencia",
-    "descripción": "Un libro que explora el universo y la historia de la ciencia...",
+    "descripcion": "Un libro que explora el universo y la historia de la ciencia...",
     "fech_publicada": "2023-12-20",
     "estado": "Aprobado"
   },
@@ -95,7 +95,7 @@
     "portada": "https://acortar.link/sgMOs5",
     "autor": "Richard Dawkins",
     "categoria": "ciencia",
-    "descripción": "Un libro que explica la teoría de la selección natural desde una perspectiva genética...",
+    "descripcion": "Un libro que explica la teoría de la selección natural desde una perspectiva genética...",
     "fech_publicada": "2023-12-20",
     "estado": "Aprobado"
   },
@@ -105,7 +105,7 @@
     "portada": "https://acortar.link/JBeafW",
     "autor": "Dan Brown",
     "categoria": "literatura",
-    "descripción": "Una novela de misterio y suspense que gira en torno a un complot en el Vaticano...",
+    "descripcion": "Una novela de misterio y suspense que gira en torno a un complot en el Vaticano...",
     "fech_publicada": "2023-12-20",
     "estado": "Aprobado"
   },
@@ -115,7 +115,7 @@
     "portada": "https://acortar.link/yZqS3K",
     "autor": "Carlos Ruiz Zafón",
     "categoria": "literatura",
-    "descripción": "Una novela ambientada en la Barcelona de los años 40 que narra la historia de un joven...",
+    "descripcion": "Una novela ambientada en la Barcelona de los años 40 que narra la historia de un joven...",
     "fech_publicada": "2023-12-20",
     "estado": "Aprobado"
   },
@@ -125,7 +125,7 @@
     "portada": "https://acortar.link/Uv63n5",
     "autor": "J.R.R. Tolkien",
     "categoria": "literatura",
-    "descripción": "Un cuento que precede a El señor de los anillos y narra la historia de Bilbo Bolsón...",
+    "descripcion": "Un cuento que precede a El señor de los anillos y narra la historia de Bilbo Bolsón...",
     "fech_publicada": "2023-12-20",
     "estado": "Aprobado"
   },
@@ -135,7 +135,7 @@
     "portada": "https://acortar.link/V7d7mM",
     "autor": "Antoine de Saint-Exupéry",
     "categoria": "literatura",
-    "descripción": "Un cuento clásico para niños que habla sobre la amistad, el amor y la imaginación...",
+    "descripcion": "Un cuento clásico para niños que habla sobre la amistad, el amor y la imaginación...",
     "fech_publicada": "2023-12-20",
     "estado": "Aprobado"
   },
@@ -145,7 +145,7 @@
     "portada": "https://acortar.link/o2xJeP",
     "autor": "Harper Lee",
     "categoria": "literatura",
-    "descripción": "Una novela que narra la historia de la infancia de Scout Finch en el sur de Estados Unidos...",
+    "descripcion": "Una novela que narra la historia de la infancia de Scout Finch en el sur de Estados Unidos...",
     "fech_publicada": "2023-12-20",
     "estado": "Aprobado"
   },
@@ -155,7 +155,7 @@
     "portada": "https://acortar.link/eecfge",
     "autor": "Jane Austen",
     "categoria": "literatura",
-    "descripción": "Una novela romántica que narra la historia de Elizabeth Bennet y Mr. Darcy...",
+    "descripcion": "Una novela romántica que narra la historia de Elizabeth Bennet y Mr. Darcy...",
     "fech_publicada": "2023-12-20",
     "estado": "Aprobado"
   },
@@ -165,7 +165,7 @@
     "portada": "https://acortar.link/QY4XeU",
     "autor": "George Lucas",
     "categoria": "ciencia",
-    "descripción": "Una saga épica de ciencia ficción que narra las aventuras de Luke Skywalker...",
+    "descripcion": "Una saga épica de ciencia ficción que narra las aventuras de Luke Skywalker...",
     "fech_publicada": "2023-12-20",
     "estado": "Aprobado"
   },
@@ -175,7 +175,7 @@
     "portada": "https://acortar.link/hfFQUJ",
     "autor": "Stephen King",
     "categoria": "literatura",
-    "descripción": "Una novela de terror que narra la historia de una familia que se muda a un hotel...",
+    "descripcion": "Una novela de terror que narra la historia de una familia que se muda a un hotel...",
     "fech_publicada": "2023-12-20",
     "estado": "Aprobado"
   },
@@ -185,7 +185,7 @@
     "portada": "https://acortar.link/qAzxFq",
     "autor": "Oscar Wilde",
     "categoria": "literatura",
-    "descripción": "Una novela gótica que explora la naturaleza de la belleza y la decadencia...",
+    "descripcion": "Una novela gótica que explora la naturaleza de la belleza y la decadencia...",
     "fech_publicada": "2023-12-20",
     "estado": "Aprobado"
   },
@@ -195,7 +195,7 @@
     "portada": "https://acortar.link/KMLK64",
     "autor": "F. Scott Fitzgerald",
     "categoria": "literatura",
-    "descripción": "Una novela que narra la historia de Jay Gatsby, un hombre rico que busca el amor...",
+    "descripcion": "Una novela que narra la historia de Jay Gatsby, un hombre rico que busca el amor...",
     "fech_publicada": "2023-12-20",
     "estado": "Aprobado"
   },
@@ -205,7 +205,7 @@
     "portada": "http://alternativaseconomicas.coop/sites/default/files/shared/publicaciones/revistas/2014/revista12/fotos/ellobodewallstreet.jpg",
     "autor": "S. Max Bruno",
     "categoria": "literatura",
-    "descripción": "Una novela que narra la historia de Max Saavedra, un hombre rico que busca el amor...",
+    "descripcion": "Una novela que narra la historia de Max Saavedra, un hombre rico que busca el amor...",
     "fech_publicada": "2023-12-20",
     "estado": "Aprobado"
   },
@@ -215,7 +215,7 @@
     "portada": "https://acortar.link/m3QM5g",
     "autor": "F. Geomar Willy",
     "categoria": "historia",
-    "descripción": "Una novela que narra la historia de dos estudiantes de Ing. Software en busca del amor apasionado y que se ve opacada por el villano Axel con su caña Ferrari y su compinche Willy el vendedor chicha morada y gruñon...",
+    "descripcion": "Una novela que narra la historia de dos estudiantes de Ing. Software en busca del amor apasionado y que se ve opacada por el villano Axel con su caña Ferrari y su compinche Willy el vendedor chicha morada y gruñon...",
     "fech_publicada": "2023-12-20",
     "estado": "Aprobado"
   }
