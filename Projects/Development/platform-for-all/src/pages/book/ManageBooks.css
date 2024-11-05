@@ -1,0 +1,159 @@
+body, html {
+    height: 100%; /* Hacer que el contenedor principal ocupe el 100% de la altura */
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+
+.content-mbook {
+    
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.tabla-mbook {
+    
+    margin-top: 20px;
+    color: black;
+    background-color: white;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 10px;
+    overflow: hidden; /* Asegura que los bordes redondeados de la tabla se mantengan */
+}
+
+.header-table-mbook {
+    background-color: #EAECF0;
+    color: gray;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.row-header th {
+    padding: 10px;
+    border-bottom: 2px solid #D1D5DB; /* Línea debajo de cada encabezado */
+}
+
+.table-row {
+    border-bottom: 1px solid #D1D5DB; /* Bordes de fila */
+}
+
+.table-row:hover {
+    background-color: #F5F7FA; /* Efecto hover */
+}
+
+
+.search {
+    margin-top: 60px;
+    margin-bottom: 10px;
+    background-color: rgb(199, 199, 199);
+    display: flex;
+    height: 40px;
+    align-items: center;
+    border-end-end-radius: 10px;
+}
+
+.select-filter {
+    display: flex;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.filtro-drop {
+    width: 150px;
+    margin-right: 10px;
+    padding: 5px;
+    color: black;
+    background-color: white;
+}
+
+.logo-search {
+    width: 25px;
+    height: 50px;
+    color: black;
+}
+
+.input-search {
+    display: flex;
+    align-items: center;
+    
+}
+
+.input-buscar {
+    width: 705px; /* Ajustar el ancho del campo de búsqueda */
+    border-radius: 5px;
+    padding: 8px;
+    margin-left: 10px;
+    background-color: white;
+    color: black;
+}
+
+/* Paginación */
+.pagination {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #EAECF0; /* Color de fondo similar al header */
+    border-top: 1px solid #ce7676; /* Borde superior para separación */
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.pagination span {
+    font-size: 1rem;
+    color: #333;
+    font-weight: bold;
+}
+
+.controls {
+    display: flex;
+    gap: 5px;
+    background-color: #EEEEEE;
+}
+
+.button-pagination {
+    background-color: #EEEEEE;
+
+}
+
+.page-controller {
+    background: #ffffff;
+    border: 1px solid #ce7676;
+    color: #100F57;
+    font-size: 1.2rem;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.page-controller:disabled {
+    background: #dcdcdc;
+    color: #999;
+    cursor: not-allowed;
+}
+
+.page-controller:hover:not(:disabled) {
+    background: #100F57;
+    color: white;
+}
+
+/* Selector de tamaño de página */
+.pagination select {
+    background-color: white;
+    border: 1px solid #ce7676;
+    color: #100F57;
+    padding: 5px;
+    border-radius: 5px;
+    font-family: inherit;
+    font-size: 1rem;
+    width: 120px;
+    cursor: pointer;
+}
+
+.select-pagination {
+    width: '150px';
+    background-color: #ce7676;
+    display: flex;
+}
