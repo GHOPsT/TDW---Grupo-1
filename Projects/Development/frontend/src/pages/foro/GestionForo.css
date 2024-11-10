@@ -1,5 +1,32 @@
+/* GestionForo.css */
+
+/* Estilo general */
+.app-container {
+  display: flex;
+}
+
+.main-content {
+  flex: 1;
+  padding: 20px;
+  align-items: center;
+}
+
+/* Titulo */
+.title {
+  color: #333; /* Color oscuro para el texto */
+  font-size: 2rem; /* Tamaño de fuente más grande */
+  margin-bottom: 20px; /* Espacio inferior para separar del contenido siguiente */
+  font-weight: bold; /* Opcional: hacer que el texto sea negrita */
+  align-items: center;
+}
+
+h2.title {
+    color: #100F57;
+}
+
+
 /* Estilo para la tabla */
-table {
+.data-table {
   border-collapse: collapse;
   width: 100%;
   margin-top: 20px;
@@ -11,7 +38,8 @@ table {
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-th, td {
+th,
+td {
   text-align: left;
   padding: 12px 16px;
   border-bottom: 1px solid #eaeaea;
@@ -31,6 +59,7 @@ td {
   font-size: 1rem;
 }
 
+/* Hover effect para las filas */
 tr:hover td {
   background-color: #f9fafb;
   color: #000;
@@ -38,8 +67,8 @@ tr:hover td {
   transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
-/* Dropdown menu */
-.dropdown-content {
+/* Estilo para el menú desplegable */
+.dropdown-menu {
   position: absolute;
   background-color: #f9fafb;
   box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
@@ -49,7 +78,7 @@ tr:hover td {
   min-width: 160px;
 }
 
-.dropdown-content p {
+.dropdown-menu p {
   padding: 12px 16px;
   color: #333;
   font-size: 1rem;
@@ -57,11 +86,28 @@ tr:hover td {
   transition: background-color 0.3s ease-in-out;
 }
 
-.dropdown-content p:hover {
+.dropdown-menu p:hover {
   background-color: #f1f5f8;
   cursor: pointer;
 }
 
+/* Estilo para el campo de búsqueda */
+.search-input {
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #e5e7eb;
+  width: 100%;
+  max-width: 300px;
+  margin-right: 10px;
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.3);
+}
+
+/* Estilo para los botones */
 button {
   background-color: #3b82f6;
   color: #fff;
@@ -78,41 +124,64 @@ button:hover {
   background-color: #2563eb;
 }
 
-input[type="text"] {
-  padding: 10px;
+/* Estilo para las etiquetas de estado */
+.status-badge {
+  padding: 4px 8px;
   border-radius: 4px;
-  border: 1px solid #e5e7eb;
-  width: 100%;
-  max-width: 300px;
-  margin-right: 10px;
+  color: #fff;
+  font-size: 0.875rem; /* Tamaño de fuente más pequeño */
 }
 
-input[type="text"]:focus {
-  outline: none;
-  border-color: #3b82f6;
-  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.3);
+.estado-aprobado {
+  background-color: #28a745; /* Verde para aprobado */
 }
 
-.main-content {
-  padding: 20px;
+.estado-desaprobado {
+  background-color: #dc3545; /* Rojo para desaprobado */
 }
 
-.text-gray-800 {
-  color: #333;
+.estado-pendiente {
+  background-color: #ffc107; /* Amarillo para pendiente */
 }
 
-.text-indigo-800 {
+/* Estilo para las acciones de la tabla */
+.action-button {
+  background-color: transparent;
+  border: none;
+  color: #007bff;
+  cursor: pointer;
+  font-size: 1rem; /* Tamaño de fuente */
+  transition: color 0.3s; /* Transición para hover */
+}
+
+.action-button:hover {
+  color: #0056b3; /* Color al pasar el mouse */
+}
+
+/* Estilo para el contenedor del filtro */
+.filter {
+  margin-bottom: 15px; /* Espacio entre el filtro y la tabla */
+  display: flex;
+  align-items: center; /* Alinear verticalmente */
   color: #3b82f6;
 }
 
-.bg-white {
-  background-color: #ffffff;
+.filter-select {
+  margin-left: 10px; /* Espacio entre el texto y el selector */
+  border-radius: 10px;
 }
 
-.border {
-  border: 1px solid #e5e7eb;
-}
+/* Responsive Styles */
+@media (max-width: 600px) {
+  .data-table {
+    font-size: 0.9rem; /* Tamaño de fuente más pequeño para dispositivos pequeños */
+  }
 
-.rounded {
-  border-radius: 8px;
+  .search-input {
+    max-width: 100%; /* Asegurar que el campo de búsqueda ocupe todo el ancho en móviles */
+  }
+
+  button {
+    font-size: 0.8rem; /* Tamaño de fuente más pequeño para botones */
+  }
 }

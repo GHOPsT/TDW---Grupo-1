@@ -4,6 +4,7 @@ import '../../component/sidebar/sidebar.css';
 import './Foro.css';
 import { FaThumbsUp, FaThumbsDown, FaReply, FaTrash, FaUser, FaBook, FaForumbee, FaEdit, FaPlus } from 'react-icons/fa';
 import postData from '../../data/post.json'; // Importar el JSON de datos
+import Cookies from 'js-cookie'; // Importar la librería de cookies
 
 function Foro() {
   const [posts, setPosts] = useState(postData);
@@ -15,6 +16,10 @@ function Foro() {
   // New post states
   const [newPostTitle, setNewPostTitle] = useState("");
   const [newPostDescription, setNewPostDescription] = useState("");
+
+  // Obtener el nombre y correo del usuario desde las cookies
+  const nombreUsuario = Cookies.get('nombreUsuario') || 'Usuario';
+  const correoUsuario = Cookies.get('correoUsuario') || 'correo@ejemplo.com';
 
   // Paginate posts
   const indexOfLastPost = currentPage * postsPerPage;
@@ -95,8 +100,8 @@ function Foro() {
       <Sidebar
         userType="admin"
         profileImg="https://cdn.britannica.com/49/39749-050-E773E614/Max-Weber-1918.jpg"
-        name="Max Saavedra"
-        email="john.doe@example.com"
+        name={nombreUsuario} // Usar el nombre del usuario desde cookies
+        email={correoUsuario} // Usar el correo del usuario desde cookies
         links={[
           { icon: <FaUser />, title: 'Gestionar Usuario', path: '/user' },
           { icon: <FaForumbee />, title: 'Gestionar Foro', path: '/forum' },
