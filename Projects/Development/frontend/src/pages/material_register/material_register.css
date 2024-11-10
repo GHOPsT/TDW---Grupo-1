@@ -1,11 +1,14 @@
+/* material_register.css */
+
 .container {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  height: 100vh;
-  padding: 8px;
+  align-items: flex-start; /* Alinear en la parte superior */
+  height: auto; /* Ajustar altura automáticamente */
+  padding: 20px; /* Espacio adicional */
   background-color: rgb(255, 255, 255);
 }
+
 
 .left {
   display: flex;
@@ -17,73 +20,67 @@
 .right {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-start; /* Alinear al inicio */
+  align-items: flex-start; /* Alinear a la izquierda */
   flex: 1;
+  padding: 20px; /* Espacio adicional para el contenido */
+  margin-left: 40px;
 }
 
-.tittle {
-  font-size: 20px;
+.title {
+  font-size: 28px; /* Aumentar tamaño del título */
   font-weight: bold;
   margin-bottom: 15px;
-  color:rgb(0, 0, 0);
+  color: rgb(0, 0, 0);
 }
 
 .form {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  gap: 5px;
-  width: 80%;
+  align-items: flex-start; /* Alinear a la izquierda */
+  gap: 15px; /* Aumentar espaciado entre elementos */
+  width: 100%; /* Usar todo el ancho disponible */
+}
+
+.form-group {
+  width: 100%; /* Usar todo el ancho */
 }
 
 .form label {
-  font-size: 12px;
+  font-size: 14px; /* Aumentar tamaño de fuente */
   margin-bottom: 5px;
-  display: block;
-  color: black;
-  justify-content: left;
-  text-align: left;
+  color: #000;
 }
 
-.form input, .form select, .form textarea {
-  display: block;
-  padding: 10px;
-  width: 250px;
+.form input,
+.form select,
+.form textarea {
+  padding: 12px; /* Aumentar el padding para mayor comodidad */
+  width: 100%; /* Asegurarse de que todos los inputs sean del mismo tamaño */
+  max-width: 400px; /* Máximo ancho para los inputs */
   border: 1px solid #ccc;
   border-radius: 5px;
+  font-size: 16px; /* Aumentar tamaño de fuente en inputs */
 }
 
 .form textarea {
-  height: 100px;
-  resize: none;
+  height: 120px; /* Ajustar altura del textarea */
+  resize: none; /* Deshabilitar redimensionamiento */
 }
 
-.in-se {
-  max-width: 100%;
-  height: auto;
-}
-
-p {
-  color:black;
-  font-size: 12px;
-}
-
-/* Estilo del botón para añadir archivo */
 .add-file-button {
   display: flex;
-  align-items: left;
+  align-items: center;
   background-color: transparent;
   border: none;
   cursor: pointer;
   padding: 0;
   margin-top: 10px;
-  margin-bottom: 10px;
 }
 
 .button-content {
   display: flex;
-  align-items: left;
+  align-items: center;
 }
 
 .button-icon {
@@ -92,7 +89,59 @@ p {
   margin-right: 10px;
 }
 
-button span {
-  font-size: 14px;
+button {
+  background-color: #3b82f6;
+  color: #fff;
+  padding: 12px 24px; /* Aumentar tamaño del botón */
+  border-radius: 6px;
+  border: none;
+  font-size: 16px; /* Aumentar tamaño de fuente en botón */
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 10px; /* Espaciado superior para el botón */
+}
+
+button:hover {
+  background-color: #2563eb;
+}
+
+/* Estilo de la tabla */
+.materials-table {
+  margin-top: 20px;
+  width: 100%;
+}
+
+.data-table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 20px;
+  font-family: 'Arial', sans-serif;
+  font-size: 1rem;
+}
+
+th, td {
+  text-align: left;
+  padding: 12px 16px;
+  border-bottom: 1px solid #eaeaea;
+}
+
+th {
+  background-color: #f5f5f5;
   font-weight: bold;
+  text-transform: uppercase;
+  font-size: 0.875rem;
+  color: #555;
+  letter-spacing: 0.05rem;
+}
+
+td {
+  color: #333;
+  font-size: 1rem;
+}
+
+tr:hover td {
+  background-color: #f9fafb;
+  color: #000;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }

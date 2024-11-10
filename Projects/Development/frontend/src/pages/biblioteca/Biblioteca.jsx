@@ -7,6 +7,7 @@ import Carta from '../../component/carta/Carta';
 import Pagination from '../../component/pagination/Pagination';
 import { FcBusinessman, FcOpenedFolder } from "react-icons/fc";  // Importa tus íconos
 import { FaBookBible } from "react-icons/fa6";
+import Cookies from 'js-cookie';
 
 
 function Biblioteca() {
@@ -44,6 +45,11 @@ function Biblioteca() {
     setCategoryFilter(event.target.value);
   };
 
+ // Obtener el nombre y correo del usuario desde las cookies
+  const nombreUsuario = Cookies.get('nombreUsuario') || 'Usuario';
+  const correoUsuario = Cookies.get('correoUsuario') || 'correo@ejemplo.com';
+
+
   // Manejar cambios de página
   const paginate = (pageNumber) => setCurrentPage(pageNumber);
 
@@ -53,18 +59,18 @@ function Biblioteca() {
   const currentBooks = filteredData.slice(indexOfFirstBook, indexOfLastBook);
 
  const userLinks = [
-  { icon: <FcBusinessman />, title: 'Gestionar Usuario', path: '/accessibility'  },
-  { icon: <FcOpenedFolder />, title: 'Gestionar Foro', path: '/forum' },
-  { icon: <FaBookBible />, title: 'Gestionar Libros', path: '/books' },
+  { icon: <FcBusinessman />, title: 'Subir Material', path: '/material_register'  },
+  { icon: <FcOpenedFolder />, title: 'Foros', path: '/Foro' },
+  { icon: <FaBookBible />, title: 'Biblioteca', path: '/Biblioteca' },
 ];
 
   return (
     <div className="app-container">
       <Sidebar
         userType="lector"
-        profileImg="../../images/libros/user.png"  // Cambia la ruta según la ubicación en tu proyecto
-        name="John Doe"
-        email="john.doe@example.com"
+        profileImg="../../images/libros/user.png"  
+        name={nombreUsuario} // Usar el nombre del usuario desde cookies
+        email={correoUsuario} // Usar el correo del usuario desde cookies
         links={userLinks}
       />
       <div className="main-content">
