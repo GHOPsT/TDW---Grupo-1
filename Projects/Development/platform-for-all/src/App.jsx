@@ -6,12 +6,14 @@ import ManageBooks from './pages/book/ManageBooks';
 import ManageUsers from './pages/user/ManageUsers';
 import Biblioteca from './pages/book/Biblioteca';
 import Book from './pages/book/Book'; // Tomar en cuenta
+import Home from './pages/home/Home';
 
 function App() {
   return (
     <Router>
       <Routes>
         <Route path="/" element={<Landing />} />
+        <Route path="/home" element={<Home />} />
         <Route path="/register" element={<Register />} />
         <Route path="/login" element={<Login />} />
         <Route path="/managebooks" element={<ManageBooks />} />
