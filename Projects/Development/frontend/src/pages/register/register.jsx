@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import image from './images/image_register.png'; // Cambia la imagen si es necesario
-import './register.css'; // Cambia el archivo CSS si es necesario
+import image from './images/image_register.png';
+import './register.css';
+import Cookies from 'js-cookie'; // Importar Cookies
 
 const Registro = () => {
     const [nombreCompleto, setNombreCompleto] = useState('');
@@ -15,10 +16,12 @@ const Registro = () => {
     const handleRegister = () => {
         if (nombreUsuario && correo && contrasenia && confirmarContrasenia) {
             if (contrasenia === confirmarContrasenia) {
+                // Guardar el nombre del usuario en cookies
+                Cookies.set('nombreUsuario', nombreUsuario, { expires: 7 }); // Expira en 7 días
+                Cookies.set('correoUsuario', correo, { expires: 7 }); // Expira en 7 días
                 setRegistroExitoso(true);
                 setTimeout(() => {
                     navigate('/home');
-                    console.log('Registro exitoso');
                 }, 2000);
             } else {
                 alert('Las contraseñas no coinciden.');
@@ -41,9 +44,7 @@ const Registro = () => {
                 <img className='in-se' src={image} alt='Registrarse' />
             </div>
             <div className='left'>
-                <div className='tittle'>
-                    Completa el formulario
-                </div>
+                <div className='tittle'>Completa el formulario</div>
                 <div className='form'>
                     <div>
                         <label htmlFor='nombreCompleto'>Nombre Completo:</label>
@@ -82,14 +83,10 @@ const Registro = () => {
                             onChange={(e) => setConfirmarContrasenia(e.target.value)}
                         />
                     </div>
-                    <button onClick={handleRegister}>
-                        Registrar
-                    </button>
+                    <button onClick={handleRegister}>Registrar</button>
                     <div className='login'>
                         ¿Ya tienes una cuenta? {''}
-                        <span className='login-link' onClick={() => navigate('/login')}>
-                            Iniciar Sesión
-                        </span>
+                        <span className='login-link' onClick={() => navigate('/login')}>Iniciar Sesión</span>
                     </div>
                 </div>
             </div>

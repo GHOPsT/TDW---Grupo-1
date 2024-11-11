@@ -1,0 +1,30 @@
+.navbar-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.navbar-logo {
+    margin-right: 50px; /* Espacio entre el logo y los enlaces */
+}
+
+.logo-img {
+    width: 50px; /* Ajusta el tamaño del logo */
+    height: 50px;
+}
+
+.navbar-links {
+    display: flex;
+    gap: 20px; /* Espacio entre los enlaces */
+    flex-grow: 1; /* Hacer que ocupen el ancho disponible */
+    justify-content: center; /* Centra los enlaces dentro de su contenedor */
+}
+
+.nav-link {
+    text-align: center;
+    padding: 5px 10px;
+    font-size: 1rem;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+}

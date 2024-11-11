@@ -1,0 +1,101 @@
+.content-book {
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    color: black;
+}
+
+.back {
+    align-items:last baseline;
+    display: flex;
+    justify-content: flex-end; /* Alinear a la derecha */
+    margin-bottom: 16px; /* Espacio debajo del botón */
+}
+
+.back-button {
+    align-items: center; /* Alinear icono y texto verticalmente */
+    background-color: transparent; /* Fondo transparente */
+    border: none; /* Sin borde */
+    cursor: pointer; /* Cambia el cursor al pasar por encima */
+    font-size: 16px; /* Ajusta el tamaño de la fuente */
+    color: #007bff; /* Color del texto */
+}
+
+.back-button:hover {
+    text-decoration: underline; /* Subrayar al pasar el mouse */
+}
+
+
+.section-book {
+    display: flex;
+    width: 100%; /* Ocupa el 65% de la pantalla */
+    width: 1000px;
+    height: 100%;
+    height: 600px;
+    border: 1px solid #ccc; /* Agregar un borde opcional */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    overflow: hidden; /* Para evitar que los hijos se salgan */
+}
+
+.cover {
+    flex: 1; /* Ocupa un espacio igual en relación a la información */
+    position: relative; /* Necesario para posicionar la imagen */
+    overflow: hidden; /* Evita que la imagen sobresalga del contenedor */
+}
+
+.book-cover {
+    width: 100%; /* La imagen ocupa el ancho completo del contenedor */
+    height: 100%; /* La imagen ocupa la altura completa del contenedor */
+    object-fit: cover; /* Mantiene la proporción de la imagen y cubre el área del contenedor */
+    position: absolute; /* Permite que la imagen se posicione dentro del contenedor */
+    top: 0; /* Alinea la imagen al principio del contenedor */
+    left: 0; /* Alinea la imagen a la izquierda del contenedor */
+}
+
+.information-book {
+    flex: 1; /* Ocupa un espacio igual al de la portada */
+    display: flex;
+    flex-direction: column; /* Alinear elementos verticalmente */
+    justify-content: space-between; /* Espaciado entre los elementos */
+    padding: 20px; /* Espacio interno */
+}
+
+.title-book {
+    text-align: center;
+}
+
+.infor {
+    display: flex;
+    flex-direction: column; /* Alinear información verticalmente */
+}
+
+.infor h2 {
+    margin: 0; /* Eliminar margen por defecto */
+}
+
+.buttons-book {
+    display: flex;
+    justify-content: center; /* Centrar botones */
+    gap: 10px; /* Espacio entre botones */
+}
+
+.recomendations {
+    margin-top: 3px; /* Espacio encima de las recomendaciones */
+    text-align: center; /* Centrar recomendaciones */
+    width: 100%;
+}
+
+.recommendation-paper {
+    cursor: pointer; /* Cambia el cursor al pasar por encima */
+    text-align: center; /* Centra el contenido */
+    height: 100%;
+}
+
+.recommendation-cover {
+    width: 100%; /* La portada ocupa todo el contenedor */
+    height: auto; /* Mantiene la proporción */
+    max-height: 150px; /* Limita la altura máxima */
+    object-fit: cover; /* Ajusta la imagen dentro del contenedor */
+}
+

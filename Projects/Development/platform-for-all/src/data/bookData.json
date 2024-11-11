@@ -1,0 +1,222 @@
+[
+  {
+    "id": 1,
+    "titulo": "Los tres chanchitos",
+    "portada": "https://i.pinimg.com/control/564x/5c/96/2e/5c962ea8a464da68c8a53b49bcc1bf7a.jpg",
+    "autor": "Mario Vargas Llosa",
+    "categoria": "literatura",
+    "descripcion": "Un cuento clásico para niños sobre tres chanchitos que construyen casas...",
+    "fech_publicada": "2023-12-20",
+    "estado": "Aprobado"
+  },
+  {
+    "id": 2,
+    "titulo": "El Quijote",
+    "portada": "https://images.cdn1.buscalibre.com/fit-in/360x360/bd/94/bd94eec781bdbb153a654022ef70fdcb.jpg",
+    "autor": "Miguel de Cervantes",
+    "categoria": "literatura",
+    "descripcion": "Una novela épica sobre un caballero andante que lucha contra molinos de viento...",
+    "fech_publicada": "2023-12-20",
+    "estado": "Aprobado"
+  },
+  {
+    "id": 3,
+    "titulo": "Cien años de soledad",
+    "portada": "https://i.pinimg.com/564x/45/28/41/452841e9e64b532003a631606e5e12f5.jpg",
+    "autor": "Gabriel García Márquez",
+    "categoria": "literatura",
+    "descripcion": "Una novela que narra la historia de la familia Buendía en un pueblo mágico...",
+    "fech_publicada": "2023-12-20",
+    "estado": "Aprobado"
+  },
+  {
+    "id": 4,
+    "titulo": "1984",
+    "portada": "https://www.crisol.com.pe/media/catalog/product/cache/f6d2c62455a42b0d712f6c919e880845/9/7/9788418915093_vqlklll9mtfnzavx.jpg",
+    "autor": "George Orwell",
+    "categoria": "literatura",
+    "descripcion": "Una novela distópica que imagina un futuro totalitario...",
+    "fech_publicada": "2023-12-20",
+    "estado": "Aprobado"
+  },
+  {
+    "id": 5,
+    "titulo": "El señor de los anillos",
+    "portada": "https://i.pinimg.com/564x/56/e8/fe/56e8feac9405f6933c36c2f6205d9466.jpg",
+    "autor": "J.R.R. Tolkien",
+    "categoria": "literatura",
+    "descripcion": "Una épica fantasía medieval sobre la lucha entre el bien y el mal...",
+    "fech_publicada": "2023-12-20",
+    "estado": "Aprobado"
+  },
+  {
+    "id": 6,
+    "titulo": "Historia de dos ciudades",
+    "portada": "https://i.pinimg.com/564x/50/c5/ef/50c5ef8e325cdd2622281c0c3dc8dc5b.jpg",
+    "autor": "Charles Dickens",
+    "categoria": "historia",
+    "descripcion": "Una novela histórica ambientada en la Revolución Francesa...",
+    "fech_publicada": "2023-12-20",
+    "estado": "Aprobado"
+  },
+  {
+    "id": 7,
+    "titulo": "La guerra y la paz",
+    "portada": "https://semanariouniversidad.com/wp-content/uploads/2020/09/portadilla-la-guerra-y-la-paz-18.jpg",
+    "autor": "León Tolstoi",
+    "categoria": "historia",
+    "descripcion": "Una novela épica que describe la sociedad rusa durante la invasión napoleónica...",
+    "fech_publicada": "2023-12-20",
+    "estado": "Aprobado"
+  },
+  {
+    "id": 8,
+    "titulo": "Breve historia del tiempo",
+    "portada": "https://acortar.link/Hl18Oy",
+    "autor": "Stephen Hawking",
+    "categoria": "ciencia",
+    "descripcion": "Un libro de divulgación científica que explica los conceptos básicos del universo...",
+    "fech_publicada": "2023-12-20",
+    "estado": "Aprobado"
+  },
+  {
+    "id": 9,
+    "titulo": "Cosmos",
+    "portada": "https://acortar.link/ffktNa",
+    "autor": "Carl Sagan",
+    "categoria": "ciencia",
+    "descripcion": "Un libro que explora el universo y la historia de la ciencia...",
+    "fech_publicada": "2023-12-20",
+    "estado": "Aprobado"
+  },
+  {
+    "id": 10,
+    "titulo": "El gen egoísta",
+    "portada": "https://acortar.link/sgMOs5",
+    "autor": "Richard Dawkins",
+    "categoria": "ciencia",
+    "descripcion": "Un libro que explica la teoría de la selección natural desde una perspectiva genética...",
+    "fech_publicada": "2023-12-20",
+    "estado": "Aprobado"
+  },
+  {
+    "id": 11,
+    "titulo": "El código da Vinci",
+    "portada": "https://acortar.link/JBeafW",
+    "autor": "Dan Brown",
+    "categoria": "literatura",
+    "descripcion": "Una novela de misterio y suspense que gira en torno a un complot en el Vaticano...",
+    "fech_publicada": "2023-12-20",
+    "estado": "Aprobado"
+  },
+  {
+    "id": 12,
+    "titulo": "La sombra del viento",
+    "portada": "https://acortar.link/yZqS3K",
+    "autor": "Carlos Ruiz Zafón",
+    "categoria": "literatura",
+    "descripcion": "Una novela ambientada en la Barcelona de los años 40 que narra la historia de un joven...",
+    "fech_publicada": "2023-12-20",
+    "estado": "Aprobado"
+  },
+  {
+    "id": 13,
+    "titulo": "El Hobbit",
+    "portada": "https://acortar.link/Uv63n5",
+    "autor": "J.R.R. Tolkien",
+    "categoria": "literatura",
+    "descripcion": "Un cuento que precede a El señor de los anillos y narra la historia de Bilbo Bolsón...",
+    "fech_publicada": "2023-12-20",
+    "estado": "Aprobado"
+  },
+  {
+    "id": 14,
+    "titulo": "El principito",
+    "portada": "https://acortar.link/V7d7mM",
+    "autor": "Antoine de Saint-Exupéry",
+    "categoria": "literatura",
+    "descripcion": "Un cuento clásico para niños que habla sobre la amistad, el amor y la imaginación...",
+    "fech_publicada": "2023-12-20",
+    "estado": "Aprobado"
+  },
+  {
+    "id": 15,
+    "titulo": "Matar un ruiseñor",
+    "portada": "https://acortar.link/o2xJeP",
+    "autor": "Harper Lee",
+    "categoria": "literatura",
+    "descripcion": "Una novela que narra la historia de la infancia de Scout Finch en el sur de Estados Unidos...",
+    "fech_publicada": "2023-12-20",
+    "estado": "Aprobado"
+  },
+  {
+    "id": 16,
+    "titulo": "Orgullo y prejuicio",
+    "portada": "https://acortar.link/eecfge",
+    "autor": "Jane Austen",
+    "categoria": "literatura",
+    "descripcion": "Una novela romántica que narra la historia de Elizabeth Bennet y Mr. Darcy...",
+    "fech_publicada": "2023-12-20",
+    "estado": "Aprobado"
+  },
+  {
+    "id": 17,
+    "titulo": "La guerra de las galaxias",
+    "portada": "https://acortar.link/QY4XeU",
+    "autor": "George Lucas",
+    "categoria": "ciencia",
+    "descripcion": "Una saga épica de ciencia ficción que narra las aventuras de Luke Skywalker...",
+    "fech_publicada": "2023-12-20",
+    "estado": "Aprobado"
+  },
+  {
+    "id": 18,
+    "titulo": "El resplandor",
+    "portada": "https://acortar.link/hfFQUJ",
+    "autor": "Stephen King",
+    "categoria": "literatura",
+    "descripcion": "Una novela de terror que narra la historia de una familia que se muda a un hotel...",
+    "fech_publicada": "2023-12-20",
+    "estado": "Aprobado"
+  },
+  {
+    "id": 19,
+    "titulo": "El retrato de Dorian Gray",
+    "portada": "https://acortar.link/qAzxFq",
+    "autor": "Oscar Wilde",
+    "categoria": "literatura",
+    "descripcion": "Una novela gótica que explora la naturaleza de la belleza y la decadencia...",
+    "fech_publicada": "2023-12-20",
+    "estado": "Aprobado"
+  },
+  {
+    "id": 20,
+    "titulo": "El gran Gatsby",
+    "portada": "https://acortar.link/KMLK64",
+    "autor": "F. Scott Fitzgerald",
+    "categoria": "literatura",
+    "descripcion": "Una novela que narra la historia de Jay Gatsby, un hombre rico que busca el amor...",
+    "fech_publicada": "2023-12-20",
+    "estado": "Aprobado"
+  },
+  {
+    "id": 21,
+    "titulo": "El gran Max",
+    "portada": "http://alternativaseconomicas.coop/sites/default/files/shared/publicaciones/revistas/2014/revista12/fotos/ellobodewallstreet.jpg",
+    "autor": "S. Max Bruno",
+    "categoria": "literatura",
+    "descripcion": "Una novela que narra la historia de Max Saavedra, un hombre rico que busca el amor...",
+    "fech_publicada": "2023-12-20",
+    "estado": "Aprobado"
+  },
+  {
+    "id": 22,
+    "titulo": "El Kinua y La Fiorella",
+    "portada": "https://acortar.link/m3QM5g",
+    "autor": "F. Geomar Willy",
+    "categoria": "historia",
+    "descripcion": "Una novela que narra la historia de dos estudiantes de Ing. Software en busca del amor apasionado y que se ve opacada por el villano Axel con su caña Ferrari y su compinche Willy el vendedor chicha morada y gruñon...",
+    "fech_publicada": "2023-12-20",
+    "estado": "Aprobado"
+  }
+]
