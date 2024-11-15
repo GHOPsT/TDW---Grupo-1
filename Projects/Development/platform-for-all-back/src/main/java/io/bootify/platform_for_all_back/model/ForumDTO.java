@@ -11,7 +11,7 @@ import lombok.Setter;
 @Setter
 public class ForumDTO {
 
-    private Long idForum;
+    private String idForum;
 
     @Size(max = 255)
     private String titulo;

@@ -18,7 +18,7 @@ import org.springframework.data.mongodb.core.mapping.Document;
 public class Forum {
 
     @Id
-    private Long idForum;
+    private String idForum;
 
     @Size(max = 255)
     private String titulo;

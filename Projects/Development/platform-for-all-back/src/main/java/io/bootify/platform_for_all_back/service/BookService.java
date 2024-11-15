@@ -19,7 +19,7 @@ public class BookService {
     }
 
     public List<BookDTO> findAll() {
-        final List<Book> books = bookRepository.findAll(Sort.by("idBook"));
+        final List<Book> books = bookRepository.findAll(Sort.by("id"));
         return books.stream()
                 .map(book -> mapToDTO(book, new BookDTO()))
                 .toList();
@@ -31,10 +31,10 @@ public class BookService {
                 .orElseThrow(NotFoundException::new);
     }
 
-    public Long create(final BookDTO bookDTO) {
+    public String create(final BookDTO bookDTO) {
         final Book book = new Book();
         mapToEntity(bookDTO, book);
-        return bookRepository.save(book).getIdBook();
+        return bookRepository.save(book).getId();
     }
 
     public void update(final Long idBook, final BookDTO bookDTO) {
@@ -49,7 +49,7 @@ public class BookService {
     }
 
     private BookDTO mapToDTO(final Book book, final BookDTO bookDTO) {
-        bookDTO.setIdBook(book.getIdBook());
+        bookDTO.setIdBook(book.getId());
         bookDTO.setTitulo(book.getTitulo());
         bookDTO.setPortada(book.getPortada());
         bookDTO.setAutor(book.getAutor());

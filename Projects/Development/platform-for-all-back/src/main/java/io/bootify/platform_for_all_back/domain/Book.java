@@ -12,13 +12,13 @@ import org.springframework.data.annotation.Version;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 
-@Document
+@Document(collection = "libros")
 @Getter
 @Setter
 public class Book {
 
     @Id
-    private Long idBook;
+    private String id;
 
     @Size(max = 255)
     private String titulo;

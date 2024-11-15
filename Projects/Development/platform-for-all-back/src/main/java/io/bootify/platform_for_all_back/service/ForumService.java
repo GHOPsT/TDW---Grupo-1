@@ -31,7 +31,7 @@ public class ForumService {
                 .orElseThrow(NotFoundException::new);
     }
 
-    public Long create(final ForumDTO forumDTO) {
+    public String create(final ForumDTO forumDTO) {
         final Forum forum = new Forum();
         mapToEntity(forumDTO, forum);
         return forumRepository.save(forum).getIdForum();
