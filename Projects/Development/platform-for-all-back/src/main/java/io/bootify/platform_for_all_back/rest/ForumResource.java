@@ -40,8 +40,8 @@ public class ForumResource {
 
     @PostMapping
     @ApiResponse(responseCode = "201")
-    public ResponseEntity<Long> createForum(@RequestBody @Valid final ForumDTO forumDTO) {
-        final Long createdIdForum = forumService.create(forumDTO);
+    public ResponseEntity<String> createForum(@RequestBody @Valid final ForumDTO forumDTO) {
+        final String createdIdForum = forumService.create(forumDTO);
         return new ResponseEntity<>(createdIdForum, HttpStatus.CREATED);
     }
 

@@ -10,7 +10,7 @@ import lombok.Setter;
 @Setter
 public class BookDTO {
 
-    private Long idBook;
+    private String idBook;
 
     @Size(max = 255)
     private String titulo;

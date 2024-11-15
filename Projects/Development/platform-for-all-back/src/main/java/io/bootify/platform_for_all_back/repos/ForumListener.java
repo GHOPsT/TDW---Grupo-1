@@ -19,7 +19,7 @@ public class ForumListener extends AbstractMongoEventListener<Forum> {
     @Override
     public void onBeforeConvert(final BeforeConvertEvent<Forum> event) {
         if (event.getSource().getIdForum() == null) {
-            event.getSource().setIdForum(primarySequenceService.getNextValue());
+            event.getSource().setIdForum(String.valueOf(primarySequenceService.getNextValue()));
         }
     }
 

@@ -34,19 +34,19 @@ public class BookResource {
     }
 
     @GetMapping("/{idBook}")
-    public ResponseEntity<BookDTO> getBook(@PathVariable(name = "idBook") final Long idBook) {
+    public ResponseEntity<BookDTO> getBook(@PathVariable(name = "id") final Long idBook) {
         return ResponseEntity.ok(bookService.get(idBook));
     }
 
     @PostMapping
     @ApiResponse(responseCode = "201")
-    public ResponseEntity<Long> createBook(@RequestBody @Valid final BookDTO bookDTO) {
-        final Long createdIdBook = bookService.create(bookDTO);
+    public ResponseEntity<String> createBook(@RequestBody @Valid final BookDTO bookDTO) {
+        final String createdIdBook = bookService.create(bookDTO);
         return new ResponseEntity<>(createdIdBook, HttpStatus.CREATED);
     }
 
     @PutMapping("/{idBook}")
-    public ResponseEntity<Long> updateBook(@PathVariable(name = "idBook") final Long idBook,
+    public ResponseEntity<Long> updateBook(@PathVariable(name = "id") final Long idBook,
             @RequestBody @Valid final BookDTO bookDTO) {
         bookService.update(idBook, bookDTO);
         return ResponseEntity.ok(idBook);
@@ -54,7 +54,7 @@ public class BookResource {
 
     @DeleteMapping("/{idBook}")
     @ApiResponse(responseCode = "204")
-    public ResponseEntity<Void> deleteBook(@PathVariable(name = "idBook") final Long idBook) {
+    public ResponseEntity<Void> deleteBook(@PathVariable(name = "id") final Long idBook) {
         bookService.delete(idBook);
         return ResponseEntity.noContent().build();
     }
