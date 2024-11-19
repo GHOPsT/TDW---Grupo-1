@@ -17,7 +17,7 @@ body, html {
     font-family: 'Courier New', Courier, monospace;
     display: flex;
     align-items: center;
-    margin-top: 150px;
+    margin-top: 35px;
 }
 
 
@@ -76,4 +76,46 @@ body, html {
 
 .login-link:hover {
     color: darkblue;     /* Cambia de color al pasar el cursor */
+}
+
+.imagen-register {
+    position: relative; /* Necesario para que los hijos se posicionen dentro */
+    margin-left: 50px;
+    z-index: 3; /* ImgRegister debe estar encima de los rectángulos */
+}
+
+.img-register {
+    position: relative; /* Asegura que la imagen principal esté en el flujo normal */
+    z-index: 3; /* Mantiene esta imagen por encima de los rectángulos */
+}
+
+.rectangulos-register {
+    position: absolute; /* Coloca este contenedor detrás de ImgRegister */
+    top: 0; /* Ubica los rectángulos en la parte superior */
+    left: 50%; /* Centra horizontalmente con respecto al contenedor padre */
+    transform: translateX(-50%); /* Ajusta el centrado horizontal */
+    width: auto; /* Ajusta el ancho automáticamente */
+    height: auto; /* Ajusta el alto automáticamente */
+    z-index: 2; /* Asegura que esté detrás de ImgRegister */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-rectangulo1 {
+    width: 280px; /* Ajusta el tamaño según lo necesites */
+    height: 580px;
+    position: absolute; /* Superposición dentro del contenedor */
+    z-index: 1; /* Debajo de img-rectangulo2 */
+    margin-right: 150px;
+    margin-top: 275px;
+}
+
+.img-rectangulo2 {
+    width: 300px; /* Ajusta el tamaño según lo necesites */
+    height: 700px;
+    position: absolute; /* Superposición dentro del contenedor */
+    z-index: 0; /* Encima de img-rectangulo1 */
+    margin-top: 280px;
+    margin-right: 200px;
 }

@@ -2,6 +2,8 @@ import { Form, Button } from 'react-bootstrap';
 import { useNavigate } from 'react-router-dom';
 import '../login/Login.css';
 import ImgLogin from '../../assets/login-register/login-img.svg';
+import RLogin1 from '../../assets/login-register/figura-login-1.svg';
+import RLogin2 from '../../assets/login-register/figura-login-2.svg';
 
 function Login() {
 
@@ -26,7 +28,7 @@ function Login() {
                             <Form.Control 
                                 className="control-login" 
                                 type="text" 
-                                placeholder="Maxbr"
+                                placeholder="Usuario"
                             />
 
                             <Form.Label>Contraseña</Form.Label>
@@ -55,6 +57,10 @@ function Login() {
             </div>
             <div className="imagen-login">
                 <img src={ImgLogin} alt="Imagen de login" className="img-login" />
+            </div>
+            <div className='rectangule-login'>
+                <img src={RLogin2} alt="Rectangle2" className='imgLogin2'/>
+                <img src={RLogin1} alt="Rectangle1" className='imgLogin1'/>
             </div>
         </div>
     );
