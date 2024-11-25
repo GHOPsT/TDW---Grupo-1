@@ -18,7 +18,7 @@ import org.springframework.data.mongodb.core.mapping.Document;
 public class Book {
 
     @Id
-    private String id;
+    private String idBook;
 
     @Size(max = 255)
     private String titulo;

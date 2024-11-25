@@ -34,7 +34,7 @@ public class BookService {
     public String create(final BookDTO bookDTO) {
         final Book book = new Book();
         mapToEntity(bookDTO, book);
-        return bookRepository.save(book).getId();
+        return bookRepository.save(book).getIdBook();
     }
 
     public void update(final Long idBook, final BookDTO bookDTO) {
@@ -49,7 +49,7 @@ public class BookService {
     }
 
     private BookDTO mapToDTO(final Book book, final BookDTO bookDTO) {
-        bookDTO.setIdBook(book.getId());
+        bookDTO.setIdBook(book.getIdBook());
         bookDTO.setTitulo(book.getTitulo());
         bookDTO.setPortada(book.getPortada());
         bookDTO.setAutor(book.getAutor());
