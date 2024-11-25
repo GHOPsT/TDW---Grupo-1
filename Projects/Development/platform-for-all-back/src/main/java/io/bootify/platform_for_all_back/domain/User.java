@@ -13,7 +13,7 @@ import org.springframework.data.annotation.Version;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 
-@Document
+@Document(collection = "usuarios")
 @Getter
 @Setter
 public class User {
