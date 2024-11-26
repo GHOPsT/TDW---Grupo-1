@@ -18,8 +18,8 @@ public class BookListener extends AbstractMongoEventListener<Book> {
 
     @Override
     public void onBeforeConvert(final BeforeConvertEvent<Book> event) {
-        if (event.getSource().getId() == null) {
-            event.getSource().setId(String.valueOf(primarySequenceService.getNextValue()));
+        if (event.getSource().getIdBook() == null) {
+            event.getSource().setIdBook(String.valueOf(primarySequenceService.getNextValue()));
         }
     }
 

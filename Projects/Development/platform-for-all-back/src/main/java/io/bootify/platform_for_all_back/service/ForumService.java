@@ -53,7 +53,7 @@ public class ForumService {
         forumDTO.setTitulo(forum.getTitulo());
         forumDTO.setDetalles(forum.getDetalles());
         forumDTO.setTituloObra(forum.getTituloObra());
-        forumDTO.setAuthor(forum.getAuthor());
+        forumDTO.setAuthor(forum.getUsuarioCreadorId());
         forumDTO.setFechaPublicacion(forum.getFechaPublicacion());
         forumDTO.setEstado(forum.getEstado());
         forumDTO.setReporte(forum.getReporte());
@@ -64,7 +64,7 @@ public class ForumService {
         forum.setTitulo(forumDTO.getTitulo());
         forum.setDetalles(forumDTO.getDetalles());
         forum.setTituloObra(forumDTO.getTituloObra());
-        forum.setAuthor(forumDTO.getAuthor());
+        forum.setUsuarioCreadorId(forumDTO.getAuthor());
         forum.setFechaPublicacion(forumDTO.getFechaPublicacion());
         forum.setEstado(forumDTO.getEstado());
         forum.setReporte(forumDTO.getReporte());

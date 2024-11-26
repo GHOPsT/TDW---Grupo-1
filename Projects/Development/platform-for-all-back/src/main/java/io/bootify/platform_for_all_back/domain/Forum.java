@@ -12,7 +12,7 @@ import org.springframework.data.annotation.Version;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 
-@Document
+@Document (collection = "foros")
 @Getter
 @Setter
 public class Forum {
@@ -29,7 +29,7 @@ public class Forum {
     private String tituloObra;
 
     @Size(max = 255)
-    private String author;
+    private String usuarioCreadorId;
 
     private LocalTime fechaPublicacion;
 
