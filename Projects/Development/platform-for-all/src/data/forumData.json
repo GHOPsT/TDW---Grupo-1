@@ -1,191 +1,77 @@
 [
   {
-    "titulo": "¿El lobo es el bueno?",
-    "detalles": "Un libro para reflexionar...",
-    "tituloObra": "Los tres chanchitos",
-    "autor": "Mario Vargas Llosa",
-    "fecha": "01-01-2024",
-    "estado": "Aprobado",
-    "reporte": "No se permite..."
+    "id": 1,
+    "cover": "https://example.com/cover1.jpg",
+    "title": "Foro sobre Historia Romana",
+    "description": "Discusiones sobre la historia del Imperio Romano.",
+    "tags": ["Roma", "Imperio", "Historia", "Antigüedad"],
+    "author": "Julio César",
+    "profileImage": "https://example.com/profile1.jpg",
+    "timeAgo": "1 hora atrás",
+    "bookTitle": "De Bello Gallico",
+    "bookAuthor": "Julio César",
+    "comments": 15,
+    "views": 230,
+    "category": "Historia"
   },
   {
-    "titulo": "Los tres chanchitos",
-    "detalles": "Un libro para reflexionar...",
-    "tituloObra": "Los tres chanchitos",
-    "autor": "Mario Vargas Llosa",
-    "fecha": "01-01-2024",
-    "estado": "Desaprobado",
-    "reporte": "Comunismo no..."
+    "id": 2,
+    "cover": "https://example.com/cover2.jpg",
+    "title": "Foro de Fotografía de Naturaleza",
+    "description": "Comparte tus mejores fotos de la naturaleza.",
+    "tags": ["Fotografía", "Naturaleza", "Paisajes", "Animales"],
+    "author": "National Geographic",
+    "profileImage": "https://example.com/profile2.jpg",
+    "timeAgo": "3 días atrás",
+    "bookTitle": "Guía de Fotografía de Naturaleza",
+    "bookAuthor": "John Smith",
+    "comments": 52,
+    "views": 875,
+    "category": "Fotografía"
   },
   {
-    "titulo": "El Quijote: ¿Un loco o un visionario?",
-    "detalles": "Análisis de la obra de Cervantes.",
-    "tituloObra": "El Quijote",
-    "autor": "Miguel de Cervantes",
-    "fecha": "15-02-2023",
-    "estado": "Pendiente",
-    "reporte": "Excelente análisis!"
+    "id": 3,
+    "cover": "https://example.com/cover3.jpg",
+    "title": "Foro de Debate Político",
+    "description": "Debate sobre temas políticos actuales.",
+    "tags": ["Política", "Actualidad", "Debate", "Elecciones"],
+    "author": "Política Global",
+    "profileImage": "https://example.com/profile3.jpg",
+    "timeAgo": "1 semana atrás",
+    "bookTitle": "Introducción a la Ciencia Política",
+    "bookAuthor": "Jane Doe",
+    "comments": 110,
+    "views": 1500,
+    "category": "Política"
+  }, 
+  {
+    "id": 4,
+    "cover": "https://i.pinimg.com/control/564x/5c/96/2e/5c962ea8a464da68c8a53b49bcc1bf7a.jpg",
+    "title": "Foro sobre Literatura Clásica",
+    "description": "Un espacio para debatir sobre obras clásicas de la literatura mundial. Comparte tus ideas y aprende de otros lectores.",
+    "tags": ["Clásico", "Filosofía", "Novela"],
+    "author": "Mario Vargas",
+    "profileImage": "https://i.pinimg.com/564x/e8/7a/b0/e87ab0a15b2b65662020e614f7e05ef1.jpg",
+    "timeAgo": "2 horas atrás",
+    "bookTitle": "Don Quijote de la Mancha",
+    "bookAuthor": "Miguel de Cervantes",
+    "comments": 42,
+    "views": 356,
+    "category": "Literatura"
   },
   {
-    "titulo": "La metamorfosis: ¿Qué nos dice sobre la soledad?",
-    "detalles": "Interpretación de la obra de Kafka.",
-    "tituloObra": "La metamorfosis",
-    "autor": "Franz Kafka",
-    "fecha": "28-03-2023",
-    "estado": "Desaprobado",
-    "reporte": "Tema interesante, pero falta profundidad."
-  },
-  {
-    "titulo": "Cien años de soledad: Un viaje a la memoria",
-    "detalles": "Reflexiones sobre la obra de García Márquez.",
-    "tituloObra": "Cien años de soledad",
-    "autor": "Gabriel García Márquez",
-    "fecha": "10-04-2023",
-    "estado": "Desaprobado",
-    "reporte": "Excelente análisis literario."
-  },
-  {
-    "titulo": "La Odisea: Un viaje épico de regreso a casa",
-    "detalles": "Análisis de la obra de Homero.",
-    "tituloObra": "La Odisea",
-    "autor": "Homero",
-    "fecha": "22-05-2023",
-    "estado": "Desaprobado",
-    "reporte": "Excelente trabajo, muy bien documentado."
-  },
-  {
-    "titulo": "Hamlet: La tragedia de un príncipe",
-    "detalles": "Interpretación de la obra de Shakespeare.",
-    "tituloObra": "Hamlet",
-    "autor": "William Shakespeare",
-    "fecha": "05-06-2023",
-    "estado": "Desaprobado",
-    "reporte": "Excelente interpretación del texto original."
-  },
-  {
-    "titulo": "El Principito: Una reflexión sobre la amistad",
-    "detalles": "Análisis del clásico de Saint-Exupéry.",
-    "tituloObra": "El Principito",
-    "autor": "Antoine de Saint-Exupéry",
-    "fecha": "18-07-2023",
-    "estado": "Desaprobado",
-    "reporte": "Excelente análisis del lenguaje de la obra."
-  },
-  {
-    "titulo": "El amor en los tiempos del cólera: Un amor eterno",
-    "detalles": "Interpretación de la obra de García Márquez.",
-    "tituloObra": "El amor en los tiempos del cólera",
-    "autor": "Gabriel García Márquez",
-    "fecha": "01-08-2023",
-    "estado": "Desaprobado",
-    "reporte": "Excelente trabajo de investigación."
-  },
-  {
-    "titulo": "La Divina Comedia: Un viaje a través del infierno, el purgatorio y el paraíso",
-    "detalles": "Análisis de la obra de Dante Alighieri.",
-    "tituloObra": "La Divina Comedia",
-    "autor": "Dante Alighieri",
-    "fecha": "15-09-2023",
-    "estado": "Desaprobado",
-    "reporte": "Excelente trabajo de investigación."
-  },
-  {
-    "titulo": "Don Juan: El seductor por excelencia",
-    "detalles": "Interpretación de la obra de Lord Byron.",
-    "tituloObra": "Don Juan",
-    "autor": "Lord Byron",
-    "fecha": "28-10-2023",
-    "estado": "Desaprobado",
-    "reporte": "Excelente trabajo de investigación."
-  },
-  {
-    "titulo": "Anna Karenina: Un amor prohibido",
-    "detalles": "Análisis de la obra de León Tolstoi.",
-    "tituloObra": "Anna Karenina",
-    "autor": "León Tolstoi",
-    "fecha": "12-11-2023",
-    "estado": "Desaprobado",
-    "reporte": "Excelente trabajo de investigación."
-  },
-  {
-    "titulo": "Madame Bovary: Una mujer en busca de la felicidad",
-    "detalles": "Interpretación de la obra de Gustave Flaubert.",
-    "tituloObra": "Madame Bovary",
-    "autor": "Gustave Flaubert",
-    "fecha": "25-12-2023",
-    "estado": "Desaprobado",
-    "reporte": "Excelente trabajo de investigación."
-  },
-  {
-    "titulo": "Crimen y Castigo: La culpa y la redención",
-    "detalles": "Análisis de la obra de Fiódor Dostoievski.",
-    "tituloObra": "Crimen y Castigo",
-    "autor": "Fiódor Dostoievski",
-    "fecha": "07-01-2024",
-    "estado": "Desaprobado",
-    "reporte": "Excelente trabajo de investigación."
-  },
-  {
-    "titulo": "El retrato de Dorian Gray: La belleza y la decadencia",
-    "detalles": "Interpretación de la obra de Oscar Wilde.",
-    "tituloObra": "El retrato de Dorian Gray",
-    "autor": "Oscar Wilde",
-    "fecha": "21-02-2024",
-    "estado": "Desaprobado",
-    "reporte": "Excelente trabajo de investigación."
-  },
-  {
-    "titulo": "El gran Gatsby: El sueño americano y su fracaso",
-    "detalles": "Análisis de la obra de F. Scott Fitzgerald.",
-    "tituloObra": "El gran Gatsby",
-    "autor": "F. Scott Fitzgerald",
-    "fecha": "04-03-2024",
-    "estado": "Desaprobado",
-    "reporte": "Excelente trabajo de investigación."
-  },
-  {
-    "titulo": "La Rebelión en la Granja: Una fábula política",
-    "detalles": "Interpretación de la obra de George Orwell.",
-    "tituloObra": "La Rebelión en la Granja",
-    "autor": "George Orwell",
-    "fecha": "18-04-2024",
-    "estado": "Desaprobado",
-    "reporte": "Excelente trabajo de investigación."
-  },
-  {
-    "titulo": "1984: Una distopía aterradora",
-    "detalles": "Análisis de la obra de George Orwell.",
-    "tituloObra": "1984",
-    "autor": "George Orwell",
-    "fecha": "01-05-2024",
-    "estado": "Desaprobado",
-    "reporte": "Excelente trabajo de investigación."
-  },
-  {
-    "titulo": "Fahrenheit 451: Un mundo sin libros",
-    "detalles": "Interpretación de la obra de Ray Bradbury.",
-    "tituloObra": "Fahrenheit 451",
-    "autor": "Ray Bradbury",
-    "fecha": "15-06-2024",
-    "estado": "Desaprobado",
-    "reporte": "Excelente trabajo de investigación."
-  },
-  {
-    "titulo": "Un mundo feliz: Una sociedad distópica",
-    "detalles": "Análisis de la obra de Aldous Huxley.",
-    "tituloObra": "Un mundo feliz",
-    "autor": "Aldous Huxley",
-    "fecha": "29-07-2024",
-    "estado": "Desaprobado",
-    "reporte": "Excelente trabajo de investigación."
-  },
-  {
-    "titulo": "El señor de los anillos: Una épica batalla entre el bien y el mal",
-    "detalles": "Análisis de la obra de J.R.R. Tolkien.",
-    "tituloObra": "El señor de los anillos",
-    "autor": "J.R.R. Tolkien",
-    "fecha": "12-08-2024",
-    "estado": "Desaprobado",
-    "reporte": "Excelente trabajo de investigación."
+    "id": 5,
+    "cover": "https://images.cdn1.buscalibre.com/fit-in/360x360/bd/94/bd94eec781bdbb153a654022ef70fdcb.jpg",
+    "title": "Foro sobre Ciencia Ficción",
+    "description": "Debates y reflexiones sobre las mejores obras del género de ciencia ficción.",
+    "tags": ["Ciencia", "Futuro", "Espacio"],
+    "author": "Isaac Asimov",
+    "profileImage": "https://i.pinimg.com/564x/14/21/df/1421df1189c418b802f918ed7dac6272.jpg",
+    "timeAgo": "5 días atrás",
+    "bookTitle": "Fundación",
+    "bookAuthor": "Isaac Asimov",
+    "comments": 65,
+    "views": 1200,
+    "category": "Ciencia Ficción"
   }
 ]

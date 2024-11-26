@@ -1,4 +1,65 @@
-.pruebahome {
-    color: black;
+/* Home.css */
+.home-container {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Asegura que ocupe toda la pantalla */
+    background-color: #f4f4f4; /* Fondo gris claro */
+    color: #333; /* Color de texto oscuro */
+    font-family: 'Arial', sans-serif; /* Fuente limpia y moderna */
+}
+
+.welcome-message {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #2a2a2a;
+    margin-bottom: 20px;
+}
+
+.buttons-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px; /* Espacio entre los botones */
+}
+
+.home-button {
+    background-color: #007bff; /* Color de fondo azul */
+    color: white; /* Color de texto blanco */
+    padding: 12px 25px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    width: 250px; /* Ancho consistente para los botones */
+}
+
+.home-button:hover {
+    background-color: #0056b3; /* Cambio a un azul más oscuro al pasar el mouse */
+    transform: scale(1.05); /* Efecto de escalado al pasar el mouse */
+}
+
+.home-button:focus {
+    outline: none; /* Eliminar el borde por defecto al hacer clic */
+}
+
+@media (max-width: 600px) {
+    .home-container {
+        padding: 10px; /* Añadir un poco de espacio en pantallas pequeñas */
+    }
+
+    h1 {
+        font-size: 1.8rem; /* Ajustar el tamaño de la fuente en dispositivos pequeños */
+    }
+
+    .home-button {
+        width: 100%; /* Hacer que los botones ocupen todo el ancho en pantallas pequeñas */
+    }
 }

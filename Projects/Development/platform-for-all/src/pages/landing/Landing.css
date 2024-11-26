@@ -1,13 +1,7 @@
-body, html {
-    height: 100%; /* Hacer que el contenedor principal ocupe el 100% de la altura */
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-}
+
 
 .content-landing {
     align-items: center;
-    flex-direction: column;
     display: grid;
     background-color: aquamarine;
     min-height: 100dvh;
@@ -38,6 +32,10 @@ body, html {
     border-radius: 10px;
 }
 
+.buttonsession {
+    background-color: #0A92DD;
+}
+
 .boton-sesion-landing {
     background-color: blue;
     color: white;
@@ -64,7 +62,7 @@ body, html {
 .inicio-landing {
     background-color: #100F57;
     width: 100%;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Kumbh Sans', Courier, monospace;
     
     box-sizing: border-box;
     .titulo-inicio {

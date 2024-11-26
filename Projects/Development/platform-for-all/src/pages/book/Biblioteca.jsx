@@ -96,7 +96,7 @@ function Biblioteca() {
                       <img src={book.cover} alt={book.title} className="book-cover" />
                       <p className="book-category">{book.category}</p>
                       <p className="book-title">{book.title}</p>
-                      <Button onClick={() => navigate(`/biblioteca/book/${book.id}`)}>Ver Detalles</Button>
+                      <Button className='buttondetail' onClick={() => navigate(`/biblioteca/book/${book.id}`)}>Aprender</Button>
                     </Paper>
                   </Grid>
                 ))}

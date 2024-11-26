@@ -48,7 +48,7 @@
     width: 100%; /* La imagen ocupa el ancho completo del contenedor */
     height: 100%; /* La imagen ocupa la altura completa del contenedor */
     object-fit: cover; /* Mantiene la proporción de la imagen y cubre el área del contenedor */
-    position: absolute; /* Permite que la imagen se posicione dentro del contenedor */
+    
     top: 0; /* Alinea la imagen al principio del contenedor */
     left: 0; /* Alinea la imagen a la izquierda del contenedor */
 }

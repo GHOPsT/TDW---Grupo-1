@@ -66,8 +66,8 @@ function Landing() {
                     />
                 </div>
                 <div className="button-container">
-                    <button>
-                        <Button title="Iniciar Sesión" variant="link" href="/login" />
+                    <button >
+                        <Button className="buttonsession" title="Iniciar Sesión" variant="link" href="/login" />
                     </button>
                 </div>
             </div>
