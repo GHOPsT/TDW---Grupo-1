@@ -1,0 +1,164 @@
+/* General styles */
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 0;
+}
+
+.mainonlyforum {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    background: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Author Forum Styles */
+.onlyforo {
+    margin-bottom: 20px;
+}
+
+.authorforum {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 20px;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.profile img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.profile span {
+    font-size: 14px;
+    color: #555;
+}
+
+.authorforum span:last-child {
+    font-size: 12px;
+    color: #999;
+}
+
+/* Forum Content Styles */
+.forum {
+    margin-bottom: 20px;
+}
+
+.forum h1 {
+    font-size: 24px;
+    color: #222;
+    margin-bottom: 10px;
+}
+
+.contentforum {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    color: #444;
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.tags .tag {
+    font-size: 12px;
+    color: #007bff;
+    background-color: #eaf4ff;
+    padding: 5px 10px;
+    border-radius: 12px;
+    cursor: default;
+}
+
+/* Answer Section */
+.toanswer {
+    margin-bottom: 20px;
+}
+
+.toanswer .field textarea {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    resize: none;
+}
+
+.toanswer .buttonsforum {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.buttonsforum button {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.buttonsforum button:first-child {
+    background-color: #ddd;
+    color: #555;
+}
+
+.buttonsforum button:last-child {
+    background-color: #007bff;
+    color: white;
+}
+
+.buttonsforum button:hover {
+    opacity: 0.9;
+}
+
+/* Comments Section */
+.answers {
+    margin-top: 20px;
+}
+
+.usersrespond {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+    padding: 15px;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    background-color: #fafafa;
+}
+
+.profileuserrespond img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.datetime {
+    font-size: 12px;
+    color: #999;
+}
+
+.contentanswer {
+    font-size: 14px;
+    color: #555;
+    margin-top: 5px;
+}
