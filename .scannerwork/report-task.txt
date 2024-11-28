@@ -1,0 +1,6 @@
+projectKey=TWD_GRUPO1
+serverUrl=http://localhost:9000
+serverVersion=9.9.7.96285
+dashboardUrl=http://localhost:9000/dashboard?id=TWD_GRUPO1
+ceTaskId=AZNv616o8-oDOZhD5vc6
+ceTaskUrl=http://localhost:9000/api/ce/task?id=AZNv616o8-oDOZhD5vc6
