@@ -1,0 +1,6 @@
+projectKey=TWD-BACKEND
+serverUrl=http://localhost:9000
+serverVersion=9.9.7.96285
+dashboardUrl=http://localhost:9000/dashboard?id=TWD-BACKEND
+ceTaskId=AZN5j8rxizrpgvGQsPVi
+ceTaskUrl=http://localhost:9000/api/ce/task?id=AZN5j8rxizrpgvGQsPVi
