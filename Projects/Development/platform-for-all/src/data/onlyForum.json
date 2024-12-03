@@ -1,0 +1,30 @@
+[
+    {
+        "id": 4,
+        "cover": "https://i.pinimg.com/736x/95/75/df/9575df6180c72bb26c0baa0b08372492.jpg",
+        "title": "Foro sobre Historia Romana",
+        "content": "Este foro se centra en explorar eventos clave, personajes históricos y temas relevantes de la historia del Imperio Romano.",
+        "tags": ["Roma", "Historia", "Antigüedad"],
+        "author": "Julio César",
+        "profileImage": "https://i.pinimg.com/736x/b3/89/41/b38941f434af85e7f752fe77bffa41d6.jpg",
+        "timeAgo": "1 hora atrás",
+        "comments": [
+            {
+                "user": "Marco Aurelio",
+                "profileImage": "https://i.pinimg.com/736x/21/13/0d/21130d15519df19ac1aadb848a380233.jpg",
+                "date": "Hace 20 minutos",
+                "content": "¡Gran tema! Siempre he admirado a Julio César por su liderazgo.",
+                "likes": 5,
+                "dislikes": 0
+            },
+            {
+                "user": "Cleopatra",
+                "profileImage": "https://i.pinimg.com/736x/0f/2f/6b/0f2f6be902912c623cfd2fd812285479.jpg",
+                "date": "Hace 1 hora",
+                "content": "El Imperio Romano cambió el curso de la historia, fascinante.",
+                "likes": 8,
+                "dislikes": 1
+            }
+        ]
+    }
+]

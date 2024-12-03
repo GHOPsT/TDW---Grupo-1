@@ -1,0 +1,125 @@
+.mainforo {
+    display: flex;
+    flex-direction: column;
+    background-color: #f9f9f9;
+    color: #333;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.filtro {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.filtro select,
+.filtro input {
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+.filtro button {
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.filtro button:hover {
+    background-color: #218838;
+}
+
+.forums {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    overflow-y: auto;
+    max-height: 500px;
+}
+
+.rowforum {
+    display: flex;
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    gap: 20px;
+}
+
+.coverforum img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.descriptionforum h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.descriptionforum p {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.tags .tag {
+    display: inline-block;
+    background-color: #e9ecef;
+    color: #007bff;
+    padding: 5px 10px;
+    border-radius: 12px;
+    font-size: 12px;
+    margin-right: 5px;
+}
+
+.authorforum .profile {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.authorforum img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.commits {
+    display: flex;
+    flex-direction: column;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    gap: 10px;
+}
+
+.pagination button {
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.pagination button:hover {
+    background-color: #0056b3;
+}
