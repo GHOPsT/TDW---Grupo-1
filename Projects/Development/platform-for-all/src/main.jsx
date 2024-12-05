@@ -4,6 +4,7 @@ import { BrowserRouter as Router } from 'react-router-dom';
 import { AuthProvider } from './contexts/AuthContext.jsx';
 import './index.css';
 import App from './App.jsx';
+import "./app/firebase.js";
 
 const rootElement = document.getElementById('root');
 
@@ -16,7 +17,7 @@ if (rootElement) {
         <AuthProvider>
           <App />
         </AuthProvider>
-      </Router>
+      </Router> 
     </StrictMode>
   );
 } else {
