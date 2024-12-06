@@ -14,3 +14,19 @@
 - **Gestión administrativa**:
   - Moderación de usuarios, foros y material publicado.
   - Herramientas para asegurar la calidad del contenido.
+## Herramientas empleadas
+-**Frontend**
+  -React
+  -HTML
+  -CSS
+  -Figma
+-**Backend**
+  -Java
+-**Base de datos**
+  -Mongo DB Atlas
+-**Pruebas**
+  -Sonarqube
+  -Selenium
+  -OWASP ZAP
+-**Despliegue**
+  -Google Cloud Platform
