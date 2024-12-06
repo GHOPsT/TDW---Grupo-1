@@ -15,18 +15,18 @@
   - Moderación de usuarios, foros y material publicado.
   - Herramientas para asegurar la calidad del contenido.
 ## Herramientas empleadas
--**Frontend**
+-**Frontend**:
   -React
   -HTML
   -CSS
   -Figma
--**Backend**
+-**Backend**:
   -Java
--**Base de datos**
+-**Base de datos**:
   -Mongo DB Atlas
--**Pruebas**
+-**Pruebas**:
   -Sonarqube
   -Selenium
   -OWASP ZAP
--**Despliegue**
+-**Despliegue**:
   -Google Cloud Platform
