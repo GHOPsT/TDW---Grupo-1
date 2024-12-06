@@ -1,10 +1,15 @@
+.sidebar-biblioteca{
+  padding-right: 100px;
+  padding-left: 20px;
+}
+
 .content-bookstore {
   display: flex;
-  flex-direction: column;
   font-family: 'Montserrat', sans-serif;
   background: linear-gradient(to bottom, #EAF4FC, #F4F9FF);
   color: #252B42;
   padding: 5px;
+  width: 100vw;
 }
 
 .title {
@@ -19,13 +24,13 @@
   justify-content: center;
   align-items: center;
   gap: 1.5rem;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .select-filter, .filtro-drop {
   width: 220px;
   height: 40px;
-  border: 1px solid #152259;
+  border: 1px solid #ffffff;
   border-radius: 5px;
   padding: 0 10px;
   font-size: 0.9rem;
@@ -35,7 +40,7 @@
 .input-search, .input-buscar {
   flex-grow: 1;
   height: 40px;
-  border: 1px solid #152259;
+  border: 1px solid #fdfdfd;
   border-radius: 5px;
   padding: 0 15px;
   font-size: 1rem;
@@ -49,7 +54,7 @@
 
 .book-item {
   text-align: center;
-  padding: 15px;
+  padding: 20px;
   font-size: 1rem;
   font-weight: bold;
   color: #333;
@@ -57,7 +62,7 @@
   border-radius: 8px;
   box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  height: 340px;
+  height: 290px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -78,13 +83,13 @@
 .book-category {
   font-size: 0.9rem;
   color: #509CDB;
-  margin-top: 10px;
+  margin-top: 2px;
 }
 
 .book-title {
   font-size: 1.1rem;
   color: #152259;
-  margin-top: 5px;
+  margin-top: 1px;
 }
 
 .buttondetail {
@@ -129,7 +134,6 @@
 .button-pagination:hover:not(:disabled) {
   background-color: #509CDB;
 }
-
 
 
 /* Paginación responsive */

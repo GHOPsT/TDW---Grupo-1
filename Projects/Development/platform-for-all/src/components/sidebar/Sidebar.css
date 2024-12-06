@@ -1,0 +1,67 @@
+.sidebar-container {
+    width: 250px;
+    height: 93vh;
+    background-color: #283747; /* Color de fondo */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px 10px;
+    color: #ffffff; /* Color de texto */
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Usuario */
+.sidebar-user {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.sidebar-icon-profile {
+    font-size: 40px;
+    margin-right: 10px;
+    color: #f7dc6f; /* Color del ícono */
+}
+
+.sidebar-username {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Opciones */
+.sidebar-options {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.sidebar-item {
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.sidebar-item:hover {
+    background-color: #34495e; /* Color hover */
+}
+
+.sidebar-icon {
+    font-size: 20px;
+    margin-right: 10px;
+    color: #f7dc6f; /* Color del ícono */
+}
+
+/* Salir */
+.sidebar-logout {
+    margin-top: auto;
+    background-color: #c0392b;
+    color: white;
+    font-weight: bold;
+}
+
+.sidebar-logout:hover {
+    background-color: #e74c3c; /* Color hover para salir */
+}

@@ -6,8 +6,9 @@
     font-family: 'Montserrat', sans-serif;
     padding: 20px;
     background-color: #F4F9FF;
-    min-height: 100vh;
     gap: 20px;
+    width: 50vw;
+    height: 90vh;
 }
 
 .back {
@@ -54,7 +55,7 @@
     align-items: center;
 }
 
-.book-cover {
+.book-cover-only {
     max-width: 100%;
     max-height: 400px;
     border-radius: 8px;

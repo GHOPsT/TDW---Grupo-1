@@ -1,9 +1,18 @@
 /* Contenedor principal */
 .content-mbook {
-  padding: 20px;
+  padding: 10px;
   background-color: #f7f9fc;
   font-family: 'Kumbh Sans', sans-serif;
   color: #333;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  align-items: center;
+}
+
+.sidebarlibros{
+  padding-right: 100px;
+  padding-left: 30px;
 }
 
 /* Estilo de la barra de búsqueda */

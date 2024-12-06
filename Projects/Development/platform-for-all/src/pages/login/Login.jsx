@@ -7,7 +7,7 @@ import { useAuth } from '../../contexts/AuthContext';
 import RLogin1 from '../../assets/login-register/figura-login-1.svg';
 import RLogin2 from '../../assets/login-register/figura-login-2.svg';
 
-function Login () {
+function Login() {
   const navigate = useNavigate();
   const { login } = useAuth();
   const [username, setUsername] = useState('');
@@ -22,35 +22,26 @@ function Login () {
     e.preventDefault();
 
     try {
-        // Cargar el archivo JSON con los usuarios
-        const response = await fetch('/src/data/userData.json');
+      const response = await fetch('/src/data/userData.json');
 
-        if (!response.ok) {
+      if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`);
-        }
+      }
 
-        const users = await response.json();
+      const users = await response.json();
+      const user = users.find((u) => u.username === username && u.password === password);
 
-        console.log('Datos cargados:', users);
-
-        // Buscar al usuario en el JSON
-        const user = users.find(
-            (u) => u.username === username && u.password === password
-            
-        );
-
-        if (user) {
-                login();
-                navigate('/home');
-            } else {
-                setError('Usuario o contraseña incorrectos');
-        }
+      if (user) {
+        login(); // Autenticar usuario
+        navigate('/home');
+      } else {
+        setError('Usuario o contraseña incorrectos');
+      }
     } catch (err) {
-        console.error('Error al cargar los datos de usuario:', err);
-        setError('Error al validar usuario');
+      console.error('Error al cargar los datos de usuario:', err);
+      setError('Error al validar usuario');
     }
-    };
-
+  };
 
   return (
     <div className="login-content">
@@ -71,7 +62,6 @@ function Login () {
                 value={username}
                 onChange={(e) => setUsername(e.target.value)}
               />
-
               <Form.Label>Contraseña</Form.Label>
               <Form.Control
                 className="control-login"
@@ -80,7 +70,6 @@ function Login () {
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
               />
-
               <Button type="submit" className="button-submit">
                 Iniciar Sesión
               </Button>
