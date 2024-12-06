@@ -1,0 +1,16 @@
+.input-search {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.logo-search {
+  font-size: 1.2rem;
+  color: #007bff;
+  margin-right: 5px;
+}
+
+.filtro-drop {
+  margin-right: 10px;
+  padding: 5px;
+}

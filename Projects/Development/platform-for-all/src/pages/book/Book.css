@@ -1,101 +1,162 @@
-.content-book {
+.content-book-id {
     align-items: center;
-    flex-direction: column;
     display: flex;
-    color: black;
+    flex-direction: column;
+    color: #333;
+    font-family: 'Montserrat', sans-serif;
+    padding: 20px;
+    background-color: #F4F9FF;
+    min-height: 100vh;
+    gap: 20px;
 }
 
 .back {
-    align-items:last baseline;
     display: flex;
-    justify-content: flex-end; /* Alinear a la derecha */
-    margin-bottom: 16px; /* Espacio debajo del botón */
+    justify-content: flex-start;
+    width: 100%;
 }
 
 .back-button {
-    align-items: center; /* Alinear icono y texto verticalmente */
-    background-color: transparent; /* Fondo transparente */
-    border: none; /* Sin borde */
-    cursor: pointer; /* Cambia el cursor al pasar por encima */
-    font-size: 16px; /* Ajusta el tamaño de la fuente */
-    color: #007bff; /* Color del texto */
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    color: #007BFF;
+    font-size: 16px;
+    cursor: pointer;
+    gap: 5px;
+    transition: color 0.3s ease;
 }
 
 .back-button:hover {
-    text-decoration: underline; /* Subrayar al pasar el mouse */
+    color: #0056b3;
+    text-decoration: underline;
 }
-
 
 .section-book {
     display: flex;
-    width: 100%; /* Ocupa el 65% de la pantalla */
-    width: 1000px;
-    height: 100%;
-    height: 600px;
-    border: 1px solid #ccc; /* Agregar un borde opcional */
-    border-radius: 8px; /* Bordes redondeados */
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
-    overflow: hidden; /* Para evitar que los hijos se salgan */
+    width: 100%;
+    max-width: 1000px;
+    height: auto;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    background-color: #FFFFFF;
+    overflow: hidden;
+    gap: 20px;
 }
 
 .cover {
-    flex: 1; /* Ocupa un espacio igual en relación a la información */
-    position: relative; /* Necesario para posicionar la imagen */
-    overflow: hidden; /* Evita que la imagen sobresalga del contenedor */
+    flex: 1;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .book-cover {
-    width: 100%; /* La imagen ocupa el ancho completo del contenedor */
-    height: 100%; /* La imagen ocupa la altura completa del contenedor */
-    object-fit: cover; /* Mantiene la proporción de la imagen y cubre el área del contenedor */
-    
-    top: 0; /* Alinea la imagen al principio del contenedor */
-    left: 0; /* Alinea la imagen a la izquierda del contenedor */
+    max-width: 100%;
+    max-height: 400px;
+    border-radius: 8px;
+    object-fit: cover;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .information-book {
-    flex: 1; /* Ocupa un espacio igual al de la portada */
+    flex: 1;
+    padding: 20px;
     display: flex;
-    flex-direction: column; /* Alinear elementos verticalmente */
-    justify-content: space-between; /* Espaciado entre los elementos */
-    padding: 20px; /* Espacio interno */
+    flex-direction: column;
+    gap: 20px;
+    justify-content: space-between;
 }
 
 .title-book {
+    font-size: 1.8rem;
+    color: #152259;
+    margin-bottom: 10px;
     text-align: center;
 }
 
 .infor {
     display: flex;
-    flex-direction: column; /* Alinear información verticalmente */
+    flex-direction: column;
+    gap: 10px;
 }
 
-.infor h2 {
-    margin: 0; /* Eliminar margen por defecto */
+.infor p {
+    margin: 0;
+    font-size: 1rem;
+    color: #555;
 }
 
 .buttons-book {
     display: flex;
-    justify-content: center; /* Centrar botones */
-    gap: 10px; /* Espacio entre botones */
+    justify-content: center;
+    gap: 15px;
+}
+
+.buttons-book button {
+    background-color: #152259;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.buttons-book button:hover {
+    background-color: #509CDB;
 }
 
 .recomendations {
-    margin-top: 3px; /* Espacio encima de las recomendaciones */
-    text-align: center; /* Centrar recomendaciones */
+    text-align: center;
     width: 100%;
 }
 
 .recommendation-paper {
-    cursor: pointer; /* Cambia el cursor al pasar por encima */
-    text-align: center; /* Centra el contenido */
-    height: 100%;
+    cursor: pointer;
+    text-align: center;
+    padding: 10px;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: #FFFFFF;
+}
+
+.recommendation-paper:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
 .recommendation-cover {
-    width: 100%; /* La portada ocupa todo el contenedor */
-    height: auto; /* Mantiene la proporción */
-    max-height: 150px; /* Limita la altura máxima */
-    object-fit: cover; /* Ajusta la imagen dentro del contenedor */
+    width: 100%;
+    height: auto;
+    max-height: 150px;
+    border-radius: 8px;
+    object-fit: cover;
 }
 
+.action-bar {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.action-button {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color: #EAF4FC;
+    border: 1px solid #152259;
+    border-radius: 5px;
+    padding: 8px 12px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.action-button:hover {
+    background-color: #D0E9FC;
+}

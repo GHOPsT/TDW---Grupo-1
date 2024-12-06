@@ -1,164 +1,228 @@
-/* General styles */
+/* Global Styles */
 body {
-    font-family: 'Arial', sans-serif;
-    color: #333;
-    background-color: #f7f7f7;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f9;
     margin: 0;
     padding: 0;
 }
 
 .mainonlyforum {
-    padding: 20px;
-    max-width: 800px;
-    margin: 0 auto;
-    background: white;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 30px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
 }
 
-/* Author Forum Styles */
+/* Header */
 .onlyforo {
-    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 .authorforum {
     display: flex;
     align-items: center;
     gap: 16px;
-    margin-bottom: 20px;
-    padding: 10px 0;
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
 }
 
 .profile {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 12px;
 }
 
 .profile img {
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
     object-fit: cover;
 }
 
 .profile span {
-    font-size: 14px;
-    color: #555;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
 }
 
 .authorforum span:last-child {
-    font-size: 12px;
-    color: #999;
+    font-size: 14px;
+    color: #888;
 }
 
-/* Forum Content Styles */
+/* Forum Content */
 .forum {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .forum h1 {
-    font-size: 24px;
-    color: #222;
-    margin-bottom: 10px;
+    font-size: 28px;
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 15px;
+    line-height: 1.4;
 }
 
 .contentforum {
     font-size: 16px;
-    line-height: 1.6;
-    margin-bottom: 15px;
-    color: #444;
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    text-align: justify;
 }
 
 .tags {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 12px;
+    margin-top: 15px;
 }
 
 .tags .tag {
-    font-size: 12px;
+    font-size: 14px;
     color: #007bff;
     background-color: #eaf4ff;
-    padding: 5px 10px;
-    border-radius: 12px;
-    cursor: default;
+    padding: 6px 12px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.tags .tag:hover {
+    background-color: #007bff;
+    color: #fff;
 }
 
 /* Answer Section */
 .toanswer {
-    margin-bottom: 20px;
+    margin-top: 30px;
+    border-top: 1px solid #e0e0e0;
+    padding-top: 20px;
 }
 
 .toanswer .field textarea {
     width: 100%;
-    height: 100px;
-    padding: 10px;
-    font-size: 14px;
+    padding: 12px;
+    font-size: 16px;
     border: 1px solid #ddd;
     border-radius: 8px;
     resize: none;
+    margin-bottom: 15px;
 }
 
 .toanswer .buttonsforum {
     display: flex;
     justify-content: flex-end;
-    gap: 10px;
-    margin-top: 10px;
+    gap: 20px;
 }
 
 .buttonsforum button {
-    padding: 8px 16px;
-    border: none;
-    border-radius: 5px;
-    font-size: 14px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 6px;
     cursor: pointer;
+    transition: all 0.3s;
+    display: flex;
+    align-items: center;
+    gap: 8px;
 }
 
 .buttonsforum button:first-child {
-    background-color: #ddd;
+    background-color: #f1f1f1;
     color: #555;
+    border: 1px solid #ddd;
 }
 
 .buttonsforum button:last-child {
     background-color: #007bff;
     color: white;
+    border: none;
 }
 
 .buttonsforum button:hover {
     opacity: 0.9;
 }
 
+.buttonsforum button:first-child:hover {
+    background-color: #e0e0e0;
+}
+
+.buttonsforum button:last-child:hover {
+    background-color: #0056b3;
+}
+
 /* Comments Section */
 .answers {
-    margin-top: 20px;
+    margin-top: 40px;
 }
 
 .usersrespond {
     display: flex;
-    gap: 10px;
-    margin-bottom: 15px;
-    padding: 15px;
-    border: 1px solid #eee;
+    gap: 15px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #e0e0e0;
     border-radius: 8px;
-    background-color: #fafafa;
+    margin-bottom: 20px;
 }
 
 .profileuserrespond img {
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
     object-fit: cover;
 }
 
 .datetime {
     font-size: 12px;
-    color: #999;
+    color: #aaa;
+    margin-top: 5px;
 }
 
 .contentanswer {
     font-size: 14px;
-    color: #555;
-    margin-top: 5px;
+    color: #444;
+    margin-top: 10px;
+}
+
+.answeractions {
+    margin-top: 10px;
+    display: flex;
+    gap: 15px;
+    font-size: 14px;
+    color: #007bff;
+    cursor: pointer;
+}
+
+.answeractions span:hover {
+    text-decoration: underline;
+}
+
+.answeractions .icon {
+    margin-right: 6px;
+}
+
+/* Media Query for Mobile Responsiveness */
+@media (max-width: 768px) {
+    .mainonlyforum {
+        padding: 20px;
+    }
+
+    .profile img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .forum h1 {
+        font-size: 24px;
+    }
+
+    .contentforum {
+        font-size: 14px;
+    }
 }
