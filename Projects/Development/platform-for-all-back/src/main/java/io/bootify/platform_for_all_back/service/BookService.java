@@ -57,6 +57,7 @@ public class BookService {
         bookDTO.setDescripcion(book.getDescripcion());
         bookDTO.setFechaPublicacion(book.getFechaPublicacion());
         bookDTO.setStatus(book.getStatus());
+        bookDTO.setSource(book.getSource());
         return bookDTO;
     }
 
@@ -68,6 +69,7 @@ public class BookService {
         book.setDescripcion(bookDTO.getDescripcion());
         book.setFechaPublicacion(bookDTO.getFechaPublicacion());
         book.setStatus(bookDTO.getStatus());
+        book.setSource(bookDTO.getSource());
         return book;
     }
 

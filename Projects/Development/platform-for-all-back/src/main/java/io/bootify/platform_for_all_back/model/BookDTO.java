@@ -31,4 +31,5 @@ public class BookDTO {
     @Size(max = 10)
     private String status;
 
+    private String source;
 }
