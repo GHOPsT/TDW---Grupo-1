@@ -1,65 +1,96 @@
-/* Home.css */
+:root {
+    --primary-color: #100F57;
+    --secondary-color: #FFC107;
+    --text-color: #FFFFFF;
+    --background-color: #1A1A40; /* Fondo oscuro */
+    --button-hover-color: #E0E0E0;
+}
+
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
 .home-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh; /* Asegura que ocupe toda la pantalla */
-    background-color: #f4f4f4; /* Fondo gris claro */
-    color: #333; /* Color de texto oscuro */
-    font-family: 'Arial', sans-serif; /* Fuente limpia y moderna */
+    padding: 20px;
 }
 
-.welcome-message {
+/* Banner */
+.banner {
+    width: 100%;
+    max-height: 300px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.banner-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Header */
+.header {
     text-align: center;
     margin-bottom: 30px;
 }
 
-h1 {
+.header-title {
+    color: var(--primary-color);
     font-size: 2.5rem;
-    font-weight: bold;
-    color: #2a2a2a;
-    margin-bottom: 20px;
+    margin: 0;
 }
 
-.buttons-container {
+.header-subtitle {
+    color: var(--secondary-color);
+    font-size: 1.2rem;
+    margin-top: 5px;
+}
+
+/* Botones */
+.buttons-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    width: 100%;
+    max-width: 800px;
+}
+
+.button-card {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 15px; /* Espacio entre los botones */
-}
-
-.home-button {
-    background-color: #007bff; /* Color de fondo azul */
-    color: white; /* Color de texto blanco */
-    padding: 12px 25px;
-    font-size: 1.2rem;
-    border: none;
-    border-radius: 8px;
+    justify-content: center;
+    padding: 15px;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-    width: 250px; /* Ancho consistente para los botones */
+    transition: transform 0.2s ease, background-color 0.2s ease;
 }
 
-.home-button:hover {
-    background-color: #0056b3; /* Cambio a un azul más oscuro al pasar el mouse */
-    transform: scale(1.05); /* Efecto de escalado al pasar el mouse */
+.button-card:hover {
+    transform: translateY(-5px);
+    background-color: var(--button-hover-color);
+    color: var(--primary-color);
 }
 
-.home-button:focus {
-    outline: none; /* Eliminar el borde por defecto al hacer clic */
+.button-icon {
+    font-size: 2rem;
+    margin-bottom: 10px;
 }
 
-@media (max-width: 600px) {
-    .home-container {
-        padding: 10px; /* Añadir un poco de espacio en pantallas pequeñas */
-    }
-
-    h1 {
-        font-size: 1.8rem; /* Ajustar el tamaño de la fuente en dispositivos pequeños */
-    }
-
-    .home-button {
-        width: 100%; /* Hacer que los botones ocupen todo el ancho en pantallas pequeñas */
-    }
+/* Footer */
+.footer {
+    margin-top: 40px;
+    text-align: center;
+    color: var(--secondary-color);
+    font-size: 0.9rem;
 }
