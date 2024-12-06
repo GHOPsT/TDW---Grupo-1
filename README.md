@@ -16,17 +16,22 @@
   - Herramientas para asegurar la calidad del contenido.
 ## Herramientas empleadas
 - **Frontend**:
-  -React
-  -HTML
-  -CSS
-  -Figma
+  - React
+  - HTML
+  - CSS
+  - Figma
 - **Backend**:
-  -Java
+  - Java
 - **Base de datos**:
-  -Mongo DB Atlas
+  - Mongo DB Atlas
 - **Pruebas**:
-  -Sonarqube
-  -Selenium
-  -OWASP ZAP
+  - Sonarqube
+  - Selenium
+  - OWASP ZAP
 - **Despliegue**:
-  -Google Cloud Platform
+  - Google Cloud Platform
+## Datos de la web:
+- Creación de cuenta
+- Selección de preferencias
+- Seguir y participar en foros
+- Busqueda de textos diversos
