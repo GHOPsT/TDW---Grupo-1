@@ -1,14 +1,21 @@
 import { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import Cookies from 'js-cookie';
 import api from '../../axios';
 import './Home.css';
-import { FaBook, FaUserAlt, FaUsers, FaClipboardList } from 'react-icons/fa'; // Importación de íconos
+import { FaBook, FaUserAlt, FaUsers, FaClipboardList } from 'react-icons/fa';
 
 function Home() {
     const [message, setMessage] = useState('');
+    const [userName, setUserName] = useState(''); // Estado para el nombre del usuario
     const navigate = useNavigate();
 
     useEffect(() => {
+        // Obtener el nombre del usuario de las cookies
+        const storedUserName = Cookies.get('username');
+        setUserName(storedUserName || 'Usuario');
+
+        // Fetch inicial del mensaje (opcional)
         const fetchMessage = async () => {
             try {
                 const response = await api.get('/');
@@ -37,7 +44,9 @@ function Home() {
 
             {/* Header */}
             <header className="header">
-                <h1 className="header-title">{message} Bienvenido</h1>
+                <h1 className="header-title">
+                    {message} Bienvenido, {userName}
+                </h1>
                 <p className="header-subtitle">Explora y gestiona recursos con facilidad</p>
             </header>
 

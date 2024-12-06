@@ -8,6 +8,7 @@ import { CiSearch } from "react-icons/ci";
 import { BiFirstPage, BiLastPage } from "react-icons/bi";
 import { MdKeyboardArrowLeft, MdKeyboardArrowRight } from "react-icons/md";
 import '../book/ManageBooks.css';
+import Sidebar from '../../components/sidebar/Sidebar.jsx';
 
 function ManageBooks() {
   const columns = useColumns();
@@ -76,7 +77,11 @@ function ManageBooks() {
 
   return (
     <div className="content-mbook">
-      <div className="content-show-table">
+      <div className="sidebarlibros">
+        <Sidebar />
+      </div>
+      <div className="tablalibros">
+        <div className="content-show-table">
         <div className="search">
           <div className="select-filter">
             <Form.Select aria-label="Select Column" className="filtro-drop" onChange={handleColumnChange} value={selectedColumn}>
@@ -159,6 +164,7 @@ function ManageBooks() {
           </Form.Select>
         </div>
       </div>
+      </div>      
     </div>
   );
 }

@@ -47,7 +47,7 @@ function Book() {
             </div>
             <div className="section-book">
                 <div className="cover">
-                    <img src={book.portada} alt={book.titulo} className="book-cover" />
+                    <img src={book.portada} alt={book.titulo} className="book-cover-only" />
                 </div>
                 <div className="information-book">
                     <div className="infor">

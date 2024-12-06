@@ -9,7 +9,7 @@ public class HomeResource {
 
     @GetMapping("/")
     public String index() {
-        return "\"Hello Max!\"";
+        return "\"Hello!\"";
     }
 
 }
