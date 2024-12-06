@@ -3,14 +3,14 @@ body, html {
     margin: 0;
     display: flex;
     flex-direction: column;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(235, 239, 255);
 }
 
 .login-content {
     font-family: 'Courier New', Courier, monospace;
     display: flex;
     align-items: center;
-    margin-top: 150px;
+    margin-top: 35px;
 }
 
 .form-login {
@@ -80,4 +80,33 @@ body, html {
 
 .register-link:hover {
     color: darkblue;     /* Cambia de color al pasar el cursor */
+}
+
+.rectangule-login {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.imgLogin1 {
+    width: 220px; /* Ajusta el tamaño según lo necesites */
+    height: auto;
+    position: absolute; /* Posiciona de manera absoluta dentro de su contenedor */
+    bottom: 0;
+    left: 0;
+    z-index: 1; /* Asegura que RLogin2 esté encima de RLogin1 */
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+.imgLogin2 {
+    width: 225px; /* Ajusta el tamaño según lo necesites */
+    height: auto;
+    position: absolute; /* Posiciona de manera absoluta dentro de su contenedor */
+    bottom: 10px; /* El espacio entre las dos imágenes */
+    left: 0;
+    margin-left: 10px;
 }
