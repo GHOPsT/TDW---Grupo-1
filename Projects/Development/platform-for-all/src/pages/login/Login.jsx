@@ -4,6 +4,8 @@ import { useState } from 'react';
 import '../login/Login.css';
 import ImgLogin from '../../assets/login-register/login-img.svg';
 import { useAuth } from '../../contexts/AuthContext';
+import RLogin1 from '../../assets/login-register/figura-login-1.svg';
+import RLogin2 from '../../assets/login-register/figura-login-2.svg';
 
 function Login() {
   const navigate = useNavigate();
@@ -85,6 +87,10 @@ function Login() {
       <div className="imagen-login">
         <img src={ImgLogin} alt="Imagen de login" className="img-login" />
       </div>
+            <div className='rectangule-login'>
+                <img src={RLogin2} alt="Rectangle2" className='imgLogin2'/>
+                <img src={RLogin1} alt="Rectangle1" className='imgLogin1'/>
+            </div>
     </div>
   );
 }
