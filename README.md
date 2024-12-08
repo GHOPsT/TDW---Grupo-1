@@ -29,7 +29,7 @@
   - CSS
   - Figma
 - **Backend**:
-  - Java (Sprint boot)
+  - Java (Spring boot)
 - **Base de datos**:
   - Mongo DB Atlas
 - **Pruebas**:
